@@ -1,11 +1,11 @@
 {
   "version": "1",
-  "target_date": "2026-05-10",
-  "activity": "GAME",
-  "teens_passage": "Acts 20",
-  "preteens_passage": "John 7",
-  "started_at": "2026-05-08T13:35:29Z",
-  "last_updated": "2026-05-08T13:44:30Z",
+  "target_date": "2026-05-17",
+  "activity": "QUIZ",
+  "teens_passage": "Acts 21",
+  "preteens_passage": "John 8",
+  "started_at": "2026-05-16T14:01:09Z",
+  "last_updated": "2026-05-16T14:34:29Z",
   "steps": {
     "rotation_lookup": "done",
     "teens_spec_written": "done",
@@ -19,20 +19,62 @@
   "files": {
     "teens": [
       {
-        "filename": "Game_Teens_Acts20.docx",
-        "local_path": "content/teens/2026-05-10_GAME_Acts20/Game_Teens_Acts20.docx",
-        "file_type": "GAME_SHEET",
-        "download_url": "https://nocodb.aiautom8or.com/dltemp/LDiMUFyvobT_9OcX/1778254800000/tod/2026/05/Game_Teens_Acts20_h8uCW.docx",
-        "nocodb_record_id": 1
+        "filename": "Quiz_Teens_Variant_A_Acts21.docx",
+        "local_path": "content/teens/2026-05-17_QUIZ_Acts21/Quiz_Teens_Variant_A_Acts21.docx",
+        "file_type": "QUIZ_VARIANT_A",
+        "download_url": "https://raw.githubusercontent.com/autom8or-com/children-weekly-content/dff49c44eee5ec1d5a4889d58696ae0cbd679663/content/teens/2026-05-17_QUIZ_Acts21/Quiz_Teens_Variant_A_Acts21.docx",
+        "nocodb_record_id": 0
+      },
+      {
+        "filename": "Quiz_Teens_Variant_B_Acts21.docx",
+        "local_path": "content/teens/2026-05-17_QUIZ_Acts21/Quiz_Teens_Variant_B_Acts21.docx",
+        "file_type": "QUIZ_VARIANT_B",
+        "download_url": "https://raw.githubusercontent.com/autom8or-com/children-weekly-content/dff49c44eee5ec1d5a4889d58696ae0cbd679663/content/teens/2026-05-17_QUIZ_Acts21/Quiz_Teens_Variant_B_Acts21.docx",
+        "nocodb_record_id": 0
+      },
+      {
+        "filename": "Quiz_Teens_Variant_C_Acts21.docx",
+        "local_path": "content/teens/2026-05-17_QUIZ_Acts21/Quiz_Teens_Variant_C_Acts21.docx",
+        "file_type": "QUIZ_VARIANT_C",
+        "download_url": "https://raw.githubusercontent.com/autom8or-com/children-weekly-content/dff49c44eee5ec1d5a4889d58696ae0cbd679663/content/teens/2026-05-17_QUIZ_Acts21/Quiz_Teens_Variant_C_Acts21.docx",
+        "nocodb_record_id": 0
+      },
+      {
+        "filename": "Quiz_Teens_Answer_Keys_Acts21.docx",
+        "local_path": "content/teens/2026-05-17_QUIZ_Acts21/Quiz_Teens_Answer_Keys_Acts21.docx",
+        "file_type": "QUIZ_ANSWER_KEYS",
+        "download_url": "https://raw.githubusercontent.com/autom8or-com/children-weekly-content/dff49c44eee5ec1d5a4889d58696ae0cbd679663/content/teens/2026-05-17_QUIZ_Acts21/Quiz_Teens_Answer_Keys_Acts21.docx",
+        "nocodb_record_id": 0
       }
     ],
     "preteens": [
       {
-        "filename": "Game_Preteens_John7.docx",
-        "local_path": "content/preteens/2026-05-10_GAME_John7/Game_Preteens_John7.docx",
-        "file_type": "GAME_SHEET",
-        "download_url": "https://nocodb.aiautom8or.com/dltemp/Hh6lntr3AukShmpj/1778255400000/tod/2026/05/Game_Preteens_John7_rpk5x.docx",
-        "nocodb_record_id": 2
+        "filename": "Quiz_Preteens_Variant_A_John8.docx",
+        "local_path": "content/preteens/2026-05-17_QUIZ_John8/Quiz_Preteens_Variant_A_John8.docx",
+        "file_type": "QUIZ_VARIANT_A",
+        "download_url": "https://raw.githubusercontent.com/autom8or-com/children-weekly-content/dff49c44eee5ec1d5a4889d58696ae0cbd679663/content/preteens/2026-05-17_QUIZ_John8/Quiz_Preteens_Variant_A_John8.docx",
+        "nocodb_record_id": 0
+      },
+      {
+        "filename": "Quiz_Preteens_Variant_B_John8.docx",
+        "local_path": "content/preteens/2026-05-17_QUIZ_John8/Quiz_Preteens_Variant_B_John8.docx",
+        "file_type": "QUIZ_VARIANT_B",
+        "download_url": "https://raw.githubusercontent.com/autom8or-com/children-weekly-content/dff49c44eee5ec1d5a4889d58696ae0cbd679663/content/preteens/2026-05-17_QUIZ_John8/Quiz_Preteens_Variant_B_John8.docx",
+        "nocodb_record_id": 0
+      },
+      {
+        "filename": "Quiz_Preteens_Variant_C_John8.docx",
+        "local_path": "content/preteens/2026-05-17_QUIZ_John8/Quiz_Preteens_Variant_C_John8.docx",
+        "file_type": "QUIZ_VARIANT_C",
+        "download_url": "https://raw.githubusercontent.com/autom8or-com/children-weekly-content/dff49c44eee5ec1d5a4889d58696ae0cbd679663/content/preteens/2026-05-17_QUIZ_John8/Quiz_Preteens_Variant_C_John8.docx",
+        "nocodb_record_id": 0
+      },
+      {
+        "filename": "Quiz_Preteens_Answer_Keys_John8.docx",
+        "local_path": "content/preteens/2026-05-17_QUIZ_John8/Quiz_Preteens_Answer_Keys_John8.docx",
+        "file_type": "QUIZ_ANSWER_KEYS",
+        "download_url": "https://raw.githubusercontent.com/autom8or-com/children-weekly-content/dff49c44eee5ec1d5a4889d58696ae0cbd679663/content/preteens/2026-05-17_QUIZ_John8/Quiz_Preteens_Answer_Keys_John8.docx",
+        "nocodb_record_id": 0
       }
     ]
   }
