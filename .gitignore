@@ -1,0 +1,11 @@
+# Secrets — never commit
+.env
+
+# Checkpoint — tracks generation progress per Sunday, safe to delete to restart fresh
+.claude/checkpoint.json
+
+# Temp spec files written during generation
+/tmp/tod_specs/
+
+# OS
+.DS_Store

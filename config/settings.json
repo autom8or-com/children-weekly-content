@@ -1,0 +1,11 @@
+{
+  "church": "RCCG Tabernacle of David (TOD)",
+
+  "nocodb": {
+    "_comment": "base_url, base_id, table_id are in .env as NOCODB_BASE_URL, NOCODB_BASE_ID, NOCODB_TABLE_ID"
+  },
+
+  "telegram": {
+    "completion_message_template": "✅ *TOD Sunday Content Ready*\n\n📅 *{date}* — {activity} Sunday\n\n📖 *TEENS:* {teens_passage} + Psalms 19:7-11\n📖 *PRE-TEENS:* {preteens_passage} + Psalms 19:7-11\n\n📁 *Download Links:*\n{file_links}\n\n_Content is ready for printing and distribution._ 🙏"
+  }
+}

@@ -1,0 +1,250 @@
+{
+  "church": "RCCG Tabernacle of David (TOD) Teens Church",
+  "schedule": [
+    {
+      "date": "2026-05-03",
+      "week": "1st",
+      "activity": "SKIPPED",
+      "teens": { "passage": "Acts 19", "extra": "Psalms 19:7-11" },
+      "preteens": { "passage": "John 6", "extra": "Psalms 19:7-11" }
+    },
+    {
+      "date": "2026-05-10",
+      "week": "2nd",
+      "activity": "GAME",
+      "teens": { "passage": "Acts 20", "extra": "Psalms 19:7-11" },
+      "preteens": { "passage": "John 7", "extra": "Psalms 19:7-11" }
+    },
+    {
+      "date": "2026-05-17",
+      "week": "3rd",
+      "activity": "QUIZ",
+      "teens": { "passage": "Acts 21", "extra": "Psalms 19:7-11" },
+      "preteens": { "passage": "John 8", "extra": "Psalms 19:7-11" }
+    },
+    {
+      "date": "2026-05-24",
+      "week": "4th",
+      "activity": "PRESENTATION",
+      "teens": { "passage": "Acts 22", "extra": "Psalms 19:7-11" },
+      "preteens": { "passage": "John 9", "extra": "Psalms 19:7-11" }
+    },
+    {
+      "date": "2026-05-31",
+      "week": "5th",
+      "activity": "MESSAGE",
+      "teens": { "passage": "Acts 23", "extra": "Psalms 19:7-11" },
+      "preteens": { "passage": "John 10", "extra": "Psalms 19:7-11" }
+    },
+    {
+      "date": "2026-06-07",
+      "week": "1st",
+      "activity": "SKIPPED",
+      "teens": { "passage": "Acts 24", "extra": "Psalms 19:7-11" },
+      "preteens": { "passage": "John 11", "extra": "Psalms 19:7-11" }
+    },
+    {
+      "date": "2026-06-14",
+      "week": "2nd",
+      "activity": "GAME",
+      "teens": { "passage": "Acts 25", "extra": "Psalms 19:7-11" },
+      "preteens": { "passage": "John 12", "extra": "Psalms 19:7-11" }
+    },
+    {
+      "date": "2026-06-21",
+      "week": "3rd",
+      "activity": "QUIZ",
+      "teens": { "passage": "Acts 26", "extra": "Psalms 19:7-11" },
+      "preteens": { "passage": "John 13", "extra": "Psalms 19:7-11" }
+    },
+    {
+      "date": "2026-06-28",
+      "week": "4th",
+      "activity": "PRESENTATION",
+      "teens": { "passage": "Acts 27", "extra": "Psalms 19:7-11" },
+      "preteens": { "passage": "John 14", "extra": "Psalms 19:7-11" }
+    },
+    {
+      "date": "2026-07-05",
+      "week": "1st",
+      "activity": "SKIPPED",
+      "teens": { "passage": "Acts 28", "extra": "Psalms 19:7-11" },
+      "preteens": { "passage": "John 15", "extra": "Psalms 19:7-11" }
+    },
+    {
+      "date": "2026-07-12",
+      "week": "2nd",
+      "activity": "MESSAGE",
+      "teens": { "passage": "Hebrews 1", "extra": "Psalms 19:7-11" },
+      "preteens": { "passage": "John 16", "extra": "Psalms 19:7-11" }
+    },
+    {
+      "date": "2026-07-19",
+      "week": "3rd",
+      "activity": "GAME",
+      "teens": { "passage": "Hebrews 2", "extra": "Psalms 19:7-11" },
+      "preteens": { "passage": "John 17", "extra": "Psalms 19:7-11" }
+    },
+    {
+      "date": "2026-07-26",
+      "week": "4th",
+      "activity": "QUIZ",
+      "teens": { "passage": "Hebrews 3", "extra": "Psalms 19:7-11" },
+      "preteens": { "passage": "John 18", "extra": "Psalms 19:7-11" }
+    },
+    {
+      "date": "2026-08-02",
+      "week": "1st",
+      "activity": "SKIPPED",
+      "teens": { "passage": "Hebrews 4", "extra": "Psalms 19:7-11" },
+      "preteens": { "passage": "John 19", "extra": "Psalms 19:7-11" }
+    },
+    {
+      "date": "2026-08-09",
+      "week": "2nd",
+      "activity": "PRESENTATION",
+      "teens": { "passage": "Hebrews 5", "extra": "Psalms 19:7-11" },
+      "preteens": { "passage": "John 20", "extra": "Psalms 19:7-11" }
+    },
+    {
+      "date": "2026-08-16",
+      "week": "3rd",
+      "activity": "MESSAGE",
+      "teens": { "passage": "Hebrews 6", "extra": "Psalms 19:7-11" },
+      "preteens": { "passage": "John 21", "extra": "Psalms 19:7-11" }
+    },
+    {
+      "date": "2026-08-23",
+      "week": "4th",
+      "activity": "GAME",
+      "teens": { "passage": "Hebrews 7", "extra": "Psalms 19:7-11" },
+      "preteens": { "passage": "Matthew 1", "extra": "Psalms 19:7-11" }
+    },
+    {
+      "date": "2026-08-30",
+      "week": "5th",
+      "activity": "QUIZ",
+      "teens": { "passage": "Hebrews 8", "extra": "Psalms 19:7-11" },
+      "preteens": { "passage": "Matthew 2", "extra": "Psalms 19:7-11" }
+    },
+    {
+      "date": "2026-09-06",
+      "week": "1st",
+      "activity": "SKIPPED",
+      "teens": { "passage": "Hebrews 9", "extra": "Psalms 19:7-11" },
+      "preteens": { "passage": "Matthew 3", "extra": "Psalms 19:7-11" }
+    },
+    {
+      "date": "2026-09-13",
+      "week": "2nd",
+      "activity": "PRESENTATION",
+      "teens": { "passage": "Hebrews 10", "extra": "Psalms 19:7-11" },
+      "preteens": { "passage": "Matthew 4", "extra": "Psalms 19:7-11" }
+    },
+    {
+      "date": "2026-09-20",
+      "week": "3rd",
+      "activity": "MESSAGE",
+      "teens": { "passage": "Hebrews 11", "extra": "Psalms 19:7-11" },
+      "preteens": { "passage": "Matthew 5", "extra": "Psalms 19:7-11" }
+    },
+    {
+      "date": "2026-09-27",
+      "week": "4th",
+      "activity": "GAME",
+      "teens": { "passage": "Hebrews 12", "extra": "Psalms 19:7-11" },
+      "preteens": { "passage": "Matthew 6", "extra": "Psalms 19:7-11" }
+    },
+    {
+      "date": "2026-10-04",
+      "week": "1st",
+      "activity": "SKIPPED",
+      "teens": { "passage": "Hebrews 13", "extra": "Psalms 19:7-11" },
+      "preteens": { "passage": "Matthew 7", "extra": "Psalms 19:7-11" }
+    },
+    {
+      "date": "2026-10-11",
+      "week": "2nd",
+      "activity": "QUIZ",
+      "teens": { "passage": "Matthew 1", "extra": "Psalms 19:7-11" },
+      "preteens": { "passage": "Matthew 8", "extra": "Psalms 19:7-11" }
+    },
+    {
+      "date": "2026-10-18",
+      "week": "3rd",
+      "activity": "PRESENTATION",
+      "teens": { "passage": "Matthew 2", "extra": "Psalms 19:7-11" },
+      "preteens": { "passage": "Matthew 9", "extra": "Psalms 19:7-11" }
+    },
+    {
+      "date": "2026-10-25",
+      "week": "4th",
+      "activity": "MESSAGE",
+      "teens": { "passage": "Matthew 3", "extra": "Psalms 19:7-11" },
+      "preteens": { "passage": "Matthew 10", "extra": "Psalms 19:7-11" }
+    },
+    {
+      "date": "2026-11-01",
+      "week": "1st",
+      "activity": "SKIPPED",
+      "teens": { "passage": "Matthew 4", "extra": "Psalms 19:7-11" },
+      "preteens": { "passage": "Matthew 11", "extra": "Psalms 19:7-11" }
+    },
+    {
+      "date": "2026-11-08",
+      "week": "2nd",
+      "activity": "GAME",
+      "teens": { "passage": "Matthew 5", "extra": "Psalms 19:7-11" },
+      "preteens": { "passage": "Matthew 12", "extra": "Psalms 19:7-11" }
+    },
+    {
+      "date": "2026-11-15",
+      "week": "3rd",
+      "activity": "QUIZ",
+      "teens": { "passage": "Matthew 6", "extra": "Psalms 19:7-11" },
+      "preteens": { "passage": "Matthew 13", "extra": "Psalms 19:7-11" }
+    },
+    {
+      "date": "2026-11-22",
+      "week": "4th",
+      "activity": "PRESENTATION",
+      "teens": { "passage": "Matthew 7", "extra": "Psalms 19:7-11" },
+      "preteens": { "passage": "Matthew 14", "extra": "Psalms 19:7-11" }
+    },
+    {
+      "date": "2026-11-29",
+      "week": "5th",
+      "activity": "MESSAGE",
+      "teens": { "passage": "Matthew 8", "extra": "Psalms 19:7-11" },
+      "preteens": { "passage": "Matthew 15", "extra": "Psalms 19:7-11" }
+    },
+    {
+      "date": "2026-12-06",
+      "week": "1st",
+      "activity": "SKIPPED",
+      "teens": { "passage": "Matthew 9", "extra": "Psalms 19:7-11" },
+      "preteens": { "passage": "Matthew 16", "extra": "Psalms 19:7-11" }
+    },
+    {
+      "date": "2026-12-13",
+      "week": "2nd",
+      "activity": "GAME",
+      "teens": { "passage": "Matthew 10", "extra": "Psalms 19:7-11" },
+      "preteens": { "passage": "Matthew 17", "extra": "Psalms 19:7-11" }
+    },
+    {
+      "date": "2026-12-20",
+      "week": "3rd",
+      "activity": "QUIZ",
+      "teens": { "passage": "Matthew 11", "extra": "Psalms 19:7-11" },
+      "preteens": { "passage": "Matthew 18", "extra": "Psalms 19:7-11" }
+    },
+    {
+      "date": "2026-12-27",
+      "week": "4th",
+      "activity": "PRESENTATION",
+      "teens": { "passage": "Matthew 12", "extra": "Psalms 19:7-11" },
+      "preteens": { "passage": "Matthew 19", "extra": "Psalms 19:7-11" }
+    }
+  ]
+}

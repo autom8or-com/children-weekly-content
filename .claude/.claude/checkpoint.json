@@ -1,0 +1,39 @@
+{
+  "version": "1",
+  "target_date": "2026-05-10",
+  "activity": "GAME",
+  "teens_passage": "Acts 20",
+  "preteens_passage": "John 7",
+  "started_at": "2026-05-08T13:35:29Z",
+  "last_updated": "2026-05-08T13:44:30Z",
+  "steps": {
+    "rotation_lookup": "done",
+    "teens_spec_written": "done",
+    "teens_docx_built": "done",
+    "teens_nocodb_uploaded": "done",
+    "preteens_spec_written": "done",
+    "preteens_docx_built": "done",
+    "preteens_nocodb_uploaded": "done",
+    "telegram_sent": "done"
+  },
+  "files": {
+    "teens": [
+      {
+        "filename": "Game_Teens_Acts20.docx",
+        "local_path": "content/teens/2026-05-10_GAME_Acts20/Game_Teens_Acts20.docx",
+        "file_type": "GAME_SHEET",
+        "download_url": "https://nocodb.aiautom8or.com/dltemp/LDiMUFyvobT_9OcX/1778254800000/tod/2026/05/Game_Teens_Acts20_h8uCW.docx",
+        "nocodb_record_id": 1
+      }
+    ],
+    "preteens": [
+      {
+        "filename": "Game_Preteens_John7.docx",
+        "local_path": "content/preteens/2026-05-10_GAME_John7/Game_Preteens_John7.docx",
+        "file_type": "GAME_SHEET",
+        "download_url": "https://nocodb.aiautom8or.com/dltemp/Hh6lntr3AukShmpj/1778255400000/tod/2026/05/Game_Preteens_John7_rpk5x.docx",
+        "nocodb_record_id": 2
+      }
+    ]
+  }
+}
