@@ -12,3 +12,11 @@ node_modules/
 
 # OS
 .DS_Store
+
+# Slides — generated image artifacts (large binary files, reproducible)
+slides/projects/*/characters/*/reference.png
+slides/projects/*/scenes/**/draft.png
+slides/projects/*/scenes/**/output.png
+slides/projects/*/output/*.pptx
+*.pyc
+__pycache__/

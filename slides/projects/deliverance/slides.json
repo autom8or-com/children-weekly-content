@@ -1,0 +1,14 @@
+[
+  { "id": "scene-1/1a", "theme": "What Is Deliverance?", "cta": null },
+  { "id": "scene-1/1b", "theme": "What Is Deliverance?", "cta": "By rescuing Angela, what did Jesus do?\n\nDeliverance!" },
+  { "id": "scene-2/2a", "theme": "Heroes of Our Deliverance", "cta": null },
+  { "id": "scene-2/2b", "theme": "Heroes of Our Deliverance", "cta": null },
+  { "id": "scene-2/2c", "theme": "Heroes of Our Deliverance", "cta": "What weapon did the heroes have?\n\nHow does the oppressed become a hero?\nWhen freedom is granted — and they seek freedom for others!" },
+  { "id": "scene-3/3a", "theme": "Who Is the Victim?", "cta": null },
+  { "id": "scene-3/3b", "theme": "Who Is the Victim?", "cta": null },
+  { "id": "scene-3/3c", "theme": "Who Is the Victim?", "cta": null },
+  { "id": "scene-3/3d", "theme": "Who Is the Victim?", "cta": "Now that you are free!" },
+  { "id": "scene-4/4a", "theme": "Why Does Jesus Set Us Free?", "cta": null },
+  { "id": "scene-4/4b", "theme": "Why Does Jesus Set Us Free?", "cta": null },
+  { "id": "scene-4/4c", "theme": "Why Does Jesus Set Us Free?", "cta": "You are free to serve, learn, and become like Jesus!\n\nYou are a hero too!" }
+]
