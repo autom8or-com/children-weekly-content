@@ -1,11 +1,10 @@
 #!/usr/bin/env node
 /**
  * TOD Presentation Sunday — Word Document Builder
- * Builds EITHER the facilitator guideline OR the group assignments sheet.
+ * Builds a single combined document: group assignments table + full guideline.
  *
  * Usage:
- *   node build_presentation.js <spec.json> <output.docx> [type]
- *   type: GUIDELINE | GROUPS   (default: GUIDELINE)
+ *   node build_presentation.js <spec.json> <output.docx>
  *
  * Spec JSON shape:
  * {
@@ -20,7 +19,7 @@
  *       "principle": "...",
  *       "members": ["Member 1", "Member 2", "Member 3"]
  *     },
- *     ...5 groups
+ *     ...2 groups total
  *   ],
  *   "closing_remarks": "...",
  *   "discussion_questions": ["...", "...", "..."]
@@ -93,10 +92,36 @@ function numbered(text) {
   });
 }
 
-// ── Guideline document (sent to groups 1 week ahead) ─────────────────────────
+// ── Combined document (group assignments table + full guideline) ──────────────
 
-function buildGuideline() {
+function buildCombined() {
   const passage = spec.extra ? `${spec.passage}  +  ${spec.extra}` : spec.passage;
+
+  // Group assignments table
+  const tableHeaderRow = new TableRow({
+    tableHeader: true,
+    children: ["Group", "Members", "Assigned Topic", "Verses"].map(h => new TableCell({
+      borders: allBorders,
+      shading: { fill: NAVY, type: ShadingType.CLEAR },
+      margins: { top: 100, bottom: 100, left: 120, right: 120 },
+      children: [new Paragraph({ children: [new TextRun({ text: h, bold: true, color: WHITE, size: 18, font: "Calibri" })] })],
+    })),
+  });
+
+  const tableDataRows = (spec.groups || []).map((g, i) => new TableRow({
+    children: [
+      `Group ${i + 1}`,
+      (g.members || []).join(", "),
+      g.topic_title,
+      g.verses || "",
+    ].map((text, colIdx) => new TableCell({
+      borders: allBorders,
+      shading: { fill: i % 2 === 0 ? LIGHT : WHITE, type: ShadingType.CLEAR },
+      margins: { top: 80, bottom: 80, left: 120, right: 120 },
+      width: { size: [700, 2800, 3000, 1800][colIdx], type: WidthType.DXA },
+      children: [new Paragraph({ children: [new TextRun({ text, size: 18, font: "Calibri" })] })],
+    })),
+  }));
 
   const children = [
     // Church header
@@ -120,6 +145,16 @@ function buildGuideline() {
       children: [new TextRun({ text: `Sunday ${spec.date}  |  ${spec.cohort}`, color: GREY, size: 18, font: "Calibri" })],
       spacing: { after: 80 },
     }),
+    rule(),
+
+    // Group assignments table
+    sectionHeading("Group Assignments"),
+    new Table({
+      width: { size: 9000, type: WidthType.DXA },
+      columnWidths: [700, 2800, 3000, 1800],
+      rows: [tableHeaderRow, ...tableDataRows],
+    }),
+    new Paragraph({ children: [], spacing: { before: 80 } }),
     rule(),
 
     // Important dates
@@ -235,7 +270,7 @@ function buildGuideline() {
       headers: {
         default: new Header({
           children: [new Paragraph({
-            children: [new TextRun({ text: `TOD Teens Church  |  Presentation Sunday  |  ${spec.passage}`, color: GREY, size: 16, font: "Calibri" })],
+            children: [new TextRun({ text: `TOD ${spec.cohort}  |  Presentation Sunday  |  ${spec.passage}`, color: GREY, size: 16, font: "Calibri" })],
           })],
         }),
       },
@@ -255,85 +290,9 @@ function buildGuideline() {
   });
 }
 
-// ── Group assignments sheet ───────────────────────────────────────────────────
-
-function buildGroups() {
-  const passage = spec.extra ? `${spec.passage}  +  ${spec.extra}` : spec.passage;
-
-  const headerRows = [
-    new TableRow({
-      tableHeader: true,
-      children: ["Group", "Members", "Assigned Topic", "Verses", "Note"].map(h => new TableCell({
-        borders: allBorders,
-        shading: { fill: NAVY, type: ShadingType.CLEAR },
-        margins: { top: 100, bottom: 100, left: 120, right: 120 },
-        children: [new Paragraph({ children: [new TextRun({ text: h, bold: true, color: WHITE, size: 18, font: "Calibri" })] })],
-      })),
-    }),
-  ];
-
-  const dataRows = (spec.groups || []).map((g, i) => new TableRow({
-    children: [
-      `Group ${i + 1}`,
-      (g.members || []).join(", "),
-      g.topic_title,
-      g.verses || "",
-      g.note || "",
-    ].map((text, colIdx) => new TableCell({
-      borders: allBorders,
-      shading: { fill: i % 2 === 0 ? LIGHT : WHITE, type: ShadingType.CLEAR },
-      margins: { top: 80, bottom: 80, left: 120, right: 120 },
-      width: { size: [700, 2400, 2600, 1500, 1800][colIdx], type: WidthType.DXA },
-      children: [new Paragraph({ children: [new TextRun({ text, size: 18, font: "Calibri" })] })],
-    })),
-  }));
-
-  return new Document({
-    sections: [{
-      properties: {
-        page: {
-          size: { width: 12240, height: 15840 },
-          margin: { top: 900, bottom: 900, left: 1080, right: 1080 },
-        },
-      },
-      children: [
-        new Paragraph({
-          alignment: AlignmentType.CENTER,
-          children: [new TextRun({ text: (spec.church || "").toUpperCase(), bold: true, color: NAVY, size: 18, font: "Calibri" })],
-          spacing: { after: 0 },
-        }),
-        new Paragraph({
-          alignment: AlignmentType.CENTER,
-          children: [new TextRun({ text: `GROUP ASSIGNMENTS — ${spec.title}`, bold: true, color: NAVY, size: 28, font: "Calibri" })],
-          spacing: { before: 40, after: 40 },
-        }),
-        new Paragraph({
-          alignment: AlignmentType.CENTER,
-          children: [new TextRun({ text: passage, bold: true, color: GOLD, size: 22, font: "Calibri" })],
-          spacing: { after: 80 },
-        }),
-        rule(),
-        new Paragraph({
-          children: [new TextRun({ text: "Distribute to group leaders or post on the notice board.", color: GREY, size: 18, font: "Calibri" })],
-          spacing: { after: 80 },
-        }),
-        new Table({
-          width: { size: 9000, type: WidthType.DXA },
-          columnWidths: [700, 2400, 2600, 1500, 1800],
-          rows: [...headerRows, ...dataRows],
-        }),
-        new Paragraph({ children: [], spacing: { before: 80 } }),
-        new Paragraph({
-          children: [new TextRun({ text: "Note: Groups are mixed by age and confidence level. Adjust as needed for your cohort.", color: GREY, size: 16, font: "Calibri" })],
-        }),
-      ],
-    }],
-  });
-}
-
 // ── Run ────────────────────────────────────────────────────────────────────────
 
-const doc = docType === "GROUPS" ? buildGroups() : buildGuideline();
+const doc = buildCombined();
 Packer.toBuffer(doc).then(buf => {
   fs.writeFileSync(outPath, buf);
   console.log(`Saved: ${outPath}`);

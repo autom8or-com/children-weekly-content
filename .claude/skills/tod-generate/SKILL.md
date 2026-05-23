@@ -60,14 +60,46 @@ If the user passed a specific date (e.g. `/tod-generate 2026-06-14`), use that i
 
 Read `config/rotation.json`. Find the entry where `"date"` matches the target Sunday.
 
+**If no entry is found for that date** → print:
+> "No rotation entry for [DATE] — nothing to generate. Add this date to `config/rotation.json` to schedule content."
+
+Stop here. Do not proceed.
+
 Extract: `activity`, `teens.passage`, `teens.extra`, `preteens.passage`, `preteens.extra`
 
-**If activity is SKIPPED or MESSAGE**:
-> "This is a **[1st/MESSAGE] Sunday** — no activity content needed.
-> Bible reading: Teens: [passage] + [extra] | Pre-Teens: [passage] + [extra]."
+**If activity is SKIPPED or MESSAGE**, send a Telegram reading reminder then stop.
+
+Build the message:
+```
+*No activity this Sunday ([formatted date])*
+
+Bible reading for the week:
+• Teens: [teens.passage] + [teens.extra]
+• Pre-Teens: [preteens.passage] + [preteens.extra]
+```
+
+Send using the Telegram MCP tool (`mcp__plugin_telegram_telegram__reply`):
+- `chat_id`: `$TELEGRAM_GROUP_CHAT_ID`
+- `reply_to`: `$TELEGRAM_TOPIC_ID`
+- `text`: the message above (Markdown enabled)
+
+If `TELEGRAM_GROUP_CHAT_ID` is empty, skip the message and print the reading info to the console instead.
+
 Stop here. No checkpoint needed.
 
-**If activity is GAME, QUIZ, or PRESENTATION**, initialise the checkpoint:
+**If activity is GAME**, initialise the checkpoint and proceed to Step 3.
+
+**If activity is QUIZ**, also check the very next entry in the schedule:
+- If that next entry's `activity` is `PRESENTATION`, store it as the **paired PRESENTATION**:
+  `pres_date`, `pres_teens_passage`, `pres_preteens_passage`
+- Announce: "QUIZ + PRESENTATION pair detected — generating both in one run."
+- Generate QUIZ content (Steps 4–5), then immediately generate PRESENTATION content
+  (Steps 4–5 again for the paired date) before sending the Telegram notification.
+  The Telegram message covers both Sundays.
+
+**If activity is PRESENTATION**, initialise the checkpoint and proceed to Step 3.
+
+For any active activity, initialise the checkpoint:
 ```bash
 python3 .claude/skills/tod-generate/scripts/checkpoint.py init \
   [DATE] [ACTIVITY] "[TEENS_PASSAGE]" "[PRETEENS_PASSAGE]"
@@ -80,22 +112,7 @@ python3 .claude/skills/tod-generate/scripts/checkpoint.py set rotation_lookup do
 
 ---
 
-## STEP 3 — NocoDB table setup (already done — skip on all runs)
-
-The `tod_content_library` table was created in the Pora Student base on 2026-05-07.
-All credentials are in `.env` (sourced in Step 0):
-- `NOCODB_BASE_URL=https://nocodb.aiautom8or.com`
-- `NOCODB_BASE_ID=pi615b94l2p403o`
-- `NOCODB_TABLE_ID=m0lpo3ciq9q35t1`
-
-**Skip this step entirely.** `nocodb_upload.py` reads directly from these env vars.
-
-> If the table is ever lost and needs to be recreated, see the git history of this SKILL.md
-> for the original curl commands (Step 3 before 2026-05-07).
-
----
-
-## STEP 4 — Generate & build Teens content
+## STEP 3 — Generate & build Teens content
 
 Skip any sub-step already marked `done` in the checkpoint.
 
@@ -107,15 +124,19 @@ OUTDIR="content/teens/[DATE]_[ACTIVITY]_[TEENS_PASSAGE_NO_SPACES]"
 mkdir -p "$OUTDIR" /tmp/tod_specs/teens
 ```
 
+> NocoDB credentials (`NOCODB_BASE_URL`, `NOCODB_BASE_ID`, `NOCODB_TABLE_ID`) are already in `.env`
+> and sourced in Step 0. `nocodb_upload.py` reads them directly — no extra setup needed.
+> To recreate the table if ever lost, see git history of this SKILL.md (before 2026-05-07).
+
 ### Conservative biblical framing — applies to all content
 All answers must reflect clear, orthodox Christian truth. No ambiguous or relativistic framing.
 Correct answers are definitively correct. Applications are practical and faith-affirming for teens.
 
 ---
 
-### 4a — Write the JSON spec   (checkpoint: `teens_spec_written`)
+### 3a — Write the JSON spec   (checkpoint: `teens_spec_written`)
 
-Read the appropriate template from `templates/` then produce the JSON spec below.
+Produce the JSON spec below for the active activity type.
 
 **GAME** → write `/tmp/tod_specs/teens/game.json`:
 ```json
@@ -192,24 +213,37 @@ Variants must be genuinely different, not paraphrases.
   "church": "RCCG Tabernacle of David (TOD)",
   "groups": [
     {
-      "topic_title": "[Section 1 topic]",
-      "summary": "[2-3 sentences]",
-      "verses": "[e.g. Acts 22:1-11]",
+      "topic_title": "[First half of passage — topic title]",
+      "summary": "[2-3 sentences covering the first half of the chapter]",
+      "verses": "[e.g. Acts 22:1-16]",
       "questions": [
         "What happened? (narrative)",
         "Why did [key character] act this way? (motivation)",
         "What does this reveal about God or faith? (principle)",
         "How does this apply to your life as a teen? (application)"
       ],
-      "principle": "[Spiritual truth — 1-2 sentences]",
+      "principle": "[Spiritual truth from first half — 1-2 sentences]",
       "members": ["Member 1","Member 2","Member 3"]
     },
-    "...4 more groups"
+    {
+      "topic_title": "[Second half of passage — topic title]",
+      "summary": "[2-3 sentences covering the second half of the chapter]",
+      "verses": "[e.g. Acts 22:17-30]",
+      "questions": [
+        "What happened? (narrative)",
+        "Why did [key character] act this way? (motivation)",
+        "What does this reveal about God or faith? (principle)",
+        "How does this apply to your life as a teen? (application)"
+      ],
+      "principle": "[Spiritual truth from second half — 1-2 sentences]",
+      "members": ["Member 4","Member 5","Member 6"]
+    }
   ],
-  "closing_remarks": "[Pre-filled facilitator closing connecting all 5 sections]",
+  "closing_remarks": "[Pre-filled facilitator closing connecting both sections]",
   "discussion_questions": ["...","...","..."]
 }
 ```
+Split the chapter roughly in half by verse count. Group 1 covers the first half, Group 2 the second half.
 
 After writing the spec, checkpoint it:
 ```bash
@@ -218,7 +252,7 @@ python3 $SKILL/checkpoint.py set teens_spec_written done
 
 ---
 
-### 4b — Build Word documents   (checkpoint: `teens_docx_built`)
+### 3b — Build Word documents   (checkpoint: `teens_docx_built`)
 
 **GAME:**
 ```bash
@@ -248,16 +282,10 @@ python3 $SKILL/checkpoint.py add-file teens \
 **PRESENTATION:**
 ```bash
 node $SKILL/build_presentation.js /tmp/tod_specs/teens/presentation.json \
-  "$OUTDIR/Presentation_Teens_Guideline_[PASSAGE].docx" GUIDELINE
+  "$OUTDIR/Presentation_Teens_[PASSAGE].docx"
 python3 $SKILL/checkpoint.py add-file teens \
-  "Presentation_Teens_Guideline_[PASSAGE].docx" \
-  "$OUTDIR/Presentation_Teens_Guideline_[PASSAGE].docx" PRESENTATION_GUIDELINE
-
-node $SKILL/build_presentation.js /tmp/tod_specs/teens/presentation.json \
-  "$OUTDIR/Presentation_Teens_Group_Assignments_[PASSAGE].docx" GROUPS
-python3 $SKILL/checkpoint.py add-file teens \
-  "Presentation_Teens_Group_Assignments_[PASSAGE].docx" \
-  "$OUTDIR/Presentation_Teens_Group_Assignments_[PASSAGE].docx" PRESENTATION_GROUPS
+  "Presentation_Teens_[PASSAGE].docx" \
+  "$OUTDIR/Presentation_Teens_[PASSAGE].docx" PRESENTATION
 ```
 
 Checkpoint:
@@ -267,7 +295,7 @@ python3 $SKILL/checkpoint.py set teens_docx_built done
 
 ---
 
-### 4c — Upload to NocoDB   (checkpoint: `teens_nocodb_uploaded`)
+### 3c — Upload to NocoDB   (checkpoint: `teens_nocodb_uploaded`)
 
 For every file registered in the checkpoint under `teens`, run:
 ```bash
@@ -293,15 +321,16 @@ python3 $SKILL/checkpoint.py set teens_nocodb_uploaded done
 
 ---
 
-## STEP 5 — Generate & build Pre-Teens content
+## STEP 4 — Generate & build Pre-Teens content
 
-Repeat the same sub-steps (5a, 5b, 5c) as Step 4 with these differences:
+Repeat the same sub-steps (4a, 4b, 4c) as Step 3 with these differences:
 - `"cohort": "PRE-TEENS"` in the JSON spec
 - Spec files: `/tmp/tod_specs/preteens/`
 - Output folder: `content/preteens/[DATE]_[ACTIVITY]_[PRETEENS_PASSAGE_NO_SPACES]/`
 - File names: `Preteens` instead of `Teens`
-- Checkpoint steps: `preteens_spec_written`, `preteens_docx_built`, `preteens_nocodb_uploaded`
+- Checkpoint keys: `preteens_spec_written`, `preteens_docx_built`, `preteens_nocodb_uploaded`
 - Upload flag: `--cohort PRE-TEENS`
+- PRESENTATION: same 2-group structure, single combined .docx named `Presentation_Preteens_[PASSAGE].docx`
 
 **Language adjustments for ages 9-12:**
 - Simpler vocabulary — no jargon without a plain-English explanation beside it
@@ -311,26 +340,27 @@ Repeat the same sub-steps (5a, 5b, 5c) as Step 4 with these differences:
 
 ---
 
-## STEP 6 — Telegram notification   (checkpoint: `telegram_sent`)
+## STEP 5 — Telegram notification   (checkpoint: `telegram_sent`)
 
 Read `$TELEGRAM_GROUP_CHAT_ID` and `$TELEGRAM_TOPIC_ID` from the environment (sourced from
 `.env` in Step 0).
 Read `.claude/checkpoint.json` → collect all `download_url` values from `files.teens` and
 `files.preteens`.
 
-Build the file links block (one line per file):
+Build the file links block (one line per file, all Sundays combined):
 ```
-• [Teens] Game_Teens_Acts20.docx → https://...
-• [Teens] (answer keys, if QUIZ) → https://...
-• [Pre-Teens] Game_Preteens_John7.docx → https://...
+• [Teens – QUIZ] Quiz_Teens_Variant_A_Acts21.docx → https://...
+• [Pre-Teens – QUIZ] Quiz_Preteens_Variant_A_John8.docx → https://...
+• [Teens – PRESENTATION] Presentation_Teens_Acts22.docx → https://...
+• [Pre-Teens – PRESENTATION] Presentation_Preteens_John9.docx → https://...
 ```
 
 Fill `completion_message_template` from `config/settings.json → telegram.completion_message_template` with:
-- `{date}` → Sunday date formatted as "10 May 2026"
-- `{activity}` → e.g. "GAME"
-- `{teens_passage}` → e.g. "Acts 20"
-- `{preteens_passage}` → e.g. "John 7"
-- `{file_links}` → the bullet list built above
+- `{date}` → primary Sunday date formatted as "24 May 2026"
+- `{activity}` → for a single run: e.g. "GAME"; for a paired run: "QUIZ + PRESENTATION"
+- `{teens_passage}` → primary Teens passage (e.g. "Acts 21")
+- `{preteens_passage}` → primary Pre-Teens passage (e.g. "John 8")
+- `{file_links}` → the bullet list built above (covers all generated files)
 
 Send using the Telegram MCP tool (`mcp__plugin_telegram_telegram__reply`):
 - `chat_id`: `$TELEGRAM_GROUP_CHAT_ID`
@@ -347,7 +377,7 @@ python3 .claude/skills/tod-generate/scripts/checkpoint.py set telegram_sent done
 
 ---
 
-## STEP 7 — Final summary
+## STEP 6 — Final summary
 
 ```
 ✅  Sunday [DATE] — [ACTIVITY]
@@ -362,10 +392,13 @@ PRE-TEENS ([Passage] + Psalms 19:7-11)
   Folder: content/preteens/[folder]/
   NocoDB: [N] records created
 
+[If QUIZ+PRESENTATION pair was generated, repeat the block above for the PRESENTATION date]
+
 📲  Telegram: [sent | skipped — no chat_id]
 
 [PRESENTATION only]
-📋  Reminder: Distribute Guideline docs to groups by [SUNDAY DATE − 7 days].
+📋  Reminder: Distribute Presentation docs to groups by [PRESENTATION DATE − 7 days]
+    (i.e. the Sunday before — quiz day — so groups have a full week to prepare).
 ```
 
 ---
@@ -383,13 +416,15 @@ The NocoDB table `tod_content_library` exists in the Pora Student base at
 
 ## Quality checks before finishing
 
-- [ ] 5 narrative sections with titles and exact verse ranges
+- [ ] 5 narrative sections with titles and exact verse ranges (GAME/QUIZ)
 - [ ] Biblical answers reflect orthodox Christian understanding throughout
 - [ ] Quiz variants are genuinely different (not paraphrases)
 - [ ] Quiz correct answers spread across A/B/C/D
 - [ ] Game phrases are near-exact Scripture quotes
-- [ ] Presentation topics span all 5 sections
+- [ ] Presentation has exactly 2 groups — Group 1 covers first half, Group 2 second half
+- [ ] Presentation builds a single combined .docx (group table + guideline in one file)
 - [ ] Pre-Teens content uses noticeably simpler language
 - [ ] All Word docs built without errors (check node output)
 - [ ] All files uploaded to NocoDB (check checkpoint)
 - [ ] Checkpoint shows all steps `done` before finishing
+- [ ] If QUIZ+PRESENTATION pair: both Sundays fully generated before Telegram is sent
