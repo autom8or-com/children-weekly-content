@@ -32,6 +32,12 @@ Always do a cost estimate before generating. Pricing (2K resolution):
 
 Rule of thumb: character refs ($0.14 each, generated once) + scenes (~$0.08–$0.14 each). A 12-scene deck with 5 characters ≈ **$1.50–$2.00 total**.
 
+### Before Any Regeneration Run
+
+1. **Character + prompt sync**: After updating character reference PNGs, search every `scenes.json` (including dependent projects using `char_project`) for stale inline costume descriptions and update them before calling `generate_scenes.py`. Mismatched prompts produce wrong images at full cost.
+2. **Check balance first**: Run the balance check command before any generation run.
+3. **Sample before full run**: After major prompt changes, generate 2–3 representative scenes first (`generate_scenes.py <project> scene-X/Xa scene-Y/Yb`) to confirm output quality before committing to the full run.
+
 ### Run Commands
 
 ```bash
