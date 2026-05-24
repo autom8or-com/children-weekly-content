@@ -26,14 +26,20 @@ Always do a cost estimate before generating. Pricing (2K resolution):
 |---|---|---|
 | text-to-image | nano-banana-pro | $0.14 |
 | edit | nano-banana-pro | $0.14 |
+| edit-ultra | nano-banana-pro | $0.15 |
 | edit | nano-banana-2 | $0.105 |
 | edit-fast | nano-banana-2 | $0.045 |
+
+Rule of thumb: character refs ($0.14 each, generated once) + scenes (~$0.08–$0.14 each). A 12-scene deck with 5 characters ≈ **$1.50–$2.00 total**.
 
 ### Run Commands
 
 ```bash
 # Generate character reference sheets (once per project)
 python3 slides/_scripts/generate_characters.py <project>
+
+# Regenerate a single character only
+python3 slides/_scripts/generate_characters.py <project> <character-id>
 
 # Generate all scene images
 python3 slides/_scripts/generate_scenes.py <project>
@@ -46,6 +52,9 @@ python3 slides/_scripts/generate_scenes.py <project> scene-1/1a scene-1/1b
 
 # Assemble PPTX
 python3 slides/_scripts/build_pptx.py <project>
+
+# Custom PPTX filename
+python3 slides/_scripts/build_pptx.py <project> --out MyDeck_v2.pptx
 
 # Check WaveSpeed balance
 python3 -c "
@@ -82,8 +91,10 @@ print(r.json()['data']['balance'])
 - `text-to-image` + `nano-banana-pro` — no prior image; character appearance described inline in prompt
 - `edit` + `nano-banana-2` — placing characters into a new scene; pass refs via `chars[]`; do NOT re-describe characters already passed via refs
 - `edit-fast` + `nano-banana-2` — minor modification to a previous scene; use `base_scene`
-- `composite` — pure PIL stitch, no API call; use `layout` + `sources`
+- `composite` — pure PIL stitch, no API call; use `layout` + `sources`; layouts: `3-panel-vertical`, `3-panel-horizontal`, `2-panel-vertical`, `2-panel-horizontal`; `sources` paths are relative to `slides/`
 - `reuse` — copy another scene's output unchanged; use `source`
+
+`chars` resolves from the current project first, then falls back to `char_project` set in `project.json`. `base_scene` similarly respects `base_project` for cross-project edits.
 
 **Content filter rule:** Passing a child character reference image + a distress/conflict prompt triggers WaveSpeed safety filters. Use `text-to-image` (no `chars[]`) for scenes involving fear, conflict, or physical contact, describing the character inline instead.
 
@@ -92,6 +103,8 @@ print(r.json()['data']['balance'])
 ### PIL Post-Processing
 
 `pip` (picture-in-picture) and `overlay` fields are applied locally after the API call. Graphic assets live in `slides/_assets/`. The `composite` mode uses PIL only, with no API call.
+
+Valid `position` values for both `pip` and `overlay`: `center`, `center-right`, `center-left`, `top-right`, `top-left`, `bottom-right`, `bottom-left`.
 
 ### WaveSpeed API
 
@@ -104,7 +117,23 @@ print(r.json()['data']['balance'])
 
 - Prefers `output.png`, falls back to `draft.png` automatically
 - Resolves `reuse` mode scenes by following the `source` pointer in scenes.json
-- `slides.json` controls slide order, theme labels, and optional CTA text slides
+- `slides.json` controls slide order, theme labels, and optional CTA text slides:
+  - `"cta": null` — image slide only
+  - `"cta": "Question?\n\nAnswer!"` — image slide + white CTA slide; use `\n\n` for paragraph breaks
+
+### project.json (optional)
+
+Place in the project root to inherit characters from another project:
+
+```json
+{ "name": "My Project Name", "char_project": "deliverance" }
+```
+
+When `char_project` is set, character refs not found locally are resolved from that project's `characters/` folder.
+
+### Prompt Templates
+
+`slides/_templates/character-prompt.md` and `slides/_templates/scene-prompt.md` contain canonical style guides for writing prompts. Read these when starting a new project.
 
 ---
 
