@@ -79,7 +79,15 @@ class WaveSpeedClient:
         if images:
             payload["images"] = [self._encode_image(img) for img in images]
 
-        resp = self.session.post(url, json=payload)
+        for attempt in range(1, 4):
+            try:
+                resp = self.session.post(url, json=payload, timeout=120)
+                break
+            except Exception as exc:
+                if attempt == 3:
+                    raise
+                print(f"  → POST attempt {attempt} failed ({exc.__class__.__name__}) — retrying")
+                time.sleep(3 * attempt)
         resp.raise_for_status()
         body = resp.json()
         task_id = body["data"]["id"]
@@ -91,7 +99,15 @@ class WaveSpeedClient:
         while elapsed < max_wait:
             time.sleep(poll_interval)
             elapsed += poll_interval
-            r = self.session.get(poll_url)
+            for poll_attempt in range(1, 4):
+                try:
+                    r = self.session.get(poll_url, timeout=30)
+                    break
+                except Exception as exc:
+                    if poll_attempt == 3:
+                        raise
+                    print(f"  → poll attempt {poll_attempt} failed ({exc.__class__.__name__}) — retrying")
+                    time.sleep(3 * poll_attempt)
             r.raise_for_status()
             data = r.json()["data"]
             status = data["status"]

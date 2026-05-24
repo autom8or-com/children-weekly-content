@@ -6,7 +6,7 @@
     "model": "nano-banana-pro",
     "resolution": "2k",
     "chars": [],
-    "prompt": "Storybook illustration, flat digital art style, clean outlines, warm vibrant colors, child-friendly picture-book aesthetic. Wide 16:9 scene. A chocolate brown-skinned African toddler girl with a round chubby face, short natural hair in two small puffs, wearing a bright pink pinafore dress and white sneakers, is sprinting in full panic toward the LEFT of the frame — arms flailing, legs pumping, mouth open in a cartoon cry of fear. Behind her from the RIGHT, an enormous cartoon snake pursues her — gigantic emerald green body, large yellow cartoon eyes wide with excitement, wide open grinning mouth with oversized comical fangs, body coiling and lunging forward. Background: flat bright blue sky, simple green grass, clear sunny daytime. Strong diagonal composition from right to left conveys speed. No graphic violence. Friendly cartoon storybook style."
+    "prompt": "Storybook illustration, flat digital art style, clean outlines, warm vibrant colors, child-friendly picture-book aesthetic. Wide 16:9 scene. A chocolate brown-skinned African toddler girl with a round chubby face, short natural hair in two small puffs, wearing a bright pink pinafore dress and white sneakers, is sprinting in full panic toward the LEFT of the frame \u2014 arms flailing, legs pumping, mouth open in a cartoon cry of fear. Behind her from the RIGHT, an enormous cartoon snake pursues her \u2014 gigantic emerald green body, large yellow cartoon eyes wide with excitement, wide open grinning mouth with oversized comical fangs, body coiling and lunging forward. Background: flat bright blue sky, simple green grass, clear sunny daytime. Strong diagonal composition from right to left conveys speed. No graphic violence. Friendly cartoon storybook style."
   },
   {
     "id": "scene-1/1b",
@@ -15,7 +15,7 @@
     "model": "nano-banana-pro",
     "resolution": "2k",
     "chars": [],
-    "prompt": "Storybook illustration, flat digital art style, clean outlines, warm vibrant colors, heroic joyful mood. Wide 16:9 scene. A superhero in a bright royal blue Superman-style suit with a flowing red cape and a bold golden letter J on his chest shield (not S — it is J for Jesus), warm golden-brown skin, kind strong face, swoops down from the upper LEFT of the frame with arms outstretched. He cradles a chocolate brown-skinned African toddler girl (round chubby face, short natural hair in two puffs, bright pink pinafore dress) safely in his arms — her tears drying, expression shifting from fear to a small grateful smile as she looks up at him. On the RIGHT of the frame the enormous cartoon snake (gigantic emerald green body, yellow cartoon eyes) has turned completely around and is fleeing in a panic, body coiling backward, with a comically terrified wide-eyed expression. Bright sunny sky, warm golden light rays around the hero. Dynamic action lines. Child-friendly storybook picture-book aesthetic."
+    "prompt": "Storybook illustration, flat digital art style, clean outlines, warm vibrant colors, heroic joyful mood. Wide 16:9 scene. Jesus \u2014 long bright white robe with a deep royal blue sash at his waist, simple sandals, soft warm golden light naturally radiating from around him, warm golden-brown skin, kind loving expression, short dark hair \u2014 descends from the upper LEFT of the frame with arms outstretched, surrounded by warm golden divine light. He cradles a chocolate brown-skinned African toddler girl (round chubby face, short natural hair in two puffs, bright pink pinafore dress) safely in his arms \u2014 her tears drying, expression shifting from fear to a small grateful smile as she looks up at him. On the RIGHT of the frame the enormous cartoon snake (gigantic emerald green body, yellow cartoon eyes) has turned completely around and is fleeing in panic, body coiling backward, comically terrified wide-eyed expression. Bright sunny sky, warm golden light rays emanating from Jesus. Dynamic action lines. Child-friendly storybook picture-book aesthetic."
   },
   {
     "id": "scene-2/2a",
@@ -23,8 +23,11 @@
     "mode": "edit",
     "model": "nano-banana-2",
     "resolution": "2k",
-    "chars": ["moses", "aaron"],
-    "prompt": "Storybook illustration, flat digital art style, clean outlines, warm vibrant colors, reverent and awe-inspiring mood. Wide scene. From the upper centre of the frame, divine golden beams of light pour down from a glowing golden cloud representing God's presence, shining onto two figures below. On the left stands Moses (from reference — emerald green Superman costume, golden M on breastplate, wooden staff, chocolate brown skin), gazing upward in wonder. On the right stands Aaron (from reference — sunshine yellow Superman costume, golden A on breastplate, wooden staff, chocolate brown skin), also gazing upward in reverent awe. Both show expressions of readiness and purpose. Sandy ground, brightened sky. Storybook picture-book aesthetic, warm golden palette."
+    "chars": [
+      "moses",
+      "aaron"
+    ],
+    "prompt": "Storybook illustration, flat digital art style. Wide scene. Divine golden beams pour down from a glowing golden cloud above, shining onto Moses and Aaron (both from reference) below. Moses on the left gazes upward in wonder; Aaron on the right gazes upward in reverent awe. Both express readiness and purpose. Sandy ground, brightened sky. Warm golden palette."
   },
   {
     "id": "scene-2/2b",
@@ -32,17 +35,21 @@
     "mode": "edit",
     "model": "nano-banana-2",
     "resolution": "2k",
-    "chars": ["moses", "aaron", "serpent"],
-    "prompt": "Storybook illustration, flat digital art style, clean outlines, vibrant colors, tense dramatic mood. Wide scene inside an ancient Egyptian palace — ornate columns with simplified hieroglyphs, red carpet runner, gold decorative urns. On the left stand Moses (emerald green Superman costume, M breastplate, wooden staff, confident posture) and Aaron (yellow Superman costume, A breastplate, wooden staff) facing right. On the right, Pharaoh sits on a grand ornate throne — cartoon older man in Egyptian regal attire, golden crown and robes, stern folded-arms expression. In the background partially visible curled around a distant palace column is the enormous cartoon serpent (from reference — emerald green, yellow eyes) watching with a sly expression. Dramatic torchlit atmosphere. Child-friendly storybook picture-book aesthetic."
+    "chars": [
+      "moses",
+      "aaron",
+      "serpent"
+    ],
+    "prompt": "Storybook illustration, flat digital art style, tense dramatic mood. Wide scene inside an ancient Egyptian palace \u2014 ornate columns with hieroglyphs, red carpet, gold urns, torchlit. Moses and Aaron (both from reference) stand on the left facing right. Pharaoh sits on his grand throne on the right \u2014 stern older Egyptian man, golden crown, folded arms. Enormous cartoon serpent (from reference) partially visible curled around a distant column, watching slyly. Child-friendly picture-book aesthetic."
   },
   {
     "id": "scene-2/2c",
-    "title": "Israelites oppressed — sympathetic scene",
+    "title": "Israelites oppressed \u2014 sympathetic scene",
     "mode": "text-to-image",
     "model": "nano-banana-pro",
     "resolution": "2k",
     "chars": [],
-    "prompt": "Storybook illustration, flat digital art style, clean outlines. Wide scene. A group of people — children and adults, chocolate-brown warm skin tones, dressed in simple rough cloth — in clearly oppressed conditions: some hunched under heavy clay bricks, some sitting exhausted on the ground, drooping heads, some children with sad teary eyes. Desaturated muted color palette — warm browns, beige, grey shadows — to evoke sadness and sympathy. Egyptian overseer figures stand at the edges, depicted simply without graphic imagery. Central focus on the exhausted, burdened people. No violence. Emotionally resonant storybook picture-book aesthetic designed to evoke compassion in young viewers."
+    "prompt": "Storybook illustration, flat digital art style, clean outlines. Wide scene. A group of people \u2014 children and adults, chocolate-brown warm skin tones, dressed in simple rough cloth \u2014 in clearly oppressed conditions: some hunched under heavy clay bricks, some sitting exhausted on the ground, drooping heads, some children with sad teary eyes. Desaturated muted color palette \u2014 warm browns, beige, grey shadows \u2014 to evoke sadness and sympathy. Egyptian overseer figures stand at the edges, depicted simply without graphic imagery. Central focus on the exhausted, burdened people. No violence. Emotionally resonant storybook picture-book aesthetic designed to evoke compassion in young viewers."
   },
   {
     "id": "scene-3/3a",
@@ -51,7 +58,7 @@
     "model": "nano-banana-pro",
     "resolution": "2k",
     "chars": [],
-    "prompt": "Storybook illustration, flat digital art style, clean outlines, vibrant but slightly ominous colors. Wide 16:9 scene. A diverse crowd of people — children and adults, young and old, warm brown and chocolate skin tones, varied clothing — all run in panic from right to left across the frame. In the foreground, clearly visible, is a chocolate brown-skinned toddler girl with short natural hair in two small puffs and a bright pink pinafore dress, running with a scared expression. Multiple enormous cartoon snakes of different colors (bright green, red, purple, orange — each gigantic and cartoonishly menacing with wide yellow eyes and gaping mouths) chase the crowd from behind and the right edge. Chaotic busy composition. No graphic violence. Child-friendly storybook picture-book aesthetic."
+    "prompt": "Storybook illustration, flat digital art style, clean outlines, vibrant but slightly ominous colors. Wide 16:9 scene. A diverse crowd of people \u2014 children and adults, young and old, warm brown and chocolate skin tones, varied clothing \u2014 all run in panic from right to left across the frame. In the foreground, clearly visible, is a chocolate brown-skinned toddler girl with short natural hair in two small puffs and a bright pink pinafore dress, running with a scared expression. Multiple enormous cartoon snakes of different colors (bright green, red, purple, orange \u2014 each gigantic and cartoonishly menacing with wide yellow eyes and gaping mouths) chase the crowd from behind and the right edge. Chaotic busy composition. No graphic violence. Child-friendly storybook picture-book aesthetic."
   },
   {
     "id": "scene-3/3b",
@@ -59,8 +66,10 @@
     "mode": "edit",
     "model": "nano-banana-2",
     "resolution": "2k",
-    "chars": ["serpent"],
-    "prompt": "Storybook illustration, flat digital art style, clean outlines, lush vibrant garden setting. Wide scene showing a beautiful garden — tall fruit trees, colorful tropical flowers, bright green grass, butterflies. At centre-right, the enormous cartoon serpent (from reference — emerald green, yellow sly eyes) is coiled slyly around the trunk of a large fruit tree, looking mischievous with a curved knowing smile. The serpent's head is near a cluster of bright red fruit. The garden is lush but the serpent area has subtly darker cooler tones suggesting danger. No human figures — the serpent and the forbidden fruit are the sole focus. Storybook picture-book aesthetic."
+    "chars": [
+      "serpent"
+    ],
+    "prompt": "Storybook illustration, flat digital art style, clean outlines, lush vibrant garden setting. Wide scene showing a beautiful garden \u2014 tall fruit trees, colorful tropical flowers, bright green grass, butterflies. At centre-right, the enormous cartoon serpent (from reference \u2014 emerald green, yellow sly eyes) is coiled slyly around the trunk of a large fruit tree, looking mischievous with a curved knowing smile. The serpent's head is near a cluster of bright red fruit. The garden is lush but the serpent area has subtly darker cooler tones suggesting danger. No human figures \u2014 the serpent and the forbidden fruit are the sole focus. Storybook picture-book aesthetic."
   },
   {
     "id": "scene-3/3c",
@@ -68,9 +77,11 @@
     "mode": "edit",
     "model": "nano-banana-2",
     "resolution": "2k",
-    "chars": ["jesus"],
+    "chars": [
+      "jesus"
+    ],
     "base_scene": "scene-3/3a",
-    "prompt": "Using the provided scene image of the panicked crowd fleeing serpents, add Jesus flying dramatically into the scene from the upper right. Jesus (from reference — bright blue Superman suit, red flowing cape, golden J on red chest shield, golden-brown skin, determined compassionate expression) enters with one arm stretched forward and the other hand holding a bright white glowing Bible with a golden cross on its cover. Radiant golden light emanates from Jesus outward across the scene. Strong diagonal movement lines show his speed and arrival. Keep the crowd and serpents from the base scene visible in the lower portion of the frame. The atmosphere shifts toward hopeful with warm golden light beginning to enter. Storybook illustration style, flat digital art."
+    "prompt": "Using the provided crowd scene: add Jesus (from reference) descending dramatically from upper right, surrounded by radiant golden divine light, one arm forward, other hand holding a glowing white Bible with a golden cross. Golden light radiates outward across the scene. Strong diagonal motion lines show speed and arrival. Keep crowd and serpents visible below. Atmosphere shifts toward hopeful. Storybook flat digital art style."
   },
   {
     "id": "scene-3/3d",
@@ -80,7 +91,7 @@
     "resolution": "2k",
     "chars": [],
     "base_scene": "scene-3/3c",
-    "prompt": "Using the provided scene image of Jesus arriving over the panicked crowd: remove all serpents from the scene entirely. Transform the crowd below — stop their running, change all fearful expressions and poses to joyful grateful ones: some with arms raised in praise, some kneeling with bowed heads in prayer, some crying happy tears and smiling, some hugging each other. Angela (the chocolate-skinned toddler girl in the pink pinafore) should be visible in the foreground with hands clasped together, looking up at Jesus with a wide smile and relieved happy tears. Jesus floats above smiling warmly, Bible still in hand. Flood the entire scene with warm golden sunlight. Keep all storybook illustration style and characters from the base image."
+    "prompt": "Using the provided scene image of Jesus arriving over the panicked crowd: remove all serpents from the scene entirely. Transform the crowd below \u2014 stop their running, change all fearful expressions and poses to joyful grateful ones: some with arms raised in praise, some kneeling with bowed heads in prayer, some crying happy tears and smiling, some hugging each other. Angela (the chocolate-skinned toddler girl in the pink pinafore) should be visible in the foreground with hands clasped together, looking up at Jesus with a wide smile and relieved happy tears. Jesus floats above smiling warmly, Bible still in hand. Flood the entire scene with warm golden sunlight. Keep all storybook illustration style and characters from the base image."
   },
   {
     "id": "scene-4/4a",
@@ -88,8 +99,11 @@
     "mode": "edit",
     "model": "nano-banana-2",
     "resolution": "2k",
-    "chars": ["angela", "jesus"],
-    "prompt": "Storybook illustration, flat digital art style, clean outlines, warm cozy domestic atmosphere. Wide scene inside a simple warm Nigerian home sitting room — colorful sofa with patterned throw pillows, a patterned rug, curtains with soft natural daylight streaming through. Jesus (from reference — blue Superman suit, red cape draped over sofa back, golden J on chest shield) sits comfortably on the sofa, hands resting on knees, looking toward Angela with a warm grateful smile. Angela (from reference — chocolate-skinned toddler, pink pinafore dress, two-puff natural hair) walks carefully toward him carrying a small colourful plastic cup of water held in both tiny hands, tongue slightly out in concentration, face full of proud loving eagerness. Warm interior lighting. Gentle loving service theme. Child-friendly storybook picture-book aesthetic."
+    "chars": [
+      "angela",
+      "jesus"
+    ],
+    "prompt": "Storybook illustration, flat digital art style, warm cozy domestic atmosphere. Wide scene inside a simple Nigerian home sitting room \u2014 colourful sofa with patterned pillows, patterned rug, curtains with daylight streaming through. Jesus (from reference) sits comfortably on the sofa, looking toward Angela with a warm grateful smile. Angela (from reference) walks carefully toward him carrying a small colourful plastic cup of water in both tiny hands, tongue slightly out in concentration, face full of proud loving eagerness. Child-friendly picture-book aesthetic."
   },
   {
     "id": "scene-4/4b",
@@ -97,17 +111,20 @@
     "mode": "edit",
     "model": "nano-banana-2",
     "resolution": "2k",
-    "chars": ["angela", "jesus"],
-    "prompt": "Storybook illustration, flat digital art style, clean outlines, warm golden afternoon light. Wide scene in a peaceful beautiful garden — lush green grass, colorful flowers (yellows, pinks, oranges), a large shady tree with golden light filtering through the leaves above. Jesus (from reference — blue Superman suit, red cape, golden J on chest shield, warm kind expression) sits cross-legged at the base of the tree, relaxed and attentive. Angela (from reference — chocolate-skinned toddler, pink pinafore dress, two-puff hair) sits snugly beside him, leaning gently into his side, both looking down at a large open Bible resting across their laps. Jesus points gently to the open page; Angela looks up at him with wide curious eyes and a bright smile. Dappled golden light from above. Peaceful nurturing mood. Child-friendly storybook picture-book aesthetic."
+    "chars": [
+      "angela",
+      "jesus"
+    ],
+    "prompt": "Storybook illustration, flat digital art style, warm golden afternoon light. Wide peaceful garden scene \u2014 lush grass, colourful flowers, large shady tree with light filtering through. Jesus (from reference) sits cross-legged at the base of the tree, relaxed and attentive. Angela (from reference) sits snugly beside him, leaning into his side, both looking at a large open Bible across their laps. Jesus points gently to the page; Angela looks up at him with wide curious eyes and a bright smile. Peaceful nurturing mood."
   },
   {
     "id": "scene-4/4c",
-    "title": "Angela wears her own A cape — empowered",
+    "title": "Angela empowered \u2014 dressed like Jesus",
     "mode": "edit-fast",
     "model": "nano-banana-2",
     "resolution": "2k",
     "chars": [],
     "base_scene": "scene-4/4b",
-    "prompt": "Using the provided garden image of Angela and Jesus: modify Angela's appearance only — add a small bright red Superman-style cape flowing behind her and a golden A badge/breastplate shield on the front of her pink pinafore dress, matching the visual style of Jesus's costume. Shift Angela's pose to standing upright, hands on hips in a confident heroic stance, looking directly at the viewer with a wide proud smile. Jesus should now stand beside her (slightly taller), smiling proudly with one hand gently on her shoulder. Keep the garden background, same storybook illustration style, same golden afternoon light. Joyful, empowering, celebratory mood."
+    "prompt": "Using the provided garden image of Angela and Jesus: dress Angela in a child-sized white flowing robe over her pink pinafore, a small blue sash at her waist, and a soft gentle golden glow around her \u2014 mirroring Jesus's appearance. Shift Angela's pose to standing upright, hands on hips, confident joyful stance, looking at the viewer with a wide proud smile. Jesus stands beside her, smiling proudly, one hand gently on her shoulder. Keep the garden background. Joyful, empowering mood. Storybook flat digital art style."
   }
 ]

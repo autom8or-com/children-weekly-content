@@ -101,24 +101,120 @@ One entry per image. Key decisions per scene:
 | No prior image exists for this scene | `text-to-image` | `nano-banana-pro` |
 | New scene using established characters | `edit` | `nano-banana-2` |
 | Minor change to a previous scene | `edit-fast` | `nano-banana-2` |
+| Stitch existing images into panels (no API) | `composite` | — |
+| Copy output from another scene (no API) | `reuse` | — |
 
-**Fields:**
+**Core fields:**
 ```json
 {
   "id": "scene-1/1a",
   "title": "Short description",
-  "mode": "text-to-image | edit | edit-fast",
+  "mode": "text-to-image | edit | edit-fast | composite | reuse",
   "model": "nano-banana-pro | nano-banana-2",
   "resolution": "2k",
   "chars": ["character-id-1", "character-id-2"],
   "base_scene": "scene-1/1a",
+  "base_project": "other-project-name",
   "prompt": "Full image generation prompt..."
 }
 ```
 
-- `chars` — list of character IDs whose `reference.png` will be passed as image inputs
-- `base_scene` — scene ID whose `output.png` becomes the base image (for scene continuations)
+- `chars` — character IDs whose `reference.png` is passed as image input; resolves from current project first, then `char_project` in `project.json`
+- `base_scene` — scene whose `output.png` (falls back to `draft.png`) becomes the base image
+- `base_project` — name of another project to resolve `base_scene` from (cross-project edits)
 - Omit `chars` and `base_scene` for pure `text-to-image` scenes
+
+---
+
+### PIL Config Options (post-processing — no extra API cost)
+
+These optional fields can be added to any API-based scene entry. PIL runs locally after the image is downloaded.
+
+**`pip` — picture-in-picture stamp**
+
+Resizes a previously generated scene and stamps it onto the output at a specified position.
+The source scene must appear earlier in `scenes.json` so it is generated first.
+
+```json
+"pip": {
+  "source": "scene-1/1c",
+  "position": "center-right",
+  "scale": 0.28,
+  "border": true
+}
+```
+
+- `source` — scene ID within the current project to use as the inset image
+- `position` — one of: `center`, `center-right`, `center-left`, `top-right`, `top-left`, `bottom-right`, `bottom-left`
+- `scale` — inset width as a fraction of the canvas width (e.g. `0.28` = 28%)
+- `border` — `true` adds a thin white border frame around the inset
+
+**`overlay` — graphic asset stamp**
+
+Stamps a PNG asset from `slides/_assets/` onto the output (e.g. stop-sign, tick, X mark).
+
+```json
+"overlay": {
+  "asset": "stop-sign",
+  "position": "center",
+  "scale": 0.45,
+  "opacity": 0.88
+}
+```
+
+- `asset` — filename (without `.png`) inside `slides/_assets/`
+- `position` — same position keys as `pip`
+- `scale` — overlay width as a fraction of canvas width
+- `opacity` — transparency from `0.0` (invisible) to `1.0` (fully opaque)
+
+**`composite` mode — panel stitch (PIL only, no API)**
+
+Stitches multiple existing images side by side or stacked. No `prompt` or `model` required.
+
+```json
+{
+  "id": "scene-3/3a",
+  "title": "3-panel collage",
+  "mode": "composite",
+  "layout": "3-panel-vertical",
+  "sources": [
+    "projects/deliverance/scenes/scene-4/4a/draft.png",
+    "projects/deliverance/scenes/scene-4/4b/draft.png",
+    "projects/deliverance/scenes/scene-4/4c/draft.png"
+  ]
+}
+```
+
+- `layout` — one of: `3-panel-vertical`, `3-panel-horizontal`, `2-panel-vertical`, `2-panel-horizontal`
+- `sources` — paths relative to the `slides/` directory
+
+**`reuse` mode — copy from another scene (no API)**
+
+Copies `output.png` from a previously generated scene in the same project.
+
+```json
+{
+  "id": "scene-5/5c",
+  "title": "Reuse praying scene",
+  "mode": "reuse",
+  "source": "scene-4/4c"
+}
+```
+
+---
+
+### `project.json` (optional — for cross-project character reuse)
+
+Place in the project root to inherit characters from another project:
+
+```json
+{
+  "name": "My Project Name",
+  "char_project": "deliverance"
+}
+```
+
+When `char_project` is set, character refs not found in the current project are resolved from that project's `characters/` folder automatically.
 
 ### Step D — Create `slides.json`
 

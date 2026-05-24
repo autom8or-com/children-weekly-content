@@ -1,0 +1,203 @@
+[
+  {
+    "id": "scene-1/1a",
+    "title": "Pharaoh orders Moses and Aaron out of the palace",
+    "mode": "edit",
+    "model": "nano-banana-2",
+    "resolution": "2k",
+    "chars": [
+      "moses",
+      "aaron"
+    ],
+    "base_project": "deliverance",
+    "base_scene": "scene-2/2b",
+    "prompt": "Using the provided palace scene of Moses, Aaron, and Pharaoh: change Pharaoh's pose only \u2014 he now stands upright from his throne, one arm outstretched pointing authoritatively toward the palace exit, face showing visible anger and stern dismissal. Moses and Aaron (both from reference) face Pharaoh but visibly recoil, stepping back toward the exit. Keep the Egyptian palace interior exactly as in the base image. Storybook flat digital art style."
+  },
+  {
+    "id": "scene-1/1b",
+    "title": "Taskmasters arrayed before Pharaoh \u2014 sternly instructed",
+    "mode": "text-to-image",
+    "model": "nano-banana-pro",
+    "resolution": "2k",
+    "chars": [],
+    "prompt": "Storybook illustration, flat digital art style, clean outlines, warm vibrant colors, authoritative atmosphere. Wide 16:9 scene inside a grand ancient Egyptian palace throne room \u2014 tall ornate stone columns, simplified hieroglyph carvings, red carpet, torchlit warm lighting. At the far end, Pharaoh stands on elevated steps before his golden throne \u2014 a stern older Egyptian man with a tall golden crown, elaborate golden and white robes, commanding posture, arms gesturing forward in instruction. Arrayed before him in two neat rows facing him are his taskmasters: muscular Egyptian men, chocolate-to-tan skin tones, wearing simple leather-strap guard attire, arms folded or hands at sides, expressions attentive and obedient. Some hold long horse whips at their sides. The atmosphere is tense and authoritative. Child-friendly storybook picture-book aesthetic."
+  },
+  {
+    "id": "scene-1/1c",
+    "title": "Israelites heavily oppressed \u2014 more people, blocks on necks, whips",
+    "mode": "edit",
+    "model": "nano-banana-2",
+    "resolution": "2k",
+    "base_project": "deliverance",
+    "base_scene": "scene-2/2c",
+    "prompt": "Using the provided scene of oppressed Israelites: significantly increase the crowd \u2014 many more people filling the frame, all hunched under heavy loads. Add large heavy wooden blocks hanging from thick chains around the necks of many people. Scatter several Egyptian taskmasters throughout the crowd: muscular men in leather-strap attire, actively brandishing long horse whips \u2014 the same taskmasters as seen in Pharaoh's palace. The scene should feel more crowded, heavier, more oppressive than the original. Keep the muted desaturated color palette of warm browns, beige, and grey shadows. No graphic violence. Emotionally resonant storybook picture-book aesthetic."
+  },
+  {
+    "id": "scene-2/2a",
+    "title": "Moses and Aaron borne by divine wind toward the desert",
+    "mode": "edit",
+    "model": "nano-banana-2",
+    "resolution": "2k",
+    "chars": [
+      "moses",
+      "aaron"
+    ],
+    "prompt": "Storybook illustration, flat digital art style. Wide 16:9 open desert sky \u2014 bright blue above, sandy horizon below. Moses and Aaron (both from reference) are borne swiftly through the air by a divine wind \u2014 robes and cloaks streaming dramatically behind them, staffs held forward, moving left to right with determined expressions. Gentle golden light trails behind them, motion lines convey divine speed. Warm vibrant colours, child-friendly picture-book aesthetic."
+  },
+  {
+    "id": "scene-2/2b",
+    "title": "Moses and Aaron kneeling before God \u2014 troubled and crying",
+    "mode": "edit",
+    "model": "nano-banana-2",
+    "resolution": "2k",
+    "chars": [
+      "moses",
+      "aaron"
+    ],
+    "base_project": "deliverance",
+    "base_scene": "scene-2/2a",
+    "prompt": "Using the provided scene of Moses and Aaron with golden divine light from above: change both figures' poses \u2014 Moses (from reference, staff laid on ground beside him) kneels with face buried in hands, shoulders trembling, visibly distressed. Aaron (from reference, rod on ground) kneels beside him, one hand raised in pleading prayer, tears on cheeks. Divine golden light remains. Mood shifts to sorrowful supplication. Storybook flat digital art style."
+  },
+  {
+    "id": "scene-2/2c",
+    "title": "Moses and Aaron emboldened \u2014 gazing at suffering of their people (PiP)",
+    "mode": "edit",
+    "model": "nano-banana-2",
+    "resolution": "2k",
+    "chars": [
+      "moses",
+      "aaron"
+    ],
+    "pip": {
+      "source": "scene-1/1c",
+      "position": "center-right",
+      "scale": 0.28,
+      "border": true
+    },
+    "prompt": "Storybook illustration, flat digital art style. Wide 16:9 scene. Moses and Aaron (both from reference) stand side by side in bold heroic posture \u2014 chests forward, heads raised, feet planted wide, expressions resolute and emboldened. Both gaze toward the right of the frame where a clearly defined rectangular glowing frame on the wall holds a smaller picture (leave this as an empty glowing frame \u2014 it will be filled in post-processing). Warm golden light ahead of them, dimmer behind."
+  },
+  {
+    "id": "scene-2/2d",
+    "title": "Moses and Aaron fly toward the Israelites",
+    "mode": "edit",
+    "model": "nano-banana-2",
+    "resolution": "2k",
+    "chars": [
+      "moses",
+      "aaron"
+    ],
+    "prompt": "Storybook illustration, flat digital art style. Wide 16:9 scene. Moses and Aaron (both from reference) are borne swiftly through open sky by a divine wind from upper left toward lower right, where a crowd is faintly visible below. Robes and cloaks stream dramatically behind them. Expressions bold and purposeful. Warm golden sky, motion lines convey divine urgency. Child-friendly picture-book aesthetic."
+  },
+  {
+    "id": "scene-3/3a",
+    "title": "3-panel collage \u2014 PD scenes Angela served, read, empowered",
+    "mode": "composite",
+    "layout": "3-panel-vertical",
+    "sources": [
+      "projects/deliverance/scenes/scene-4/4a/output.png",
+      "projects/deliverance/scenes/scene-4/4b/output.png",
+      "projects/deliverance/scenes/scene-4/4c/output.png"
+    ]
+  },
+  {
+    "id": "scene-3/3b",
+    "title": "Angela in school uniform \u2014 front seat, talking to friend",
+    "mode": "edit",
+    "model": "nano-banana-2",
+    "resolution": "2k",
+    "chars": [
+      "angela"
+    ],
+    "prompt": "Place Angela (from reference) into a warm Nigerian primary school classroom. Classroom: rows of light brown wooden desks, green chalkboard at the front with simple chalk writing, four windows with bright daylight and blue curtains, colourful ABC and number posters on the walls, ceiling fan, approximately 20 pupils in Nigerian school uniforms (white collared shirts, blue pinafore dresses for girls, blue shorts for boys). Angela sits at the front-left desk in her school uniform, turned sideways talking to the girl sitting beside her \u2014 both smiling warmly mid-conversation. Cheerful, bright classroom mood. Storybook flat digital art style."
+  },
+  {
+    "id": "scene-3/3c",
+    "title": "Boy hits Angela's book off her desk",
+    "mode": "edit",
+    "model": "nano-banana-2",
+    "resolution": "2k",
+    "prompt": "Using this classroom scene: a boy in school uniform sitting to Angela's right reaches across and slaps her open exercise book hard off her desk \u2014 the book tumbles mid-air, pages splayed, cartoon motion lines show the force. Angela's expression shifts to shocked and hurt. Her friend beside her looks away. All other pupils, desks, and classroom details remain exactly the same. Storybook flat digital art style.",
+    "base_scene": "scene-3/3b"
+  },
+  {
+    "id": "scene-3/3d",
+    "title": "Angela sits alone crying, classmates jeering",
+    "mode": "edit",
+    "model": "nano-banana-2",
+    "resolution": "2k",
+    "prompt": "Using this classroom scene: Angela has retrieved her book and now sits alone \u2014 the desk beside her is empty, her friend has moved away. Angela's head is slightly bowed, cartoon tears on her cheeks, sad and hurt expression. In the background a small cluster of pupils glance toward her with unkind smirking expressions, whispering behind raised hands. Keep all classroom details, desks, and other pupils exactly as shown. Storybook flat digital art style.",
+    "base_scene": "scene-3/3c"
+  },
+  {
+    "id": "scene-4/4a",
+    "title": "Angela with school bag walking toward the school gate",
+    "mode": "edit",
+    "model": "nano-banana-2",
+    "resolution": "2k",
+    "prompt": "Using this classroom scene: transition the setting to outside the same school \u2014 the classroom interior is gone, replaced by the school's exterior courtyard and iron gate in warm golden afternoon light. The school building matches what was visible through the classroom windows. Angela now stands near the gate with a school bag on her back, expression composed and quietly determined \u2014 chin slightly raised, not crying. Other pupils stream out in the background. Long soft afternoon shadows. Storybook flat digital art style.",
+    "base_scene": "scene-3/3d"
+  },
+  {
+    "id": "scene-4/4b",
+    "title": "Angela in regalia flying toward home",
+    "mode": "edit",
+    "model": "nano-banana-2",
+    "resolution": "2k",
+    "base_project": "deliverance",
+    "base_scene": "scene-4/4c",
+    "prompt": "Using the provided image of Angela in her empowered stance: change her pose and setting \u2014 Angela now flies through open sky, arms stretched forward, borne by divine wind, heading right. Her white robe and blue sash stream behind her. Soft golden glow around her. Expression focused and purposeful. Background: open blue sky, white clouds, motion lines. Keep costume exactly: white robe, blue sash, pink pinafore underneath, white sneakers, chocolate brown skin, two-puff natural hair. Storybook flat digital art style."
+  },
+  {
+    "id": "scene-4/4c",
+    "title": "Angela kneeling by bed in superwoman regalia \u2014 praying",
+    "mode": "edit",
+    "model": "nano-banana-2",
+    "resolution": "2k",
+    "base_scene": "scene-4/4b",
+    "prompt": "Using the provided image of Angela flying in her empowered regalia: change the setting to a simple warm bedroom \u2014 single bed with colourful Nigerian-patterned bedspread, soft warm lamplight on bedside table, small curtained window, wooden floor. Change Angela's pose to kneeling beside the bed, hands clasped in prayer on the bed's edge, eyes closed, face peaceful and earnest. White robe drapes around her, blue sash at waist, soft golden glow. Quiet, reverent atmosphere. Storybook flat digital art style."
+  },
+  {
+    "id": "scene-4/4d",
+    "title": "Jesus sits by Angela's bedside encouraging her",
+    "mode": "edit",
+    "model": "nano-banana-2",
+    "resolution": "2k",
+    "chars": [
+      "jesus"
+    ],
+    "base_scene": "scene-4/4c",
+    "prompt": "Using the provided bedroom scene of Angela kneeling in prayer: add Jesus (from reference) sitting gently on the edge of the bed beside her, leaning slightly toward her, one hand softly on her shoulder. His expression is warm and encouraging \u2014 a knowing loving smile. Both share a gentle golden glow. Keep Angela's pose, costume, and bedroom setting exactly. Storybook flat digital art style."
+  },
+  {
+    "id": "scene-5/5a",
+    "title": "Angela and Jesus walking in garden, holding hands",
+    "mode": "edit",
+    "model": "nano-banana-2",
+    "resolution": "2k",
+    "chars": [
+      "angela",
+      "jesus"
+    ],
+    "prompt": "Storybook illustration, flat digital art style. Wide 16:9 peaceful garden scene \u2014 lush green grass, colourful flowers, large shady tree, winding path, warm golden afternoon light. Angela (from reference, in her white robe and blue sash empowered outfit) and Jesus (from reference) walk side by side along the path, hands clasped together. Angela looks up at Jesus with a wide happy smile; Jesus looks down at her with warm loving expression. Joyful, peaceful mood. Child-friendly picture-book aesthetic."
+  },
+  {
+    "id": "scene-5/5b",
+    "title": "Angela retaliating \u2014 hitting the boy back (wrong behaviour + stop sign overlay)",
+    "mode": "text-to-image",
+    "model": "nano-banana-pro",
+    "resolution": "2k",
+    "overlay": {
+      "asset": "stop-sign",
+      "position": "center",
+      "scale": 0.45,
+      "opacity": 0.88
+    },
+    "prompt": "Storybook illustration, flat digital art style, tense classroom mood. Wide 16:9 scene inside the same Nigerian primary school classroom \u2014 same desks, chalkboard, windows, and pupils as established earlier. Angela (in school uniform \u2014 white shirt, blue pinafore, two-puff hair) stands up from her desk, arm outstretched angrily toward the boy beside her who leans away startled. Her expression shows frustration and reactive anger. Other pupils look on with wide eyes. Depicts a wrong response, not celebrated. Child-friendly picture-book aesthetic."
+  },
+  {
+    "id": "scene-5/5c",
+    "title": "Angela praying \u2014 reuse scene-4/4c",
+    "mode": "reuse",
+    "source": "scene-4/4c"
+  }
+]

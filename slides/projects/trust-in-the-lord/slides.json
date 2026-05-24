@@ -1,0 +1,20 @@
+[
+  { "id": "scene-1/1a", "theme": "Pharaoh's Response", "cta": null },
+  { "id": "scene-1/1b", "theme": "Pharaoh's Response", "cta": null },
+  { "id": "scene-1/1c", "theme": "Pharaoh's Response", "cta": "Pharaoh's response was brash" },
+  { "id": "scene-2/2a", "theme": "What Did Moses and Aaron Do?", "cta": null },
+  { "id": "scene-2/2b", "theme": "What Did Moses and Aaron Do?", "cta": null },
+  { "id": "scene-2/2c", "theme": "What Did Moses and Aaron Do?", "cta": null },
+  { "id": "scene-2/2d", "theme": "What Did Moses and Aaron Do?", "cta": null },
+  { "id": "scene-3/3a", "theme": "Now That Angela Is Saved", "cta": null },
+  { "id": "scene-3/3b", "theme": "Now That Angela Is Saved", "cta": null },
+  { "id": "scene-3/3c", "theme": "Now That Angela Is Saved", "cta": null },
+  { "id": "scene-3/3d", "theme": "Now That Angela Is Saved", "cta": "Angela showed composure. Would you?" },
+  { "id": "scene-4/4a", "theme": "What Did Angela Do?", "cta": null },
+  { "id": "scene-4/4b", "theme": "What Did Angela Do?", "cta": null },
+  { "id": "scene-4/4c", "theme": "What Did Angela Do?", "cta": null },
+  { "id": "scene-4/4d", "theme": "What Did Angela Do?", "cta": "Jesus encourages us" },
+  { "id": "scene-5/5a", "theme": "Why Did Angela Do This?", "cta": null },
+  { "id": "scene-5/5b", "theme": "Why Did Angela Do This?", "cta": null },
+  { "id": "scene-5/5c", "theme": "Why Did Angela Do This?", "cta": "Trust in the Lord" }
+]

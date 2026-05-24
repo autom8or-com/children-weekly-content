@@ -83,18 +83,47 @@ def main():
 
     slides_meta = json.loads(slides_file.read_text())
 
+    # Load scenes.json to resolve reuse/skip modes
+    scenes_file = project / "scenes.json"
+    scenes_by_id = {}
+    if scenes_file.exists():
+        for s in json.loads(scenes_file.read_text()):
+            scenes_by_id[s["id"]] = s
+
+    def resolve_image(slide_id: str) -> Path | None:
+        scene = scenes_by_id.get(slide_id, {})
+        mode  = scene.get("mode", "")
+
+        # Reuse — point at another scene's output
+        if mode == "reuse":
+            source_id = scene.get("source", "")
+            for fname in ("output.png", "draft.png"):
+                p = project / "scenes" / source_id / fname
+                if p.exists():
+                    return p
+            return None
+
+        # Normal — output.png preferred, draft.png fallback
+        for fname in ("output.png", "draft.png"):
+            p = project / "scenes" / slide_id / fname
+            if p.exists():
+                return p
+        return None
+
     prs = Presentation()
     prs.slide_width = SLIDE_W
     prs.slide_height = SLIDE_H
 
     missing = []
     for slide in slides_meta:
-        img_path = project / "scenes" / slide["id"] / "output.png"
-        if not img_path.exists():
-            print(f"[MISSING] {slide['id']} — output.png not found, skipping")
+        img_path = resolve_image(slide["id"])
+        if img_path is None:
+            print(f"[MISSING] {slide['id']} — no image found, skipping")
             missing.append(slide["id"])
             continue
 
+        suffix = " (draft)" if img_path.name == "draft.png" else ""
+        print(f"[SLIDE]  {slide['id']}{suffix} → {img_path.name}")
         add_image_slide(prs, img_path, slide.get("theme", ""))
         if slide.get("cta"):
             add_cta_slide(prs, slide["cta"], slide.get("theme", ""))
