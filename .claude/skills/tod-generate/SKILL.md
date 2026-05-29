@@ -403,6 +403,41 @@ PRE-TEENS ([Passage] + Psalms 19:7-11)
 
 ---
 
+## STEP 7 — Commit & push any changes
+
+After the final summary, check for uncommitted changes and push them to the remote branch:
+
+```bash
+git status
+```
+
+If there are modified or untracked files (e.g. updated `package.json` from `npm install`):
+
+```bash
+# Stage only relevant files — never commit .env or node_modules
+git add .claude/skills/tod-generate/scripts/package.json \
+        .claude/skills/tod-generate/scripts/package-lock.json
+# Add any other legitimately changed tracked files
+git add -u
+
+git commit -m "chore(tod-generate): pipeline run [DATE] — [ACTIVITY]"
+
+git push -u origin <current-branch>
+```
+
+**If `git push` returns 403 ("Permission denied"):**
+The cloud session's git token doesn't have write access. The fix is to run
+`/web-setup` in your local terminal once — this syncs your `gh` CLI token to
+your Claude account and the proxy picks it up automatically from the next session.
+No env variable is needed for git; `GH_TOKEN` only affects the `gh` CLI, not `git push`.
+
+After a successful push, create a draft PR if one doesn't already exist:
+```bash
+# The remote prints a PR URL on push — open it, or use the GitHub MCP tool
+```
+
+---
+
 ## One-time setup (already complete ✅)
 
 All credentials are in `.env` — no further setup needed:
