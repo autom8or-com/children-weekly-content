@@ -32,6 +32,34 @@ Always do a cost estimate before generating. Pricing (2K resolution):
 
 Rule of thumb: character refs ($0.14 each, generated once) + scenes (~$0.08–$0.14 each). A 12-scene deck with 5 characters ≈ **$1.50–$2.00 total**.
 
+### Approval Gate — Required Before Any Generation
+
+After writing or updating `scenes.json` for any project, **always** output both tables below and the cost estimate, then **stop and wait for explicit user approval** before running `generate_characters.py` or `generate_scenes.py`.
+
+**Scene dependency table** (one row per scene):
+
+| Scene | Type | Depends On | Model |
+|---|---|---|---|
+| scene-N/Na | reuse / edit / edit-fast / text-to-image / composite | base scene or source (with project if cross-project) + pip sources | nano-banana-2 / nano-banana-pro / — |
+
+**Character table** (one row per character):
+
+| ID | Type | Model |
+|---|---|---|
+| char-id | new / copied / char_project | nano-banana-pro / — |
+
+**Cost estimate table:**
+
+| Item | Count | Unit | Subtotal |
+|---|---|---|---|
+| New character refs | N | $0.14 | $X |
+| Edit scenes | N | $0.105 | $X |
+| Edit-fast scenes | N | $0.045 | $X |
+| Reuse / composite | N | free | $0.00 |
+| **Total** | | | **$X** |
+
+Do not run any generation command until the user responds with approval.
+
 ### Before Any Regeneration Run
 
 1. **Character + prompt sync**: After updating character reference PNGs, search every `scenes.json` (including dependent projects using `char_project`) for stale inline costume descriptions and update them before calling `generate_scenes.py`. Mismatched prompts produce wrong images at full cost.

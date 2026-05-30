@@ -81,6 +81,17 @@ def resolve_images(scene: dict, project: Path, char_project: Path) -> list[str]:
     if base:
         images.append(str(base))
     images.extend(resolve_chars(scene, project, char_project))
+    for ref in scene.get("scene_refs", []):
+        ref_id            = ref["source"]
+        ref_project_name  = ref.get("project")
+        ref_project       = SLIDES / "projects" / ref_project_name if ref_project_name else project
+        for fname in ("output.png", "draft.png"):
+            p = ref_project / "scenes" / ref_id / fname
+            if p.exists():
+                images.append(str(p))
+                break
+        else:
+            print(f"  [WARN] scene_ref not found: {ref_id} in {ref_project.name} — skipping")
     return images
 
 
@@ -108,13 +119,23 @@ POSITION_MAP = {
 def apply_pip(out_path: Path, pip_cfg: dict, project: Path):
     require_pil("pip")
     source_id = pip_cfg["source"]
-    for filename in ("output.png", "draft.png"):
-        source_path = project / "scenes" / source_id / filename
-        if source_path.exists():
-            break
+    pip_type  = pip_cfg.get("type", "scene")
+
+    if pip_type == "character":
+        source_path = project / "characters" / source_id / "reference.png"
+        if not source_path.exists():
+            print(f"  [WARN] PiP character not found: {source_id} — skipping pip")
+            return
     else:
-        print(f"  [WARN] PiP source not found: {source_id} — skipping pip")
-        return
+        pip_project_name = pip_cfg.get("project")
+        pip_project = SLIDES / "projects" / pip_project_name if pip_project_name else project
+        for filename in ("output.png", "draft.png"):
+            source_path = pip_project / "scenes" / source_id / filename
+            if source_path.exists():
+                break
+        else:
+            print(f"  [WARN] PiP source not found: {source_id} — skipping pip")
+            return
 
     base_img = Image.open(out_path).convert("RGBA")
     pip_img  = Image.open(source_path).convert("RGBA")
@@ -269,8 +290,10 @@ def main():
 
         # ── Reuse ──────────────────────────────────────────────────────────
         if mode == "reuse":
-            source_id   = scene.get("source", scene_id)
-            source_path = project / "scenes" / source_id / "output.png"
+            source_id            = scene.get("source", scene_id)
+            source_project_name  = scene.get("source_project")
+            source_project       = SLIDES / "projects" / source_project_name if source_project_name else project
+            source_path          = source_project / "scenes" / source_id / "output.png"
             if source_path.exists():
                 out_path.parent.mkdir(parents=True, exist_ok=True)
                 shutil.copy2(source_path, out_path)
@@ -316,6 +339,8 @@ def main():
         # ── PIL post-processing ─────────────────────────────────────────────
         if "pip" in scene:
             apply_pip(out_path, scene["pip"], project)
+        for pip_cfg in scene.get("pips", []):
+            apply_pip(out_path, pip_cfg, project)
 
         if "overlay" in scene:
             apply_overlay(out_path, scene["overlay"])

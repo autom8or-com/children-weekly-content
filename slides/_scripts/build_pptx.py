@@ -96,9 +96,11 @@ def main():
 
         # Reuse — point at another scene's output
         if mode == "reuse":
-            source_id = scene.get("source", "")
+            source_id           = scene.get("source", "")
+            source_project_name = scene.get("source_project")
+            src_project         = SLIDES_DIR / "projects" / source_project_name if source_project_name else project
             for fname in ("output.png", "draft.png"):
-                p = project / "scenes" / source_id / fname
+                p = src_project / "scenes" / source_id / fname
                 if p.exists():
                     return p
             return None

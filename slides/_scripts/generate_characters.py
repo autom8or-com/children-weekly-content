@@ -7,6 +7,8 @@ Run once per project. Re-run only when a character design needs updating.
 Usage:
   python generate_characters.py deliverance
   python generate_characters.py deliverance angela jesus   # specific characters only
+  python generate_characters.py deliverance --redo         # force regenerate all
+  python generate_characters.py deliverance god-a --redo  # force regenerate one
 """
 import sys
 import json
@@ -28,7 +30,8 @@ def main():
         sys.exit(1)
 
     project_name = args[0]
-    only = args[1:]  # optional filter: specific character IDs
+    redo = "--redo" in args
+    only = [a for a in args[1:] if not a.startswith("--")]
 
     project = SLIDES / "projects" / project_name
     chars_file = project / "characters.json"
@@ -46,8 +49,8 @@ def main():
             continue
 
         out_path = project / "characters" / char_id / "reference.png"
-        if out_path.exists():
-            print(f"[SKIP] {char_id} — reference already exists")
+        if out_path.exists() and not redo:
+            print(f"[SKIP] {char_id} — reference already exists (use --redo to regenerate)")
             continue
 
         print(f"[GEN]  {char_id}...")
