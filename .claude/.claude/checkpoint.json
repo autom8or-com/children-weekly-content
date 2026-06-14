@@ -1,11 +1,11 @@
 {
   "version": "1",
-  "target_date": "2026-05-24",
-  "activity": "PRESENTATION",
-  "teens_passage": "Acts 22",
-  "preteens_passage": "John 9",
-  "started_at": "2026-05-23T10:21:37Z",
-  "last_updated": "2026-05-23T10:26:21Z",
+  "target_date": "2026-06-14",
+  "activity": "GAME",
+  "teens_passage": "Acts 25",
+  "preteens_passage": "John 12",
+  "started_at": "2026-06-12T13:07:30Z",
+  "last_updated": "2026-06-12T13:12:08Z",
   "steps": {
     "rotation_lookup": "done",
     "teens_spec_written": "done",
@@ -19,34 +19,20 @@
   "files": {
     "teens": [
       {
-        "filename": "Presentation_Teens_Guideline_Acts22.docx",
-        "local_path": "content/teens/2026-05-24_PRESENTATION_Acts22/Presentation_Teens_Guideline_Acts22.docx",
-        "file_type": "PRESENTATION_GUIDELINE",
-        "download_url": "https://raw.githubusercontent.com/autom8or-com/children-weekly-content/f73e226d410042fa76d55562cdd2edc60cd82b71/content/teens/2026-05-24_PRESENTATION_Acts22/Presentation_Teens_Guideline_Acts22.docx",
-        "nocodb_record_id": 0
-      },
-      {
-        "filename": "Presentation_Teens_Group_Assignments_Acts22.docx",
-        "local_path": "content/teens/2026-05-24_PRESENTATION_Acts22/Presentation_Teens_Group_Assignments_Acts22.docx",
-        "file_type": "PRESENTATION_GROUPS",
-        "download_url": "https://raw.githubusercontent.com/autom8or-com/children-weekly-content/f73e226d410042fa76d55562cdd2edc60cd82b71/content/teens/2026-05-24_PRESENTATION_Acts22/Presentation_Teens_Group_Assignments_Acts22.docx",
-        "nocodb_record_id": 0
+        "filename": "Game_Teens_Acts25.docx",
+        "local_path": "content/teens/2026-06-14_GAME_Acts25/Game_Teens_Acts25.docx",
+        "file_type": "GAME_SHEET",
+        "download_url": "https://nocodb.aiautom8or.com/dltemp/2uUh1eFAmexpvKR7/1781277000000/tod/2026/06/Game_Teens_Acts25_-yjNM.docx",
+        "nocodb_record_id": 3
       }
     ],
     "preteens": [
       {
-        "filename": "Presentation_Preteens_Guideline_John9.docx",
-        "local_path": "content/preteens/2026-05-24_PRESENTATION_John9/Presentation_Preteens_Guideline_John9.docx",
-        "file_type": "PRESENTATION_GUIDELINE",
-        "download_url": "https://raw.githubusercontent.com/autom8or-com/children-weekly-content/f73e226d410042fa76d55562cdd2edc60cd82b71/content/preteens/2026-05-24_PRESENTATION_John9/Presentation_Preteens_Guideline_John9.docx",
-        "nocodb_record_id": 0
-      },
-      {
-        "filename": "Presentation_Preteens_Group_Assignments_John9.docx",
-        "local_path": "content/preteens/2026-05-24_PRESENTATION_John9/Presentation_Preteens_Group_Assignments_John9.docx",
-        "file_type": "PRESENTATION_GROUPS",
-        "download_url": "https://raw.githubusercontent.com/autom8or-com/children-weekly-content/f73e226d410042fa76d55562cdd2edc60cd82b71/content/preteens/2026-05-24_PRESENTATION_John9/Presentation_Preteens_Group_Assignments_John9.docx",
-        "nocodb_record_id": 0
+        "filename": "Game_Preteens_John12.docx",
+        "local_path": "content/preteens/2026-06-14_GAME_John12/Game_Preteens_John12.docx",
+        "file_type": "GAME_SHEET",
+        "download_url": "https://nocodb.aiautom8or.com/dltemp/1t8UTcfnGg3VO4gJ/1781277600000/tod/2026/06/Game_Preteens_John12_ssMGb.docx",
+        "nocodb_record_id": 4
       }
     ]
   }
