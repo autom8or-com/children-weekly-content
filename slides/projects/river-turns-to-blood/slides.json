@@ -1,0 +1,15 @@
+[
+  { "id": "scene-1/1a", "theme": "Pharaoh Still Says No", "cta": null },
+  { "id": "scene-1/1b", "theme": "Take the Staff That Became a Snake", "cta": null },
+  { "id": "scene-1/1c", "theme": "Let My People Go!", "cta": null },
+  { "id": "scene-1/1d", "theme": "A Warning: The River Will Turn to Blood", "cta": null },
+  { "id": "scene-1/1e", "theme": "Stretch Your Staff Over the Waters", "cta": "Did Moses and Aaron obey God?\n\nYes — right away!" },
+  { "id": "scene-2/2a", "theme": "Morning at the Nile", "cta": null },
+  { "id": "scene-2/2b", "theme": "Aaron Strikes the Water", "cta": null },
+  { "id": "scene-2/2c", "theme": "The River Turns to Blood!", "cta": "What happened when Aaron struck the river?\n\nIt turned to blood — just as God said!" },
+  { "id": "scene-2/2d", "theme": "The Fish Die and the River Stinks", "cta": null },
+  { "id": "scene-2/2e", "theme": "No Water to Drink", "cta": null },
+  { "id": "scene-2/2f", "theme": "The Magicians Copy It", "cta": null },
+  { "id": "scene-2/2g", "theme": "Pharaoh's Heart Stays Hard", "cta": null },
+  { "id": "scene-2/2h", "theme": "Seven Days Pass", "cta": "God always keeps His word.\n\nWhen God says it, it happens!" }
+]
