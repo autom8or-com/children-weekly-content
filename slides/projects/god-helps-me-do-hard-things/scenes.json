@@ -1,0 +1,161 @@
+[
+  {
+    "id": "scene-util/infog-a",
+    "title": "Infographic — God will never leave me (toddler hand)",
+    "mode": "text-to-image",
+    "model": "nano-banana-pro",
+    "resolution": "2k",
+    "prompt": "Bright cheerful children's Bible activity handout illustration. Close-up front view of a toddler's open right hand and wrist, chocolate-brown skin, hand filling the frame. Bold text printed on the palm reads 'Hebrews 13:5' in large bright centred letters. Each finger labelled from thumb to pinky with one word: thumb = 'God', index = 'will', middle = 'never', ring = 'leave', pinky = 'me' — each word in bold rounded font in a different bright colour: red, orange, yellow, green, blue. Soft pastel yellow background. Flat digital art, clean bold outlines, child-friendly typography. No other text or decoration."
+  },
+
+  {
+    "id": "scene-1/1a",
+    "title": "Moses and Aaron before God in the desert",
+    "mode": "reuse",
+    "source": "scene-2/2b",
+    "source_project": "trust-in-the-lord"
+  },
+  {
+    "id": "scene-1/1b",
+    "title": "Moses points to himself — 'Stammerer' bubble",
+    "mode": "edit",
+    "model": "nano-banana-2",
+    "resolution": "2k",
+    "chars": ["moses-a", "aaron-b"],
+    "base_scene": "scene-1/1a",
+    "prompt": "Using the provided desert scene of Moses and Aaron before God's golden light: change Moses only — he turns toward Aaron, one hand pointing at his own chest with a worried self-doubting expression, mouth slightly open. A large cartoon speech bubble beside Moses displays the single bold word 'Stammerer'. Aaron watches with a concerned expression. Keep the divine golden light, desert setting, and all other elements exactly. Storybook flat digital art style."
+  },
+  {
+    "id": "scene-1/1c",
+    "title": "Moses with thought bubble — Pharaoh's court rendered inside",
+    "mode": "edit",
+    "model": "nano-banana-2",
+    "resolution": "2k",
+    "base_scene": "scene-1/1b",
+    "scene_refs": [
+      { "source": "scene-1/1b", "project": "trust-in-the-lord" }
+    ],
+    "prompt": "Using the first image (Moses pointing at himself with the 'Stammerer' bubble): add a large cartoon cloud thought bubble rising from Moses's head toward the top-right. Inside the thought bubble, render the scene from the second image — Pharaoh standing authoritatively before his taskmasters in the Egyptian palace — adapted to the same storybook flat art style. Keep Moses, Aaron, the 'Stammerer' speech bubble, the divine light, and all elements exactly. Storybook flat digital art style."
+  },
+  {
+    "id": "scene-1/1d",
+    "title": "Scroll from heaven with God's command",
+    "mode": "edit-fast",
+    "model": "nano-banana-2",
+    "resolution": "2k",
+    "base_scene": "scene-1/1c",
+    "prompt": "Using the provided scene: add a grand ornate golden scroll unfurling dramatically from the divine light above, rolling down into the scene. The scroll displays in clear bold calligraphy on aged parchment: 'I am the LORD. Tell Pharaoh king of Egypt everything I tell you.' The ribbon curls elegantly at top and bottom. Keep Moses, Aaron, the 'Stammerer' bubble, the thought bubble with its Pharaoh scene inside, and all elements. Storybook flat digital art style."
+  },
+
+  {
+    "id": "scene-2/2a",
+    "title": "Moses and Aaron before God — tears wiped, encouraged",
+    "mode": "edit",
+    "model": "nano-banana-2",
+    "resolution": "2k",
+    "chars": ["moses-a", "aaron-b"],
+    "base_project": "trust-in-the-lord",
+    "base_scene": "scene-2/2b",
+    "prompt": "Using the provided scene of Moses and Aaron kneeling in distress before divine light: lift both figures — Moses and Aaron (both from reference) now stand upright, staffs/rods in hand, facing the warm golden light. Their expressions are lifted and encouraged — no tears, eyes bright and hopeful, posture no longer slumped. The divine golden light remains warm and reassuring. Desert setting unchanged. Storybook flat digital art style."
+  },
+  {
+    "id": "scene-2/2b",
+    "title": "God speaks to Moses — arm on shoulder, points Aaron as prophet",
+    "mode": "edit",
+    "model": "nano-banana-2",
+    "resolution": "2k",
+    "chars": ["god-a", "moses-a", "aaron-a"],
+    "base_scene": "scene-2/2a",
+    "prompt": "Using the provided scene of Moses and Aaron standing before divine light: the divine light gives form to God (from reference) — a magnificent elderly figure with flowing white beard, luminous white robe, and golden radiance. God stands between the two, his right hand resting gently but firmly on Moses's shoulder with calm authority, his left arm extended and pointing clearly toward Aaron. Aaron (from reference — priestly breastplate and golden headband, showing he has been appointed prophet) stands nearby, expression bright and accepting. Moses looks up at God with growing reassurance. All three surrounded by warm golden divine light, desert background. Storybook flat digital art style."
+  },
+  {
+    "id": "scene-2/2c",
+    "title": "God with Moses and Aaron — cloud bubble showing Pharaoh's palace",
+    "mode": "edit",
+    "model": "nano-banana-2",
+    "resolution": "2k",
+    "base_scene": "scene-2/2b",
+    "scene_refs": [
+      { "source": "scene-1/1a", "project": "trust-in-the-lord" }
+    ],
+    "prompt": "Using the first image (God, Moses, and Aaron together in the desert): add a large transparent cloud vision bubble in the upper right area of the scene. Inside the cloud, render the scene from the second image — Pharaoh angrily ordering Moses and Aaron out of his palace — adapted to the same storybook flat art style, showing that God is fully aware and in control of the situation. God's expression remains calm and authoritative. Keep all three figures, the divine light, and all scene elements exactly. Storybook flat digital art style."
+  },
+  {
+    "id": "scene-2/2d",
+    "title": "Moses and Aaron hug — bright and ready to go",
+    "mode": "edit-fast",
+    "model": "nano-banana-2",
+    "resolution": "2k",
+    "base_scene": "scene-2/2c",
+    "prompt": "Using the provided scene: remove the cloud bubble entirely. Change Moses and Aaron's poses — they now face each other in a warm enthusiastic hug, expressions bright, wide-eyed, and filled with excitement and readiness for the mission ahead. God (if still visible) looks on with a warm approving smile. The golden divine light remains. Storybook flat digital art style."
+  },
+
+  {
+    "id": "scene-3/3a",
+    "title": "Angela alone at her desk — teacher teaching at front of class",
+    "mode": "edit",
+    "model": "nano-banana-pro",
+    "resolution": "2k",
+    "base_project": "trust-in-the-lord",
+    "base_scene": "scene-3/3a",
+    "prompt": "Using this classroom scene: the girl with two-puff natural hair in a blue pinafore currently at the front-left — move her to sit alone in the third row, the seat beside her empty while all other pupils sit in pairs. Her expression is neutral and slightly distracted, gaze drifting away from the teacher. Do not add any new characters or duplicate any existing pupils. Keep teacher, board, all other pupils, desks, posters, fan, and windows exactly. Storybook flat digital art style."
+  },
+  {
+    "id": "scene-3/3b",
+    "title": "Teacher points to Angela — 'Read aloud!'",
+    "mode": "edit-fast",
+    "model": "nano-banana-2",
+    "resolution": "2k",
+    "base_scene": "scene-3/3a",
+    "prompt": "Using this classroom scene: the teacher at the front turns and points directly at the girl with two-puff natural hair in a blue pinafore sitting alone in the third row, with an encouraging expression. A large cartoon speech bubble from the teacher clearly reads: 'Read aloud!' That girl's expression shifts to sudden surprise and nervousness — wide eyes, mouth slightly open. All other pupils and classroom elements remain exactly. Storybook flat digital art style."
+  },
+  {
+    "id": "scene-3/3c",
+    "title": "Angela stands — holding book, nervous",
+    "mode": "edit-fast",
+    "model": "nano-banana-2",
+    "resolution": "2k",
+    "base_scene": "scene-3/3b",
+    "prompt": "Using this classroom scene: the girl with two-puff natural hair in a blue pinafore in the third row now stands at her desk, gripping her open exercise book with both hands, posture showing visible nerves — slightly hunched, wide uncertain eyes, lower lip tucked. The teacher still points toward her. The 'Read aloud!' bubble remains. All other pupils and classroom elements unchanged. Storybook flat digital art style."
+  },
+  {
+    "id": "scene-3/3d",
+    "title": "Angela's thought bubble — 'I can do all things through Christ!'",
+    "mode": "edit-fast",
+    "model": "nano-banana-2",
+    "resolution": "2k",
+    "base_scene": "scene-3/3c",
+    "prompt": "Using this classroom scene of the girl standing nervously with her book: add a large cartoon thought bubble rising from her head (round cloud shape, small circles trailing up). Inside the bubble, bold clear text reads: 'I can do all things through Christ!' Keep the girl's pose, the teacher, all pupils, and all classroom elements exactly. Storybook flat digital art style."
+  },
+  {
+    "id": "scene-3/3e",
+    "title": "Two thought bubbles — God's Word hand + Jesus with Angela",
+    "mode": "edit",
+    "model": "nano-banana-2",
+    "resolution": "2k",
+    "base_scene": "scene-3/3d",
+    "scene_refs": [
+      { "source": "scene-util/infog-a" },
+      { "source": "scene-4/4d", "project": "trust-in-the-lord" }
+    ],
+    "prompt": "Using the first image (girl standing with thought bubble): replace the thought bubble with two side-by-side cloud thought bubbles above her head. In the left bubble render the content from the second image — the children's Bible hand infographic. In the right bubble render the scene from the third image — Jesus sitting encouragingly by a child's bedside. The girl looks upward at both bubbles with a wondering hopeful expression. Keep the teacher, all pupils, and all classroom elements exactly. Storybook flat digital art style."
+  },
+  {
+    "id": "scene-3/3f",
+    "title": "Angela calm — reading confidently from the board",
+    "mode": "edit-fast",
+    "model": "nano-banana-2",
+    "resolution": "2k",
+    "base_scene": "scene-3/3e",
+    "prompt": "Using this classroom scene: remove both thought bubbles. The girl with two-puff natural hair in the blue pinafore now stands tall and confident, book held steady in both hands, reading clearly and calmly — chin slightly raised, eyes focused and steady. The teacher watches with an encouraging smile. All other classroom details unchanged. Storybook flat digital art style."
+  },
+  {
+    "id": "scene-3/3g",
+    "title": "Everyone claps for Angela",
+    "mode": "edit-fast",
+    "model": "nano-banana-2",
+    "resolution": "2k",
+    "base_scene": "scene-3/3f",
+    "prompt": "Using this classroom scene: all pupils now clap enthusiastically — hands raised, bright excited expressions. The teacher claps too with a wide proud smile. The girl with two-puff natural hair in the blue pinafore stands with a warm relieved smile, slightly surprised and happy. Small cartoon applause stars and sparkles in the air. Keep the classroom and all figures exactly. Storybook flat digital art style."
+  }
+]

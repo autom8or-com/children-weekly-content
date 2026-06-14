@@ -32,6 +32,34 @@ Always do a cost estimate before generating. Pricing (2K resolution):
 
 Rule of thumb: character refs ($0.14 each, generated once) + scenes (~$0.08–$0.14 each). A 12-scene deck with 5 characters ≈ **$1.50–$2.00 total**.
 
+### Approval Gate — Required Before Any Generation
+
+After writing or updating `scenes.json` for any project, **always** output both tables below and the cost estimate, then **stop and wait for explicit user approval** before running `generate_characters.py` or `generate_scenes.py`.
+
+**Scene dependency table** (one row per scene):
+
+| Scene | Type | Depends On | Model |
+|---|---|---|---|
+| scene-N/Na | reuse / edit / edit-fast / text-to-image / composite | base scene or source (with project if cross-project) + pip sources | nano-banana-2 / nano-banana-pro / — |
+
+**Character table** (one row per character):
+
+| ID | Type | Model |
+|---|---|---|
+| char-id | new / copied / char_project | nano-banana-pro / — |
+
+**Cost estimate table:**
+
+| Item | Count | Unit | Subtotal |
+|---|---|---|---|
+| New character refs | N | $0.14 | $X |
+| Edit scenes | N | $0.105 | $X |
+| Edit-fast scenes | N | $0.045 | $X |
+| Reuse / composite | N | free | $0.00 |
+| **Total** | | | **$X** |
+
+Do not run any generation command until the user responds with approval.
+
 ### Before Any Regeneration Run
 
 1. **Character + prompt sync**: After updating character reference PNGs, search every `scenes.json` (including dependent projects using `char_project`) for stale inline costume descriptions and update them before calling `generate_scenes.py`. Mismatched prompts produce wrong images at full cost.
@@ -62,7 +90,16 @@ python3 slides/_scripts/build_pptx.py <project>
 # Custom PPTX filename
 python3 slides/_scripts/build_pptx.py <project> --out MyDeck_v2.pptx
 
-# Check WaveSpeed balance
+# Check kie.ai credit balance (default provider)
+python3 -c "
+import requests, os
+from dotenv import load_dotenv
+load_dotenv('.env')
+r = requests.get('https://api.kie.ai/api/v1/chat/credit', headers={'Authorization': f'Bearer {os.environ[\"KIE_API_KEY\"]}'})
+print(r.json()['data'])
+"
+
+# Check WaveSpeed balance (opt-in provider)
 python3 -c "
 import requests, os
 from dotenv import load_dotenv
@@ -71,6 +108,15 @@ r = requests.get('https://api.wavespeed.ai/api/v3/balance', headers={'Authorizat
 print(r.json()['data']['balance'])
 "
 ```
+
+### Image Providers
+
+The slides pipeline runs on two interchangeable providers behind one interface:
+
+- **kie.ai** (default) — `KIE_API_KEY`. Job API: `POST /api/v1/jobs/createTask`, poll `GET /api/v1/jobs/recordInfo?taskId=`. Reference images must be URLs, so local refs are auto-uploaded via the base64 upload endpoint first. No separate `edit`/`edit-fast` endpoints — edit-vs-generate is inferred from whether refs are passed.
+- **WaveSpeed** (opt-in) — `WAVESPEEDAI_API_KEY`. Inline base64 refs; per-mode endpoints.
+
+Selection precedence: `--provider kie|wavespeed` flag → `"provider"` field in `project.json` → `IMAGE_PROVIDER` env → default `kie`. Model names (`nano-banana-pro`, `nano-banana-2`) and `scenes.json` are identical across providers.
 
 ### scenes.json Schema
 
@@ -112,7 +158,16 @@ print(r.json()['data']['balance'])
 
 Valid `position` values for both `pip` and `overlay`: `center`, `center-right`, `center-left`, `top-right`, `top-left`, `bottom-right`, `bottom-left`.
 
-### WaveSpeed API
+### kie.ai API (default provider)
+
+- Env var: `KIE_API_KEY` (in `.env`)
+- Credit balance: `GET /api/v1/chat/credit`
+- Submit: `POST /api/v1/jobs/createTask` with `{model, input:{prompt, image_input:[urls], aspect_ratio, resolution, output_format}}`
+- Poll: `GET /api/v1/jobs/recordInfo?taskId=<id>` → `data.state` in {waiting, queuing, generating, success, fail}; on success parse `data.resultJson` (JSON string) → `resultUrls[0]`
+- Local reference images are uploaded first via `POST https://kieai.redpandaai.co/api/file-base64-upload` (temp URL, auto-deleted ~3 days)
+- Client retries POST/GET/upload 3× with backoff automatically
+
+### WaveSpeed API (opt-in provider)
 
 - Env var: `WAVESPEEDAI_API_KEY` (in `.env`)
 - Balance: `GET /api/v3/balance`
@@ -153,5 +208,5 @@ Use the `tod-generate` skill (`/tod-generate`) for weekly content. Content lives
 
 - Python 3.14, `python3` command
 - Dependencies: `requests`, `python-pptx`, `Pillow`, `python-dotenv`
-- Credentials in `.env` at project root: `WAVESPEEDAI_API_KEY`, `NOCODB_*`, Telegram bot tokens
+- Credentials in `.env` at project root: `KIE_API_KEY`, `IMAGE_PROVIDER`, `WAVESPEEDAI_API_KEY`, `NOCODB_*`, Telegram bot tokens
 - Generated images and `.pptx` files are gitignored (reproducible artifacts)

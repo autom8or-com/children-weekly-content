@@ -1,0 +1,126 @@
+[
+  {
+    "id": "scene-1/1a",
+    "title": "Pharaoh still says no — go to him at the river",
+    "mode": "edit",
+    "model": "nano-banana-pro",
+    "resolution": "2k",
+    "base_scene": "scene-1/1a",
+    "base_project": "gods-power",
+    "prompt": "Using the provided desert scene of God (golden divine light), Moses, and Aaron: keep all three figures, their poses, the golden divine light, and the desert setting exactly. Remove any existing speech bubble. Add one large friendly cartoon speech bubble rising from the golden divine light that reads in clear bold text: 'Pharaoh's heart is hard. Go to him in the morning at the river.' Moses and Aaron listen attentively and look ready. Storybook flat digital art style."
+  },
+  {
+    "id": "scene-1/1b",
+    "title": "Take the staff that became a snake",
+    "mode": "edit",
+    "model": "nano-banana-pro",
+    "resolution": "2k",
+    "base_scene": "scene-1/1e",
+    "base_project": "gods-power",
+    "prompt": "Using the provided desert scene of God, Moses, and Aaron: keep all three figures, their faces, costumes and the flat storybook art style exactly as in the provided scene. Remove any existing speech bubble. Moses lifts and grips his glowing wooden staff a little higher, looking at it. Add one large cartoon speech bubble rising from the golden divine light that reads: 'Take in your hand the staff that became a snake.' Keep God, Aaron, the golden divine light and desert setting exactly. Storybook flat digital art style."
+  },
+  {
+    "id": "scene-1/1c",
+    "title": "God's message: Let my people go!",
+    "mode": "edit",
+    "model": "nano-banana-pro",
+    "resolution": "2k",
+    "base_scene": "scene-1/1a",
+    "base_project": "gods-power",
+    "prompt": "Using the provided desert scene of God, Moses, and Aaron: keep all three figures, poses, golden divine light and desert setting exactly. Remove any existing speech bubble. Add one large cartoon speech bubble rising from the golden divine light that reads: 'Tell Pharaoh: Let my people go to worship me!' Moses and Aaron stand bold and ready. Storybook flat digital art style."
+  },
+  {
+    "id": "scene-1/1d",
+    "title": "A warning: the river will turn to blood",
+    "mode": "edit",
+    "model": "nano-banana-pro",
+    "resolution": "2k",
+    "base_scene": "scene-1/1a",
+    "base_project": "gods-power",
+    "prompt": "Using the provided desert scene of God, Moses, and Aaron: keep all three figures, poses, golden divine light and desert setting exactly. Remove any existing speech bubble. In the upper sky add a large soft cloud-shaped vision bubble showing a picture of the wide Nile river turned deep red like blood with a few fish floating belly-up — gentle storybook style, soft and not scary. Add a small caption banner just under the cloud reading: 'The river will turn to blood.' Moses and Aaron look up at the vision. Storybook flat digital art style."
+  },
+  {
+    "id": "scene-1/1e",
+    "title": "Aaron, stretch your staff over all Egypt's waters",
+    "mode": "edit",
+    "model": "nano-banana-pro",
+    "resolution": "2k",
+    "base_scene": "scene-1/1b",
+    "base_project": "gods-power",
+    "prompt": "Using the provided desert scene of God, Moses, and Aaron: keep all three figures, their faces, costumes and the flat storybook art style exactly as in the provided scene. Remove any existing speech bubble. Aaron raises his wooden rod high with purpose and joy. Add one large cartoon speech bubble rising from the golden divine light that reads: 'Aaron, stretch your staff over all the waters of Egypt.' Keep God, Moses, the golden divine light and desert setting exactly. Storybook flat digital art style."
+  },
+
+  {
+    "id": "scene-2/2a",
+    "title": "Morning at the Nile — facing Pharaoh and his officials",
+    "mode": "edit",
+    "model": "nano-banana-pro",
+    "resolution": "2k",
+    "base_scene": "scene-2/2a",
+    "base_project": "gods-power",
+    "prompt": "Using the provided palace scene of Pharaoh, Moses, and Aaron: keep Pharaoh, Moses, and Aaron EXACTLY as they appear — identical faces, costumes, proportions, and the same flat storybook art style; do not redesign them. Pharaoh is the older king in the white-and-gold robe with a blue-and-gold striped nemes headdress, golden cobra, and gold collar. Moses wears a white tunic and emerald green mantle and holds his glowing wooden staff. Aaron wears a bright yellow priestly robe, colourful gemstone breastplate, and golden headband and holds his wooden rod. Change ONLY the setting: remove the throne, palace columns, torches, vases and red carpet, and remove ALL four magicians. The scene now takes place outdoors on the grassy bank of the wide Nile river in early morning — soft golden sunrise light, palm trees, tall green reeds, blue river water, distant sandy shore. Pharaoh now STANDS on the riverbank facing Moses and Aaron, with two Egyptian officials (white linen robes, striped headdresses) behind him. Keep a large cartoon speech bubble above Moses reading: 'Let my people go!' Flat digital art, clean bold black outlines, warm vibrant colours, Pre-K friendly."
+  },
+  {
+    "id": "scene-2/2b",
+    "title": "Aaron raises the staff and strikes the water",
+    "mode": "edit",
+    "model": "nano-banana-pro",
+    "resolution": "2k",
+    "base_scene": "scene-2/2a",
+    "prompt": "Using the provided Nile riverbank scene: KEEP the exact same flat storybook art style and the same character faces, costumes and proportions as the provided scene — do not redesign anyone. Remove Moses's speech bubble. Aaron steps to the river's edge and swings his long wooden rod down to strike the surface of the Nile — show the rod touching the water with a small bright splash and ripple rings spreading out. Moses stands beside him holding his glowing staff raised. Pharaoh (the older king in the white-and-gold robe) and his two officials watch from the right. Keep the riverbank, palms, reeds, golden morning light and all figures exactly. Flat digital art, clean bold outlines, warm vibrant colours."
+  },
+  {
+    "id": "scene-2/2c",
+    "title": "The whole river turns to blood",
+    "mode": "edit",
+    "model": "nano-banana-pro",
+    "resolution": "2k",
+    "base_scene": "scene-2/2b",
+    "prompt": "Using the provided Nile riverbank scene: KEEP THE EXACT SAME flat storybook art style, clean bold outlines, and the same character faces, costumes, ages and proportions as the provided scene — do not redesign, repaint, or restyle anyone. Aaron stays a young man (bright yellow robe, gemstone breastplate, golden headband) — NOT old, NO grey hair or grey beard. There is exactly ONE Pharaoh (the older king in the white-and-gold robe and striped nemes headdress) with his two officials — do not duplicate Pharaoh. The entire river water has now turned a deep rich red colour, like blood, spreading from where Aaron's rod struck the water — gentle storybook style, smooth deep-red water, soft and not gory. Aaron lowers his rod. Moses watches calmly. Pharaoh and his officials stare at the red river with wide surprised eyes. Keep the riverbank, palms, reeds, golden morning light and every character exactly as they are. Flat digital art, warm vibrant colours, Pre-K friendly."
+  },
+  {
+    "id": "scene-2/2d",
+    "title": "The fish die and the river stinks",
+    "mode": "edit",
+    "model": "nano-banana-pro",
+    "resolution": "2k",
+    "base_scene": "scene-2/2c",
+    "prompt": "Using the provided deep-red Nile river scene: KEEP the exact same flat storybook art style and the same characters exactly as in the provided scene — do not redesign anyone. Moses (white tunic, emerald green mantle, glowing staff) and Aaron (bright yellow robe, gemstone breastplate, golden headband, wooden rod) BOTH remain standing together in the centre — Aaron must be clearly visible, do NOT remove him. The single older-king Pharaoh (white-and-gold robe, striped nemes headdress) and his officials stay where they are. Now several fish float belly-up on the surface of the red water, and wavy grey stink-lines with a couple of small green smell-clouds rise gently from the river. One Egyptian official pinches his nose; Pharaoh turns his face away from the smell. Gentle storybook style, nothing scary. Keep the riverbank, palms, reeds and golden morning light exactly. Flat digital art, warm vibrant colours."
+  },
+  {
+    "id": "scene-2/2e",
+    "title": "No water to drink — shock on the riverbank",
+    "mode": "edit",
+    "model": "nano-banana-pro",
+    "resolution": "2k",
+    "base_scene": "scene-2/2c",
+    "prompt": "Using the provided deep-red Nile river scene: in the foreground add three ordinary Egyptian villagers — a man, a woman, and a child in simple linen clothes — crouched at the water's edge holding clay water jars, looking shocked and dismayed at the red water they cannot drink. One shakes their head, one holds up an empty cup. Keep Moses, Aaron, Pharaoh, the red river, palms, reeds and golden morning light exactly. Gentle storybook style. Storybook flat digital art style."
+  },
+  {
+    "id": "scene-2/2f",
+    "title": "Pharaoh's magicians copy it by their secret arts",
+    "mode": "edit",
+    "model": "nano-banana-pro",
+    "resolution": "2k",
+    "base_scene": "scene-2/2c",
+    "prompt": "Using the provided red Nile scene with Pharaoh: two tall thin Egyptian magicians in white ceremonial robes with striped headdresses now stand near Pharaoh, each holding a long staff over a clay basin of water; the water in their basins also turns red, showing they copied the trick by their secret arts. Pharaoh lifts his chin, looking stubborn and pleased, no longer impressed. Moses and Aaron watch steadily. Keep the red river, riverbank, palms and golden morning light exactly. Storybook flat digital art style."
+  },
+  {
+    "id": "scene-2/2g",
+    "title": "Pharaoh's heart stays hard — he turns to his palace",
+    "mode": "edit",
+    "model": "nano-banana-pro",
+    "resolution": "2k",
+    "base_scene": "scene-2/2c",
+    "prompt": "Using the provided red Nile riverbank scene: KEEP the exact same flat storybook art style and every character exactly as in the provided scene — do NOT redesign, repaint or restyle anyone. Moses keeps his white tunic, emerald green mantle and glowing staff; Aaron keeps his bright yellow robe, gemstone breastplate, golden headband and rod; the single older-king Pharaoh keeps his white-and-gold robe and striped nemes headdress. Change ONLY Pharaoh's posture: he has turned his body away from Moses and Aaron, chin lifted, looking dismissive and unbothered, taking a step to the right as if leaving. Moses and Aaron stand calmly watching him. The Nile stays deep red. Add a caption banner across the very top that reads: 'Pharaoh did not take it to heart.' Keep the palms, reeds, golden morning light and all other figures exactly. Flat digital art, clean bold outlines, warm vibrant colours."
+  },
+  {
+    "id": "scene-2/2h",
+    "title": "The Egyptians dig for water — seven days pass",
+    "mode": "edit",
+    "model": "nano-banana-pro",
+    "resolution": "2k",
+    "base_scene": "scene-2/2e",
+    "prompt": "Using the provided red-river scene with Egyptian villagers: the villagers have moved up onto the sandy bank and are now digging holes in the ground beside the river with simple tools and their hands, searching for clean drinking water — show small pools of clear water collecting in the dug holes. In the upper corner of the sky add a large friendly cartoon number '7' beside a small sun, showing that seven days passed. The Nile behind them is still deep red. Gentle, hopeful storybook style. Storybook flat digital art style."
+  }
+]

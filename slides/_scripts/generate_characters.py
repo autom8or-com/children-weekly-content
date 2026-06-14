@@ -7,6 +7,12 @@ Run once per project. Re-run only when a character design needs updating.
 Usage:
   python generate_characters.py deliverance
   python generate_characters.py deliverance angela jesus   # specific characters only
+  python generate_characters.py deliverance --redo         # force regenerate all
+  python generate_characters.py deliverance god-a --redo  # force regenerate one
+  python generate_characters.py deliverance --provider wavespeed  # override provider
+
+Provider defaults to kie.ai. Override with --provider, a "provider" field in
+project.json, or the IMAGE_PROVIDER env var.
 """
 import sys
 import json
@@ -16,7 +22,7 @@ from dotenv import load_dotenv
 load_dotenv(Path(__file__).parent.parent.parent / ".env")
 
 sys.path.insert(0, str(Path(__file__).parent.parent / "_lib"))
-from wavespeed import WaveSpeedClient
+from provider import resolve_provider, get_client
 
 SLIDES = Path(__file__).parent.parent
 
@@ -24,11 +30,20 @@ SLIDES = Path(__file__).parent.parent
 def main():
     args = sys.argv[1:]
     if not args:
-        print("Usage: python generate_characters.py <project> [char_id ...]")
+        print("Usage: python generate_characters.py <project> [--provider kie|wavespeed] [char_id ...]")
         sys.exit(1)
 
     project_name = args[0]
-    only = args[1:]  # optional filter: specific character IDs
+    rest = args[1:]
+
+    provider_cli = None
+    if "--provider" in rest:
+        i = rest.index("--provider")
+        provider_cli = rest[i + 1]
+        del rest[i:i + 2]
+
+    redo = "--redo" in rest
+    only = [a for a in rest if not a.startswith("--")]
 
     project = SLIDES / "projects" / project_name
     chars_file = project / "characters.json"
@@ -38,7 +53,9 @@ def main():
         sys.exit(1)
 
     characters = json.loads(chars_file.read_text())
-    client = WaveSpeedClient()
+    provider = resolve_provider(provider_cli, project)
+    client = get_client(provider)
+    print(f"[PROVIDER] {provider}")
 
     for char in characters:
         char_id = char["id"]
@@ -46,8 +63,8 @@ def main():
             continue
 
         out_path = project / "characters" / char_id / "reference.png"
-        if out_path.exists():
-            print(f"[SKIP] {char_id} — reference already exists")
+        if out_path.exists() and not redo:
+            print(f"[SKIP] {char_id} — reference already exists (use --redo to regenerate)")
             continue
 
         print(f"[GEN]  {char_id}...")
