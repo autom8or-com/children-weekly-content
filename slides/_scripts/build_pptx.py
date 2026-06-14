@@ -11,6 +11,8 @@ Usage:
 """
 import sys
 import json
+import shutil
+import zipfile
 from pathlib import Path
 from pptx import Presentation
 from pptx.util import Inches, Pt, Emu
@@ -61,6 +63,38 @@ def add_cta_slide(prs, cta_text: str, theme: str):
         p.font.size = Pt(28)
         p.font.bold = True
         p.font.color.rgb = RGBColor(30, 30, 30)
+
+
+def build_collections(project: Path, scene_ids, resolve_image) -> None:
+    """Gather every scene's final image into output/collections/<slug>.png
+    (slug = id with '/' → '_'), then bundle the folder into output/collections.zip.
+    Rebuilt fresh each run. reuse/composite modes resolve to their real source
+    image but are named by the scene's own slug."""
+    collections_dir = project / "output" / "collections"
+    if collections_dir.exists():
+        shutil.rmtree(collections_dir)
+    collections_dir.mkdir(parents=True, exist_ok=True)
+
+    collected = []
+    for scene_id in scene_ids:
+        img_path = resolve_image(scene_id)
+        if img_path is None:
+            continue
+        slug = scene_id.replace("/", "_")
+        dest = collections_dir / f"{slug}.png"
+        shutil.copy2(img_path, dest)
+        collected.append(dest)
+        print(f"[COLLECT] {scene_id} → collections/{dest.name}")
+
+    if not collected:
+        print("[WARN]  no images collected — nothing to zip")
+        return
+
+    zip_path = project / "output" / "collections.zip"
+    with zipfile.ZipFile(zip_path, "w", zipfile.ZIP_DEFLATED) as zf:
+        for f in sorted(collected):
+            zf.write(f, arcname=f"collections/{f.name}")
+    print(f"[ZIPPED] {len(collected)} image(s) → {zip_path}")
 
 
 def main():
@@ -136,6 +170,9 @@ def main():
     print(f"[SAVED] {out_path}")
     if missing:
         print(f"[WARN]  {len(missing)} scene(s) missing — run generate_scenes.py first")
+
+    # Collect all scene images by slug into output/collections/ + collections.zip
+    build_collections(project, list(scenes_by_id.keys()), resolve_image)
 
 
 if __name__ == "__main__":
