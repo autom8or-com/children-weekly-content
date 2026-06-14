@@ -17,6 +17,10 @@ Usage:
   python generate_scenes.py <project>                        # all scenes
   python generate_scenes.py <project> scene-1/1a scene-1/1b # specific scenes only
   python generate_scenes.py <project> --redo scene-3/3c     # force re-generate
+  python generate_scenes.py <project> --provider wavespeed  # override provider
+
+Provider defaults to kie.ai. Override with --provider, a "provider" field in
+project.json, or the IMAGE_PROVIDER env var.
 """
 import sys
 import json
@@ -27,7 +31,7 @@ from dotenv import load_dotenv
 load_dotenv(Path(__file__).parent.parent.parent / ".env")
 
 sys.path.insert(0, str(Path(__file__).parent.parent / "_lib"))
-from wavespeed import WaveSpeedClient
+from provider import resolve_provider, get_client
 
 try:
     from PIL import Image
@@ -262,12 +266,20 @@ def load_char_project(project: Path) -> Path | None:
 def main():
     args = sys.argv[1:]
     if not args:
-        print("Usage: python generate_scenes.py <project> [--redo] [scene-id ...]")
+        print("Usage: python generate_scenes.py <project> [--provider kie|wavespeed] [--redo] [scene-id ...]")
         sys.exit(1)
 
     project_name = args[0]
-    redo = "--redo" in args
-    only = [a for a in args[1:] if not a.startswith("--")]
+    rest = args[1:]
+
+    provider_cli = None
+    if "--provider" in rest:
+        i = rest.index("--provider")
+        provider_cli = rest[i + 1]
+        del rest[i:i + 2]
+
+    redo = "--redo" in rest
+    only = [a for a in rest if not a.startswith("--")]
 
     project = SLIDES / "projects" / project_name
     scenes_file = project / "scenes.json"
@@ -278,7 +290,9 @@ def main():
 
     scenes       = json.loads(scenes_file.read_text())
     char_project = load_char_project(project)
-    client       = WaveSpeedClient()
+    provider     = resolve_provider(provider_cli, project)
+    client       = get_client(provider)
+    print(f"[PROVIDER] {provider}")
 
     for scene in scenes:
         scene_id = scene["id"]

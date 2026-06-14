@@ -1,7 +1,19 @@
 # Slides Image Generation System
 
-Automated storybook illustration pipeline using WaveSpeed AI (Nano Banana).
+Automated storybook illustration pipeline using Nano Banana image models.
 Fully reusable — each new topic is a new project folder with three JSON files.
+
+Two interchangeable image providers sit behind one interface:
+
+- **kie.ai** (default) — env `KIE_API_KEY`
+- **WaveSpeed** (opt-in) — env `WAVESPEEDAI_API_KEY`
+
+Provider is chosen by, in order: `--provider <name>` flag → `"provider"` field in the
+project's `project.json` → `IMAGE_PROVIDER` env var → default `kie`. Both providers use
+the same model names (`nano-banana-pro`, `nano-banana-2`), so `scenes.json` is unchanged
+either way. Note kie.ai's job API has no separate `edit`/`edit-fast` endpoints — it
+infers edit-vs-generate from whether reference images are present — so on kie.ai those
+modes behave the same; the distinction only affects cost on WaveSpeed.
 
 ---
 
@@ -10,7 +22,9 @@ Fully reusable — each new topic is a new project folder with three JSON files.
 ```
 slides/
 ├── _lib/
-│   └── wavespeed.py               # WaveSpeed API client
+│   ├── provider.py                # Provider selection (kie.ai / WaveSpeed)
+│   ├── kie.py                     # kie.ai API client (default)
+│   └── wavespeed.py               # WaveSpeed API client (opt-in)
 ├── _scripts/
 │   ├── generate_characters.py     # Step 1: Generate character reference sheets
 │   ├── generate_scenes.py         # Step 2: Generate scene images
