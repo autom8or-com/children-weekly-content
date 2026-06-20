@@ -25,6 +25,7 @@ project.json, or the IMAGE_PROVIDER env var.
 import sys
 import json
 import shutil
+import datetime
 from pathlib import Path
 from dotenv import load_dotenv
 
@@ -41,6 +42,21 @@ except ImportError:
 
 SLIDES = Path(__file__).parent.parent
 ASSETS = SLIDES / "_assets"
+
+# One timestamp per invocation, so a whole regen run is grouped in one folder.
+RUN_TS = datetime.datetime.now().strftime("%Y%m%d-%H%M%S")
+
+
+def backup_existing(out_path: Path, project: Path, scene_id: str):
+    """Copy an existing output.png to a timestamped backup folder before it is
+    overwritten by a regeneration. No-op if there is nothing to back up."""
+    if not out_path.exists():
+        return
+    backup_dir = project / "_backups" / RUN_TS / scene_id.replace("/", "_")
+    backup_dir.mkdir(parents=True, exist_ok=True)
+    dest = backup_dir / out_path.name
+    shutil.copy2(out_path, dest)
+    print(f"  [BACKUP] {scene_id} → {dest.relative_to(project)}")
 
 
 # ---------------------------------------------------------------------------
@@ -310,6 +326,7 @@ def main():
             source_path          = source_project / "scenes" / source_id / "output.png"
             if source_path.exists():
                 out_path.parent.mkdir(parents=True, exist_ok=True)
+                backup_existing(out_path, project, scene_id)
                 shutil.copy2(source_path, out_path)
                 print(f"[REUSE] {scene_id} ← {source_id}")
             else:
@@ -322,6 +339,7 @@ def main():
                 print(f"[SKIP] {scene_id} — already exists (use --redo to regenerate)")
                 continue
             out_path.parent.mkdir(parents=True, exist_ok=True)
+            backup_existing(out_path, project, scene_id)
             build_composite(scene, out_path)
             continue
 
@@ -329,6 +347,8 @@ def main():
         if out_path.exists() and not redo:
             print(f"[SKIP] {scene_id} — already exists (use --redo to regenerate)")
             continue
+
+        backup_existing(out_path, project, scene_id)
 
         model      = scene.get("model", "nano-banana-pro")
         resolution = scene.get("resolution", "2k")

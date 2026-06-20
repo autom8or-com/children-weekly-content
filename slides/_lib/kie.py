@@ -73,7 +73,7 @@ class KieClient:
         resolution: str = "2k",
         output_format: str = "png",
         poll_interval: int = 5,
-        max_wait: int = 300,
+        max_wait: int = 600,
     ) -> str:
         """Submit a generation request and poll until complete. Returns output image URL.
 
@@ -123,12 +123,20 @@ class KieClient:
         raise TimeoutError(f"Generation timed out after {max_wait}s — task {task_id}")
 
     def download(self, image_url: str, save_path: str | Path) -> Path:
-        """Download generated image to disk."""
+        """Download generated image to disk, retrying on transient network errors."""
         save_path = Path(save_path)
         save_path.parent.mkdir(parents=True, exist_ok=True)
-        resp = requests.get(image_url, timeout=120)
-        resp.raise_for_status()
-        save_path.write_bytes(resp.content)
+        for attempt in range(1, 4):
+            try:
+                resp = requests.get(image_url, timeout=180)
+                resp.raise_for_status()
+                save_path.write_bytes(resp.content)
+                return save_path
+            except Exception as exc:
+                if attempt == 3:
+                    raise
+                print(f"  → download attempt {attempt} failed ({exc.__class__.__name__}) — retrying")
+                time.sleep(3 * attempt)
         return save_path
 
     def credit_balance(self) -> int:
