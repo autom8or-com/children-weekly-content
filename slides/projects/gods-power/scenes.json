@@ -1,0 +1,128 @@
+[
+  {
+    "id": "scene-1/1a",
+    "title": "God tells Moses: I have made you like God to Pharaoh",
+    "mode": "edit",
+    "model": "nano-banana-pro",
+    "resolution": "2k",
+    "base_scene": "scene-2/2b",
+    "base_project": "god-helps-me-do-hard-things",
+    "prompt": "Using the provided scene of God, Moses, and Aaron in the desert: add a large cartoon speech bubble rising from God above and slightly to his left. The bubble reads in clear bold friendly text: 'I have made you like God to Pharaoh.' Keep all three figures, poses, the golden divine light, and all scene elements exactly. Storybook flat digital art style."
+  },
+  {
+    "id": "scene-1/1b",
+    "title": "God appoints Aaron as prophet",
+    "mode": "edit",
+    "model": "nano-banana-pro",
+    "resolution": "2k",
+    "chars": ["aaron-a"],
+    "base_scene": "scene-2/2b",
+    "base_project": "god-helps-me-do-hard-things",
+    "prompt": "Using the provided scene of God, Moses, and Aaron in the desert, and Aaron's character reference: ensure Aaron matches his reference exactly — bright yellow priestly robe, colourful gemstone breastplate, golden headband. Remove any existing speech bubble. Add a new cartoon speech bubble rising from God that reads: 'Aaron will be your prophet.' Aaron's expression is bright, honoured, and eager. Moses watches with growing reassurance. Keep God's posture, the divine light, and desert setting exactly. Storybook flat digital art style."
+  },
+  {
+    "id": "scene-1/1c",
+    "title": "God, Moses, and Aaron — cloud vision of Pharaoh's palace",
+    "mode": "reuse",
+    "source": "scene-2/2c",
+    "source_project": "god-helps-me-do-hard-things"
+  },
+  {
+    "id": "scene-1/1d",
+    "title": "Moses (80) and Aaron (83) — old but ready!",
+    "mode": "edit",
+    "model": "nano-banana-pro",
+    "resolution": "2k",
+    "chars": ["aaron-a"],
+    "base_scene": "scene-2/2a",
+    "base_project": "god-helps-me-do-hard-things",
+    "prompt": "Using the provided scene of Moses and Aaron standing encouraged before golden divine light, and Aaron's character reference: ensure Aaron (identifiable by his bright yellow priestly robe, colourful gemstone breastplate, golden headband from the reference) matches his reference exactly. Moses (identifiable by his emerald green cloak and glowing staff) grips his staff firmly in his right hand and rests his left hand flat on a large bold cartoon digital number '80' — the digit 8 stacked directly on top of the digit 0, displayed in bright rounded bubble-letter style. Aaron grips his rod in his left hand and rests his right hand flat on a large bold cartoon digital number '83' — the digit 8 stacked directly on top of the digit 3, in matching bright rounded digits. Floating midway between the two figures at chest height is a large cartoon number '3' tilted playfully at a jaunty angle. Desert setting and golden light unchanged. Storybook flat digital art style."
+  },
+  {
+    "id": "scene-1/1e",
+    "title": "God commands: Throw your staff before Pharaoh",
+    "mode": "edit",
+    "model": "nano-banana-pro",
+    "resolution": "2k",
+    "base_scene": "scene-2/2b",
+    "base_project": "god-helps-me-do-hard-things",
+    "prompt": "Using the provided scene of God, Moses, and Aaron in the desert: add a large cartoon speech bubble rising from God. The bubble reads in clear bold friendly text: 'Take your staff and throw it down before Pharaoh, and it will become a snake.' Keep all three figures, poses, the golden divine light, and all scene elements exactly. Storybook flat digital art style."
+  },
+  {
+    "id": "scene-1/1f",
+    "title": "Moses and Aaron fly toward the Israelites — Aaron in priestly cloak",
+    "mode": "edit",
+    "model": "nano-banana-pro",
+    "resolution": "2k",
+    "chars": ["aaron-a"],
+    "base_scene": "scene-2/2d",
+    "base_project": "trust-in-the-lord",
+    "prompt": "Using the provided scene of Moses and Aaron flying through the sky by divine wind, and Aaron's character reference: change Aaron's costume only — he now wears the bright yellow priestly robe with colourful gemstone breastplate and golden headband from the reference (his prophet calling cloak), rod still in his left hand streaming behind him. His expression remains bold and purposeful. Moses flies beside him unchanged. Keep sky, motion lines, golden light, and all other elements exactly. Storybook flat digital art style."
+  },
+
+  {
+    "id": "scene-2/2a",
+    "title": "Moses declares: Let my people go! — magicians flank Pharaoh",
+    "mode": "edit",
+    "model": "nano-banana-pro",
+    "resolution": "2k",
+    "chars": ["moses-b", "aaron-a"],
+    "base_scene": "scene-1/1a",
+    "base_project": "trust-in-the-lord",
+    "prompt": "Using the provided Egyptian palace scene and Moses and Aaron's character references: remove any snake in the image. Pharaoh is seated on his throne, hands resting calmly on the armrests — he is NOT pointing or gesturing. Moses (from reference — white tunic, emerald green mantle) is the taller figure, standing upright and bold facing Pharaoh, a large cartoon speech bubble above him reads: 'The Lord said, let my people go!' Moses holds his glowing staff upright in his right hand — the staff must be clearly visible. Aaron (from reference — bright yellow priestly robe, colourful gemstone breastplate, golden headband) stands directly beside Moses, equally upright and bold. IMPORTANT: Aaron must be holding his long wooden rod/staff vertically upright in his left hand — the rod is a critical prop and must be clearly visible, not dropped or hidden. Add exactly four Egyptian magicians total flanking the throne: two standing to the left of the throne and two standing to the right of the throne — tall thin figures in white Egyptian ceremonial robes with striped headdresses, each holding a long staff upright at their side, expressions attentive. Keep the full palace interior, columns, and decor exactly. Storybook flat digital art style."
+  },
+  {
+    "id": "scene-2/2b",
+    "title": "Pharaoh rises: Show me a sign! Perform a Miracle!!",
+    "mode": "edit",
+    "model": "nano-banana-pro",
+    "resolution": "2k",
+    "base_scene": "scene-2/2a",
+    "prompt": "Using the provided scene of the Egyptian palace with Pharaoh, Moses, Aaron, and flanking magicians: remove Moses's speech bubble entirely. Pharaoh rises from his throne — now fully standing, body turned to face Moses and Aaron, stern commanding expression, one arm pointing toward them. A large cartoon speech bubble above Pharaoh reads: 'Show me a sign! Perform a Miracle!!' Moses and Aaron maintain their bold confident postures. All four magicians remain exactly in their positions. Keep the full palace interior exactly. Storybook flat digital art style."
+  },
+  {
+    "id": "scene-2/2c",
+    "title": "Aaron's staff becomes an upright cobra",
+    "mode": "edit",
+    "model": "nano-banana-pro",
+    "resolution": "2k",
+    "base_scene": "scene-2/2a",
+    "prompt": "Using the provided scene of the Egyptian palace with Pharaoh on his throne, Moses and Aaron bold before him, and flanking magicians: remove all speech bubbles. Aaron has thrown his rod to the ground — his hands are now empty and at his sides, composed and calm. On the red carpet floor between Moses/Aaron and Pharaoh's throne, Aaron's rod has transformed into a living upright cobra: neck fanned wide into a broad dramatic hood resembling the fan shape of Pharaoh's ceremonial cape, head raised straight and charged. Moses stands bold and still beside Aaron. Pharaoh remains seated on his throne, watching with a calculating expression. All four magicians remain exactly in their positions. Keep the full palace interior exactly. Storybook flat digital art style."
+  },
+  {
+    "id": "scene-2/2d",
+    "title": "Pharaoh signals — his magicians step forward with golden cobra staffs",
+    "mode": "edit",
+    "model": "nano-banana-pro",
+    "resolution": "2k",
+    "base_scene": "scene-2/2c",
+    "prompt": "Using the provided palace scene with Aaron's cobra on the floor and Pharaoh seated: Pharaoh on his throne raises his left hand with a beckoning gesture — three fingers curling toward himself, calling to his magicians. Three Egyptian magicians step forward from their flanking positions toward the centre of the room, each now holding a staff upright whose tip is a large gleaming golden cobra head. Their expressions are confident and readying. Aaron's cobra remains on the floor unchanged. Moses and Aaron watch. Keep the full palace interior and remaining magician exactly. Storybook flat digital art style."
+  },
+  {
+    "id": "scene-2/2e",
+    "title": "Magicians' staffs become snakes — but Aaron's cobra stands apart",
+    "mode": "edit",
+    "model": "nano-banana-pro",
+    "resolution": "2k",
+    "base_scene": "scene-2/2d",
+    "prompt": "Using the provided palace scene with three magicians approaching and Aaron's cobra on the floor: the three magicians now stand directly opposite Moses and Aaron. All three magicians' golden cobra staffs are gone from their hands. Three new smaller snakes now appear on the floor beside Aaron's cobra — plain, identical, and unremarkable, each rearing up. Aaron's large cobra remains clearly distinct — its hood fanned dramatically wider, its body larger and more commanding, looking superior to the others. All four snakes are visible on the floor between the two groups. The magicians look confident. Keep Pharaoh on his throne, Moses and Aaron, palace interior exactly. Storybook flat digital art style."
+  },
+  {
+    "id": "scene-2/2f",
+    "title": "Aaron's snake swallows them all!",
+    "mode": "edit",
+    "model": "nano-banana-pro",
+    "resolution": "2k",
+    "base_scene": "scene-2/2e",
+    "prompt": "Using the provided palace scene with four snakes on the floor: Aaron's large cobra is mid-swallow — mouth stretched dramatically wide around the tail end of the last remaining magician snake, which is nearly fully consumed, just a tail tip visible. All other magician snakes are already gone from the floor. The three magicians stand with wide eyes, open mouths, and raised hands in clear shock and surprise. Aaron and Moses watch calmly and confidently. Pharaoh leans forward from his throne with a tight unreadable expression. Keep palace interior exactly. Storybook flat digital art style."
+  },
+  {
+    "id": "scene-2/2g",
+    "title": "Pharaoh furious: Get out! Get out!!",
+    "mode": "edit",
+    "model": "nano-banana-pro",
+    "resolution": "2k",
+    "base_scene": "scene-2/2a",
+    "prompt": "Using the provided Egyptian palace scene — Pharaoh on his throne, Moses and Aaron bold before him, four magicians flanking: remove Moses's speech bubble entirely. The floor is completely clear — the serpent has finished its work and Aaron's rod has been restored to him. Aaron (yellow priestly robe, gemstone breastplate, golden headband) now holds his rod upright in his left hand, returned to him after the miracle. All four magicians look visibly defeated — slumped posture, downcast eyes, heads low, shoulders dropped, no longer holding staffs. Pharaoh is now standing from his throne, body turned toward Moses and Aaron, face flushed with fury, one arm thrusting powerfully toward the palace exit. A large cartoon speech bubble above Pharaoh reads: 'Get out! Get out!!' Moses and Aaron stand calmly unshaken. Keep the full palace interior, columns, and decor exactly. Storybook flat digital art style."
+  }
+]
