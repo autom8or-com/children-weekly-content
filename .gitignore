@@ -16,7 +16,8 @@ node_modules/
 # Slides — generated image artifacts (large binary files, reproducible)
 slides/projects/*/characters/*/reference.png
 slides/projects/*/scenes/**/draft.png
-slides/projects/*/scenes/**/output.png
+slides/projects/*/scenes/**/output*.png
+slides/projects/*/collections/
 slides/projects/*/output/*.pptx
 slides/projects/*/output/collections/
 slides/projects/*/output/*.zip
