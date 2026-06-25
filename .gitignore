@@ -17,7 +17,7 @@ node_modules/
 slides/projects/*/characters/*/reference.png
 slides/projects/*/scenes/**/draft.png
 slides/projects/*/scenes/**/output*.png
-slides/projects/*/_backups/
+slides/projects/**/_backups/
 slides/projects/*/collections/
 slides/projects/*/output/*.pptx
 slides/projects/*/output/collections/
