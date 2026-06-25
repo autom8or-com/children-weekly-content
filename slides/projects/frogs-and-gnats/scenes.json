@@ -1,0 +1,142 @@
+[
+  {
+    "id": "scene-1/1a",
+    "title": "God warns Moses — Moses relays to Aaron at the Nile",
+    "mode": "edit",
+    "model": "nano-banana-pro",
+    "resolution": "2k",
+    "chars": [
+      "moses-b",
+      "aaron-a",
+      "god-a"
+    ],
+    "base_scene": "scene-2/2a",
+    "base_project": "river-turns-to-blood",
+    "prompt": "Using the provided Nile riverbank confrontation scene (Pharaoh, his officials, Moses and Aaron at the blue Nile): KEEP Pharaoh, all his officials, Moses and Aaron exactly as they appear — same faces, same dark brown skin and clean-shaven youthful look for Moses and Aaron, same clothing, Moses's glowing wooden staff, Aaron's colourful gemstone breastplate and golden headband, same positions. Do not move, age, or redraw anyone. Remove Moses's existing 'Let my people go!' speech bubble. Give Moses a NEW speech bubble, turned toward Aaron, reading: 'Aaron — stretch your rod over all the waters!' In the upper area directly above Moses, add a large round cloud-shaped thought/memory bubble connected to Moses by three small thought-bubble circles. INSIDE this memory bubble: place the provided elderly God character as a small framed vision — God (long white hair and beard, glowing white robes, warm golden light radiating all around him) sits on his golden throne and raises one hand gently; a small cartoon speech bubble from God inside the memory cloud reads: 'Go to Pharaoh: Let my people go, or frogs will fill all Egypt!' God appears ONLY inside the memory bubble — he is not standing in the main scene. Keep the blue Nile, palm trees, reeds, sandy shore and golden morning light exactly. Storybook flat digital art style."
+  },
+  {
+    "id": "scene-1/1b",
+    "title": "Aaron stretches his rod — frogs rise from the Nile",
+    "mode": "edit",
+    "model": "nano-banana-pro",
+    "resolution": "2k",
+    "base_scene": "scene-1/1a",
+    "prompt": "Using the provided Nile confrontation scene with Pharaoh, his officials, Moses, Aaron and the God memory bubble: KEEP Pharaoh, all officials, Moses and Aaron exactly as they are. Remove Moses's speech bubble AND remove the God memory/thought bubble entirely. IMPORTANT — it is AARON who acts, not Moses: Aaron (the man in the bright yellow robe with the colourful gemstone breastplate and golden headband) steps forward to the very edge of the water and stretches his long wooden rod out horizontally over the surface of the Nile with both hands. MOSES (green mantle, dark brown skin) does NOT touch the water — he stays standing back where he is, holding his glowing wooden staff UPRIGHT in his right hand, watching calmly. From the river a large, dense cluster of many green cartoon frogs leaps dramatically up out of the water — dozens of frogs mid-jump, splashing. Pharaoh and his officials lean back with startled, alarmed expressions, hands raised. Keep the palm trees, reeds, blue river and golden morning light exactly. Storybook flat digital art style, frogs are friendly cartoon-style but numerous, not scary."
+  },
+  {
+    "id": "scene-1/1c",
+    "title": "Frogs swarm and cover the land",
+    "mode": "edit",
+    "model": "nano-banana-pro",
+    "resolution": "2k",
+    "base_scene": "scene-1/1b",
+    "prompt": "Using the provided Nile scene with Pharaoh, his officials, Moses, Aaron and frogs rising: the frog plague is now fully here. The river and every part of the bank are packed with green cartoon frogs — hopping, piling on each other, covering the reeds, the ground and the water's edge in every direction. Pharaoh and his officials wave their hands and grimace in dismay at the swarming frogs. Aaron stands beside Moses, rod held upright; Moses stands calm with his glowing staff. Keep Pharaoh, the officials, Moses and Aaron in their same positions, and keep the palm trees, blue Nile and golden morning light exactly. Storybook flat digital art style, frogs are cute and friendly, not scary."
+  },
+  {
+    "id": "scene-1/1d",
+    "title": "Frogs invade the palace — Pharaoh horrified",
+    "mode": "edit",
+    "model": "nano-banana-pro",
+    "resolution": "2k",
+    "base_scene": "scene-2/2a",
+    "base_project": "gods-power",
+    "prompt": "Using the provided Egyptian palace interior scene with Pharaoh, Moses, Aaron, and magicians: remove Moses, Aaron, and all four magicians entirely — only Pharaoh and the palace interior remain. The entire palace is now overrun with green cartoon frogs: frogs jumping on the floor, frogs on the throne armrests, frogs on the steps, frogs hopping through the air, one frog sitting on top of Pharaoh's golden crown. Pharaoh sits rigid on his throne, hands raised defensively, face scrunched in shocked disgust — looking left and right at the frogs in alarm. Keep the palace columns, wall torches, red carpet and decor exactly. Storybook flat digital art style, frogs are cute cartoon-style, not scary."
+  },
+  {
+    "id": "scene-1/1e",
+    "title": "Magicians also make frogs — they only made it worse!",
+    "mode": "edit",
+    "model": "nano-banana-pro",
+    "resolution": "2k",
+    "chars": [
+      "moses-b",
+      "aaron-a"
+    ],
+    "base_scene": "scene-2/2f",
+    "base_project": "river-turns-to-blood",
+    "prompt": "Using the provided Nile riverbank scene with Pharaoh, Moses, Aaron, and two magicians with clay basins: change the Nile from red to normal calm blue water. Moses (white tunic, emerald green mantle, glowing wooden staff in his right hand) and Aaron (bright yellow priestly robe, colourful gemstone breastplate, golden headband, wooden rod) watch from the side, calm and entirely unimpressed. The ground and bank are now covered in green cartoon frogs from the first wave of the plague. The two magicians each hold their staffs over their clay basins; MORE green cartoon frogs leap OUT of the basins, adding to the chaos — the land piles up even fuller with frogs jumping everywhere. The magicians look confident, as if they have done something impressive. Pharaoh watches with folded arms. Add a caption banner across the very top reading: 'They only made it worse!' Keep the palm trees, reeds and riverbank setting exactly. Storybook flat digital art style."
+  },
+  {
+    "id": "scene-1/1f",
+    "title": "Pharaoh summons Moses — Pray to God! I will let them go!",
+    "mode": "edit",
+    "model": "nano-banana-pro",
+    "resolution": "2k",
+    "chars": [
+      "moses-b",
+      "aaron-a"
+    ],
+    "base_scene": "scene-2/2b",
+    "base_project": "gods-power",
+    "prompt": "Using the provided Egyptian palace scene of Pharaoh standing before Moses and Aaron: remove any existing speech bubble. Moses (white tunic, emerald green mantle, glowing wooden staff upright in his right hand) and Aaron (bright yellow priestly robe, colourful gemstone breastplate, golden headband, wooden rod in his left hand) stand composed and steady, watching Pharaoh. Add a few green cartoon frogs hopping on the palace floor around the characters' feet. Change Pharaoh's posture and expression entirely: he leans forward with both hands clasped together in a desperate pleading gesture, face showing urgent appeal — no longer commanding. Add a large cartoon speech bubble above Pharaoh reading: 'Pray to the Lord! Take the frogs away — I will let your people go to worship him!' Keep the palace interior, columns and decor exactly. Storybook flat digital art style."
+  },
+  {
+    "id": "scene-1/1g",
+    "title": "Moses prays — frogs die and are heaped in smelly piles",
+    "mode": "edit",
+    "model": "nano-banana-pro",
+    "resolution": "2k",
+    "base_scene": "scene-1/1c",
+    "prompt": "Using the provided Nile scene with frogs swarming and Pharaoh, his officials, Moses and Aaron present: all the frogs are now dead, lying still and gathered into heaps along the bank and on the ground. Wavy grey stink-lines and small green smell-clouds rise from the heaps. Pharaoh and his officials pinch their noses and grimace at the stench. Moses stands with both arms raised toward the sky in prayer, eyes closed, face calm and trusting; Aaron beside him with bowed head and closed eyes. The Nile is calm and blue, no frogs in the water. Add a caption banner at the very top reading: 'The land reeked of them.' Storybook flat digital art style."
+  },
+  {
+    "id": "scene-1/1h",
+    "title": "Pharaoh sees relief and hardens his heart",
+    "mode": "edit",
+    "model": "nano-banana-pro",
+    "resolution": "2k",
+    "base_scene": "scene-1/1f",
+    "prompt": "Using the provided palace scene of Pharaoh, Moses, and Aaron with frogs on the floor and Pharaoh pleading: remove all frogs from the floor — the floor is completely clean. Remove Pharaoh's speech bubble. Change Pharaoh's posture completely: he now stands upright, arms folded tightly across his chest, chin raised, expression smug and stubbornly dismissive — satisfied and unbothered. Moses and Aaron watch him calmly and steadily. Add a caption banner across the very top reading: 'When he saw relief, he hardened his heart.' Keep the palace interior exactly. Storybook flat digital art style."
+  },
+  {
+    "id": "scene-2/2a",
+    "title": "God instructs Moses — Moses relays to Aaron (gnats)",
+    "mode": "edit",
+    "model": "nano-banana-pro",
+    "resolution": "2k",
+    "chars": [
+      "moses-b",
+      "aaron-a",
+      "god-a"
+    ],
+    "base_scene": "scene-2/2a",
+    "base_project": "river-turns-to-blood",
+    "prompt": "Using the provided Nile riverbank confrontation scene (Pharaoh, his officials, Moses and Aaron at the blue Nile): KEEP Pharaoh, all his officials, Moses and Aaron exactly as they appear — same faces, same dark brown skin and clean-shaven youthful look for Moses and Aaron, same clothing, Moses's glowing wooden staff, Aaron's colourful gemstone breastplate and golden headband, same positions. Do not move, age, or redraw anyone. Remove Moses's existing speech bubble. Give Moses a NEW speech bubble, turned toward Aaron and pointing down at the dusty ground, reading: 'Strike the dust of the ground!' In the upper area directly above Moses, add a large round cloud-shaped thought/memory bubble connected to Moses by three small thought-bubble circles. INSIDE this memory bubble: place the provided elderly God character as a small framed vision — God (long white hair and beard, glowing white robes, warm golden light radiating all around him) sits on his golden throne and raises one hand gently; a small cartoon speech bubble from God inside the memory cloud reads: 'Tell Aaron: Strike the dust — it will become gnats throughout Egypt!' God appears ONLY inside the memory bubble — he is not standing in the main scene. Keep the blue Nile, palm trees, reeds, sandy shore and golden morning light exactly. Storybook flat digital art style."
+  },
+  {
+    "id": "scene-2/2b",
+    "title": "Aaron strikes the dust — gnats swarm people and animals",
+    "mode": "edit",
+    "model": "nano-banana-pro",
+    "resolution": "2k",
+    "chars": [
+      "moses-b",
+      "aaron-a"
+    ],
+    "base_scene": "scene-2/2a",
+    "prompt": "Using the provided Nile scene with Pharaoh, his officials, Moses, Aaron and the God memory bubble: KEEP everyone in their same positions. Remove Moses's speech bubble AND remove the God memory/thought bubble entirely. MOSES is a YOUNG man with dark brown skin, clean-shaven (NO beard), short cropped hair, white tunic and emerald green mantle — do NOT age him, do NOT give him white hair or a beard; he stays standing upright holding his glowing wooden staff UPRIGHT in his right hand, watching calmly. IMPORTANT — it is AARON who acts, not Moses: Aaron (young man, dark brown skin, bright yellow robe, colourful gemstone breastplate, golden headband) bends forward and strikes his wooden rod firmly against the dusty ground at his feet — a small puff of dust rises from the impact point. Pharaoh (wearing his tall golden-and-blue striped crown) and his officials remain in the scene, swatting frantically at the gnats and covering their faces. A massive, overwhelming cloud of hundreds of tiny dark gnats erupts from the dust and fills the entire scene with thick black buzzing swarms — densely packed and unmistakably visible everywhere: in the air, around every head, on clothing, in every corner. Add a cow and a donkey in the background shaking their heads, clearly distressed. Keep the blue Nile, palm trees and reeds exactly. Storybook flat digital art style."
+  },
+  {
+    "id": "scene-2/2c",
+    "title": "Magicians try and fail — This is the finger of God!",
+    "mode": "edit",
+    "model": "nano-banana-pro",
+    "resolution": "2k",
+    "chars": [
+      "moses-b",
+      "aaron-a"
+    ],
+    "base_scene": "scene-2/2a",
+    "base_project": "gods-power",
+    "prompt": "Using the provided Egyptian palace scene with Pharaoh on his throne, Moses and Aaron standing in the centre-right, and Egyptian magicians: keep Moses and Aaron EXACTLY as they appear in the provided image — same dark brown skin, same clean-shaven youthful faces, same clothing, Moses's glowing wooden staff, Aaron's colourful gemstone breastplate and golden headband — and keep them in their CURRENT positions. Do not move, age, beard, lighten, or redraw Moses or Aaron in any way. Remove Moses's existing speech bubble. Change only the magicians: the Egyptian magicians (white robes, striped Egyptian headdresses) have tried their secret arts and FAILED — their staffs hang loose and useless at their sides, shoulders slumped, faces frustrated and defeated. The magician nearest the centre raises one finger upward; a large cartoon speech bubble above THIS magician reads: 'This is the finger of God!' Pharaoh sits on his throne looking stern and uneasy. Fill the whole palace with a dense, overwhelming swarm of dark gnats — thick swirling black buzzing clouds of gnats blacken the air, coat the magicians, and fill every corner like a dark fog, impossible to miss. Keep the palace columns, torches, hieroglyph walls and all decor exactly. Match the provided image's storybook flat art style, clean bold black outlines, warm vibrant colours."
+  },
+  {
+    "id": "scene-2/2d",
+    "title": "Pharaoh's heart still hard — trouble upon trouble",
+    "mode": "edit",
+    "model": "nano-banana-pro",
+    "resolution": "2k",
+    "base_scene": "scene-2/2c",
+    "prompt": "Using the provided palace scene with Pharaoh on his throne, Moses, Aaron, the four magicians, and the dense gnat swarms filling the palace: remove the speech bubble from the magician. Pharaoh sits with arms firmly crossed and chin raised high, expression stubbornly unmoved — completely unaffected by the magicians' declaration. Moses and Aaron watch steadily. The overwhelming cloud of dark gnats still fills the palace. Add a caption banner across the very top reading: 'Trouble upon trouble — one plague upon another.' Storybook flat digital art style."
+  }
+]
