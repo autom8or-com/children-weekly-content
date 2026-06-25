@@ -24,3 +24,4 @@ slides/projects/*/output/collections/
 slides/projects/*/output/*.zip
 *.pyc
 __pycache__/
+.tmp.driveupload
