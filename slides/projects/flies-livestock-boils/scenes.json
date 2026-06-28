@@ -1,0 +1,203 @@
+[
+  {
+    "id": "scene-0/0a",
+    "title": "Scripture scroll (preamble illustration)",
+    "mode": "text-to-image",
+    "model": "nano-banana-pro",
+    "resolution": "2k",
+    "prompt": "A storybook flat digital illustration, clean bold black outlines and warm vibrant colours on a soft cream background: an ancient papyrus scroll unrolled, with a decorative Egyptian border and faint lines of writing suggested (not legible), a small wax seal and ribbon at the bottom. Gentle, inviting, child-friendly. No real text. Storybook flat digital art style."
+  },
+  {
+    "id": "scene-0/0b",
+    "title": "Recap montage — plagues 1-3 (preamble illustration)",
+    "mode": "text-to-image",
+    "model": "nano-banana-pro",
+    "resolution": "2k",
+    "prompt": "A storybook flat digital illustration, clean bold black outlines and warm vibrant colours, a gentle three-part montage of the first three plagues of Egypt for little children: a Nile river running red, a cluster of friendly green cartoon frogs, and a soft cloud of tiny dark gnats — arranged as a simple triptych against a warm Egyptian backdrop with palms and a pyramid. Cute and non-scary. No text. Storybook flat digital art style."
+  },
+  {
+    "id": "scene-0/0c",
+    "title": "Children in a circle (learning-goals illustration)",
+    "mode": "text-to-image",
+    "model": "nano-banana-pro",
+    "resolution": "2k",
+    "prompt": "A warm storybook flat digital illustration, clean bold black outlines and bright cheerful colours: a small group of happy multi-ethnic pre-school children sitting in a circle on a colourful rug, several raising their hands eagerly, smiling. A cozy Sunday-school classroom feel with soft light. No text. Storybook flat digital art style."
+  },
+  {
+    "id": "scene-1/1a",
+    "title": "God sends Moses — Moses warns Pharaoh at the Nile",
+    "mode": "edit",
+    "model": "nano-banana-pro",
+    "resolution": "2k",
+    "chars": ["moses-b", "aaron-a"],
+    "base_scene": "scene-2/2a",
+    "base_project": "river-turns-to-blood",
+    "prompt": "Using the provided Nile riverbank confrontation scene (Pharaoh, his officials, Moses and Aaron at the blue Nile): KEEP Pharaoh, all his officials, Moses and Aaron exactly as they appear — same faces, same dark brown skin and clean-shaven youthful look for Moses and Aaron, same clothing, Moses's glowing wooden staff, Aaron's gemstone breastplate and golden headband, same positions. Do not move, age or redraw anyone. REMOVE every speech bubble, thought bubble and any text — the scene must be completely clean with NO words, NO speech balloons, NO caption banners. Moses stands tall and raises one hand toward Pharaoh in calm, firm warning. Keep the blue Nile, palm trees, reeds, sandy shore and golden morning light exactly. Storybook flat digital art style."
+  },
+  {
+    "id": "scene-1/1b",
+    "title": "Flies fill an Egyptian home",
+    "mode": "text-to-image",
+    "model": "nano-banana-pro",
+    "resolution": "2k",
+    "prompt": "A storybook flat digital illustration, clean bold black outlines and warm vibrant colours: the inside of an ancient Egyptian home where an Egyptian family — father, mother and a child in simple linen robes — wave their hands and scrunch their faces in dismay. The whole room is OBVIOUSLY SWARMING with flies: thick dense clouds of clearly-drawn black flies with little wings fill the air, crawl thickly all over the table, the bread and the bowls of food, cover the walls and swirl around the family's heads — unmistakably a massive fly infestation, far too many to count. A few large flies in the foreground are drawn big and clear so it is obvious they are flies. Distressed but gentle and child-friendly, not scary. NO text, NO speech bubbles. Storybook flat digital art style."
+  },
+  {
+    "id": "scene-1/1c",
+    "title": "The distinction — Goshen stays clear while Egypt is dark with flies",
+    "mode": "text-to-image",
+    "model": "nano-banana-pro",
+    "resolution": "2k",
+    "prompt": "A storybook flat digital illustration, clean bold black outlines and warm vibrant colours, split into two contrasting halves. LEFT — the land of Goshen: a happy Israelite family with dark brown skin stands smiling outside a tidy sandstone home under a clear bright blue sky with golden sunshine, healthy goats nearby, NOT a single fly. RIGHT — Egypt in the distance: grand Egyptian buildings under a sky darkened by dense black swarms of flies. A clear band of light divides the bright fly-free Goshen from the dark fly-filled Egypt. NO text. Storybook flat digital art style."
+  },
+  {
+    "id": "scene-1/1d",
+    "title": "Pharaoh breaks his promise — flies gone, heart hardened",
+    "mode": "edit",
+    "model": "nano-banana-pro",
+    "resolution": "2k",
+    "chars": ["moses-b", "aaron-a"],
+    "base_scene": "scene-2/2b",
+    "base_project": "gods-power",
+    "prompt": "Using the provided Egyptian palace scene of Pharaoh standing before Moses and Aaron: KEEP Moses and Aaron exactly as they appear — young, dark brown skin, clean-shaven, Moses in white tunic and emerald green mantle with his glowing staff, Aaron in the bright yellow robe with gemstone breastplate and golden headband — same positions; do not age or redraw them. REMOVE every speech bubble and any text — completely clean, NO words. The palace air is clear (no flies). Change Pharaoh's posture: he stands upright with arms folded tightly across his chest, chin raised, expression smug and stubborn. Moses and Aaron watch him calmly. Keep the palace columns, torches and decor exactly. Storybook flat digital art style."
+  },
+  {
+    "id": "scene-1/1e",
+    "title": "Pharaoh the liar — Moses warns him not to lie",
+    "mode": "edit",
+    "model": "nano-banana-pro",
+    "resolution": "2k",
+    "chars": ["moses-b", "aaron-a"],
+    "base_scene": "scene-2/2b",
+    "base_project": "gods-power",
+    "prompt": "Using the provided Egyptian palace scene of Pharaoh standing before Moses and Aaron: KEEP Moses and Aaron exactly as they appear — young, dark brown skin, clean-shaven, Moses in white tunic and emerald green mantle with his glowing staff, Aaron in the bright yellow robe with gemstone breastplate and golden headband — same positions; do not age or redraw them. The palace air is clear (no flies). Change Pharaoh's posture: he leans forward with both palms open and turned upward in a coaxing, falsely-friendly gesture, wearing a sly insincere smile — pretending to make a generous promise he does not mean. Moses stands firm, points one hand toward Pharaoh, and a single clean white storybook speech bubble rises above Moses containing only the short bold words: \"DO NOT LIE!\" — clear, neat, well-spelled cartoon lettering, no other text anywhere. Keep the palace columns, torches and decor exactly. Storybook flat digital art style, clean bold black outlines."
+  },
+  {
+    "id": "scene-2/2a",
+    "title": "Moses warns Pharaoh about the livestock",
+    "mode": "edit",
+    "model": "nano-banana-pro",
+    "resolution": "2k",
+    "chars": ["moses-b", "aaron-a"],
+    "base_scene": "scene-2/2b",
+    "base_project": "gods-power",
+    "prompt": "Using the provided Egyptian palace scene of Pharaoh standing before Moses and Aaron: KEEP Moses and Aaron exactly as they appear — young, dark brown skin, clean-shaven, Moses in white tunic and emerald green mantle with his glowing staff, Aaron in the bright yellow robe with gemstone breastplate and golden headband. REMOVE every speech bubble and any text — completely clean, NO words. Moses raises one hand in solemn warning toward Pharaoh; Pharaoh listens with a stern, unconvinced frown and arms crossed. Keep the palace columns, torches and decor exactly. Storybook flat digital art style."
+  },
+  {
+    "id": "scene-2/2b",
+    "title": "Egyptian livestock fall sick in the field (gentle)",
+    "mode": "text-to-image",
+    "model": "nano-banana-pro",
+    "resolution": "2k",
+    "prompt": "A gentle storybook flat digital illustration, clean bold black outlines and warm colours, of an Egyptian farm field under a hazy sky: the Egyptian farm animals are OBVIOUSLY SICK but in a soft, child-friendly way — cattle, a horse, a donkey, a camel and sheep lie weakly slumped on the ground with droopy ears, half-closed tired eyes, lolling tongues, and little wavy green 'unwell' fumes and sweat-drops rising above them, clearly poorly, weak and listless (NOT bloody, NOT gory, NOT dead — just very sick and droopy). An Egyptian farmer in a simple robe kneels among them looking very worried and sad, one hand resting on a sick cow. Pyramids and palms in the background. The scene clearly and unmistakably reads 'the animals are sick'. NO text. Storybook flat digital art style."
+  },
+  {
+    "id": "scene-2/2c",
+    "title": "The distinction — Israel's herds stay healthy in Goshen",
+    "mode": "text-to-image",
+    "model": "nano-banana-pro",
+    "resolution": "2k",
+    "prompt": "A bright, joyful storybook flat digital illustration, clean bold black outlines and warm vibrant colours, of the land of Goshen under a clear blue sky with golden sunshine: healthy, lively Israelite livestock — strong cattle, a sturdy donkey, woolly sheep and a goat — graze happily on green grass beside a calm stream. A smiling Israelite shepherd boy with dark brown skin tends them with a staff. Tidy sandstone homes and palms behind. Everything safe and healthy. NO text. Storybook flat digital art style."
+  },
+  {
+    "id": "scene-2/2d",
+    "title": "The demarcation — Goshen's herds safe while Egypt's sicken",
+    "mode": "text-to-image",
+    "model": "nano-banana-pro",
+    "resolution": "2k",
+    "prompt": "A storybook flat digital illustration, clean bold black outlines and warm vibrant colours, split into two contrasting halves. LEFT — the land of Goshen: healthy, lively Israelite livestock — strong cattle, a sturdy donkey, woolly sheep and a goat — graze happily on green grass under a clear bright blue sky with golden sunshine; a smiling Israelite shepherd boy with dark brown skin tends them; every animal healthy and strong. RIGHT — Egypt: the same kinds of farm animals lie weakly slumped on dry ground with droopy ears, half-closed tired eyes and little wavy green 'unwell' fumes rising, clearly very sick (NOT bloody, NOT gory, NOT dead — just poorly and droopy), under a hazy darkened sky with pyramids behind. A clear bright band of light divides the healthy Goshen from the sick Egypt. NO text. Storybook flat digital art style."
+  },
+  {
+    "id": "scene-3/3a",
+    "title": "Moses tosses soot toward the sky before Pharaoh",
+    "mode": "edit",
+    "model": "nano-banana-pro",
+    "resolution": "2k",
+    "chars": ["moses-b", "aaron-a"],
+    "base_scene": "scene-2/2a",
+    "base_project": "gods-power",
+    "prompt": "Using the provided Egyptian throne-room scene (Pharaoh seated on his red-and-gold throne, two Egyptian guards in white robes and striped headdresses, Moses and Aaron standing at right): PRESERVE THE EXACT ART STYLE of the provided image — the same warm dark-red and gold palace, the same bold black outlines, the same rich colour palette and warm torch lighting; do NOT lighten, flatten, recolour or restyle it. KEEP Pharaoh, the two guards, Moses and Aaron exactly as they appear — same faces, same dark brown skin and youthful clean-shaven look for Moses and Aaron, Moses in white tunic and emerald green mantle with his glowing wooden staff, Aaron in yellow robe with gemstone breastplate and golden headband — same positions. REMOVE every speech bubble and any text — completely clean, NO words. Change only this: Moses raises one arm and throws a handful of dark grey soot up toward the ceiling, where it scatters into a soft cloud of fine grey dust drifting across the palace. Aaron stands calm beside him; Pharaoh watches from his throne. Keep the columns, torches, hieroglyph walls and decor exactly. Storybook flat digital art style."
+  },
+  {
+    "id": "scene-3/3b",
+    "title": "Soft boils break out on people and animals (gentle)",
+    "mode": "text-to-image",
+    "model": "nano-banana-pro",
+    "resolution": "2k",
+    "prompt": "A gentle, child-friendly storybook flat digital illustration, clean bold black outlines and warm colours, of an Egyptian street: several ordinary Egyptian people in simple robes are OBVIOUSLY covered in boils — lots of clearly-visible round red bumps spread over their arms, faces and legs, drawn as simple soft cartoon red spots (NOT graphic, NOT gory, NOT oozing) — and they wince and touch their sore skin with 'ouch' faces. A donkey nearby is also clearly dotted with red spots. Egyptian buildings and palms behind under a pale sky. The skin-boils plague is unmistakable at a glance. NO text. Storybook flat digital art style."
+  },
+  {
+    "id": "scene-3/3c",
+    "title": "Pharaoh stays hard-hearted; magicians cannot stand",
+    "mode": "edit",
+    "model": "nano-banana-pro",
+    "resolution": "2k",
+    "chars": ["moses-b", "aaron-a"],
+    "base_scene": "scene-2/2b",
+    "base_project": "gods-power",
+    "prompt": "Using the provided Egyptian throne-room scene (Pharaoh standing defiantly by his red-and-gold throne, two Egyptian guards in white robes and striped headdresses, Moses and Aaron standing at right): PRESERVE THE EXACT ART STYLE of the provided image — the same warm dark-red and gold palace, the same bold black outlines, the same rich colour palette and warm torch lighting; do NOT lighten, flatten, recolour or restyle it. There is NO snake and NO animal on the floor — the floor is clear. KEEP Moses and Aaron exactly as they appear — young, dark brown skin, clean-shaven, Moses in white tunic and emerald green mantle with his glowing wooden staff, Aaron in yellow robe with gemstone breastplate and golden headband — standing tall and calm at right, their skin completely CLEAR with NO spots or marks. REMOVE every speech bubble and any text — completely clean, NO words. Change this: Pharaoh stands rigid and proud, arms folded across his chest, chin raised, face hard and stubborn — and he is OBVIOUSLY covered in boils, many clearly-visible round soft red spots over his arms, face and legs (simple cartoon red dots, NOT gory, NOT oozing). The two Egyptian guards are also clearly dotted with red boils and hunch over wincing in discomfort. The boils plague on the Egyptians is unmistakable. Keep the columns, torches, hieroglyph walls and throne exactly. Storybook flat digital art style."
+  },
+  {
+    "id": "scene-4/4a",
+    "title": "Angela's diary — the flies",
+    "mode": "edit",
+    "model": "nano-banana-pro",
+    "resolution": "2k",
+    "chars": ["angela"],
+    "prompt": "Using the provided toddler girl character (Angela — chocolate-brown skin, big cheerful eyes, pink pinafore dress): place her at a lunch table making a big playful disgusted face, leaning back from her plate as a few friendly cartoon flies buzz around her food. Bright, cute, comic and child-friendly, NOT scary. Plain soft lavender background. NO text, NO speech bubbles. Storybook flat digital art style, clean bold black outlines."
+  },
+  {
+    "id": "scene-4/4b",
+    "title": "Angela's diary — the sick animals",
+    "mode": "edit",
+    "model": "nano-banana-pro",
+    "resolution": "2k",
+    "chars": ["angela"],
+    "prompt": "Using the provided toddler girl character (Angela — chocolate-brown skin, pink pinafore dress): show her hugging a soft stuffed toy cow tightly against her chest with a thoughtful, caring, slightly sad and empathetic expression. Gentle and sweet. Plain soft lavender background. NO text, NO speech bubbles. Storybook flat digital art style, clean bold black outlines."
+  },
+  {
+    "id": "scene-4/4c",
+    "title": "Angela's diary — boils / ouchies",
+    "mode": "edit",
+    "model": "nano-banana-pro",
+    "resolution": "2k",
+    "chars": ["angela"],
+    "prompt": "Using the provided toddler girl character (Angela — chocolate-brown skin, pink pinafore dress): show her pointing to a small cartoon bandaid on her knee, making a sympathetic 'ouch but I'm okay' face, a little grateful smile. Cute and gentle. Plain soft lavender background. NO text, NO speech bubbles. Storybook flat digital art style, clean bold black outlines."
+  },
+  {
+    "id": "scene-4/4d",
+    "title": "Angela's diary — what I learned",
+    "mode": "edit",
+    "model": "nano-banana-pro",
+    "resolution": "2k",
+    "chars": ["angela"],
+    "prompt": "Using the provided toddler girl character (Angela — chocolate-brown skin, pink pinafore dress): show her sitting cross-legged, beaming with a big joyful smile and arms spread wide, a warm golden glow of light radiating gently around her. Happy and full of wonder. Plain soft lavender background. NO text, NO speech bubbles. Storybook flat digital art style, clean bold black outlines."
+  },
+  {
+    "id": "scene-4/4e",
+    "title": "Angela's diary — bedtime prayer",
+    "mode": "edit",
+    "model": "nano-banana-pro",
+    "resolution": "2k",
+    "chars": ["angela"],
+    "prompt": "Using the provided toddler girl character (Angela — chocolate-brown skin, pink pinafore dress, or a soft nightgown): show her kneeling beside her little bed at night, hands folded together and eyes gently closed in peaceful prayer, a warm bedside lamp glow and a window with stars behind. Calm and tender. NO text, NO speech bubbles. Storybook flat digital art style, clean bold black outlines."
+  },
+  {
+    "id": "scene-5/5a",
+    "title": "Summary triptych (flies + sick animals + boils)",
+    "mode": "composite",
+    "layout": "3-panel-horizontal",
+    "sources": [
+      "projects/flies-livestock-boils/scenes/scene-1/1b/output.png",
+      "projects/flies-livestock-boils/scenes/scene-2/2b/output.png",
+      "projects/flies-livestock-boils/scenes/scene-3/3b/output.png"
+    ]
+  },
+  {
+    "id": "scene-6/6a",
+    "title": "Diary pull — delayed obedience ('tomorrow' frame from frogs-and-gnats)",
+    "mode": "reuse",
+    "source": "scene-1/1f",
+    "source_project": "frogs-and-gnats"
+  }
+]
