@@ -176,11 +176,25 @@ Valid `position` values for both `pip` and `overlay`: `center`, `center-right`, 
 
 ### build_pptx.py Behaviour
 
-- Prefers `output.png`, falls back to `draft.png` automatically
-- Resolves `reuse` mode scenes by following the `source` pointer in scenes.json
-- `slides.json` controls slide order, theme labels, and optional CTA text slides:
-  - `"cta": null` — image slide only
-  - `"cta": "Question?\n\nAnswer!"` — image slide + white CTA slide; use `\n\n` for paragraph breaks
+`build_pptx.py` auto-detects two deck flavours from `slides.json`:
+
+**Typed lesson deck** (any entry has a `"type"` key) — the storybook lesson format. Two render paths:
+- **Native (default)** — `deck_render.py` builds real PowerPoint shapes + **editable text** boxes, with the illustration placed as a picture. Edit text afterward in PowerPoint or Canva. Close to the mock (exact palette/layout/fonts; uniform card corners, no divider bar). Requires Caveat + Patrick Hand fonts installed on whatever machine opens the file. Embedded illustrations are downscaled to 1600px JPEG (q88) on the way in to keep the `.pptx` light (~5–6MB vs ~95MB at full 2K); originals and `collections.zip` stay full-res. Tune via `IMG_MAX_W` / `IMG_QUALITY` in `deck_render.py`.
+- **Screenshot (`--screenshot`)** — `deck_html.py` renders each slide to standalone 1920×1080 HTML (fonts via Google Fonts, images inlined as data URIs), `playwright-cli` (headless) screenshots it, placed full-bleed. Pixel-perfect to the mock but flat images (not editable). Needs `playwright-cli` + a Chromium + network for the web fonts.
+
+Slide types and fields (`palette` ∈ `preamble|flies|livestock|boils|diary`; inline `**bold**` supported in any text):
+- `title` / `goodbye` — `{eyebrow, title, subtitle?, footer?}` (goodbye = dark bg)
+- `section-header` — `{palette, eyebrow, title, footer}`
+- `verse` — `{eyebrow, title, reference}` (dark bg) · `prayer` — `{eyebrow, title, footer?}`
+- `story-card` — `{palette, chip, title, body:[{text, strong?}], prompt?, image?}`
+- `diary-card` — `{chip, title, body:[{text, strong?}], teacher_note?, signature, image?}` (Angela's voice; Odun authors the text). `teacher_note` renders a teacher-facing band beneath the card; set it to `null` to opt a card out (e.g. a closing prayer card). A diary-card with no `teacher_note` key at all triggers a build `[GUARD]` warning.
+- `summary` — `{palette, chip, title, bullets:[{emoji, text}], prompt?, image?}`
+
+`image` is a `scenes.json` scene id, resolved to its `output.png`/`draft.png` (or via `reuse` source). Omit for text-only slides.
+
+**Legacy image deck** (no `"type"`) — full-bleed scene image + optional CTA text slide. Preserves older projects (frogs-and-gnats, deliverance, etc.):
+- Prefers `output.png`, falls back to `draft.png`; resolves `reuse` scenes via the `source` pointer
+- `"cta": null` — image slide only · `"cta": "Q\n\nA"` — image slide + white CTA slide (`\n\n` = paragraph break)
 
 ### project.json (optional)
 
@@ -195,6 +209,10 @@ When `char_project` is set, character refs not found locally are resolved from t
 ### Prompt Templates
 
 `slides/_templates/character-prompt.md` and `slides/_templates/scene-prompt.md` contain canonical style guides for writing prompts. Read these when starting a new project.
+
+**Starting a new lesson deck:** copy `slides/_templates/brief-template.md` to `slides/projects/<slug>/brief.md` and fill it (or paste a rough brief). The brief is the single story-agnostic intake "request"; it expands into `project.json`, `scenes.json`, `slides.json`, and `lesson-notes.md`. Then run the approval gate before generating.
+
+**Angela's Diary authoring rule (don't drift):** the diary is defined **once** — in the brief's §2 teaching points (mirrored into `lesson-notes.md`). Each teaching point becomes **exactly one** `diary-card` whose body and `teacher_note` are **transcribed** from §2, never invented during `slides.json` authoring. Pull each card's picture from an existing story scene (the point's `pull_slide`), not a bespoke Angela portrait, unless §2 says otherwise. Never resolve an `OPEN DECISION` silently at build time — settle it with Odun first (`build_pptx.py` prints a `[GUARD]` warning if one survives, or if a diary-card is missing its `teacher_note`).
 
 ---
 

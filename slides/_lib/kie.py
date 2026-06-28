@@ -150,13 +150,12 @@ class KieClient:
         p = Path(img)
         if not p.exists():
             return img  # already a URL
-        data = base64.b64encode(p.read_bytes()).decode()
-        suffix = p.suffix.lstrip(".").lower()
-        mime = "image/png" if suffix == "png" else "image/jpeg"
+        raw, mime, fname = self._prep_upload(p)
+        data = base64.b64encode(raw).decode()
         payload = {
             "base64Data": f"data:{mime};base64,{data}",
             "uploadPath": "images/slides-refs",
-            "fileName": p.name,
+            "fileName": fname,
         }
         for attempt in range(1, 4):
             try:
@@ -171,6 +170,35 @@ class KieClient:
         url = resp.json()["data"]["downloadUrl"]
         print(f"  → uploaded {p.name} → {url}")
         return url
+
+    # Reference images only guide identity/layout — full 2K is wasteful and the
+    # large base64 payload times out the upload link. Downscale + JPEG anything big.
+    _UPLOAD_MAX_BYTES = 1_200_000
+    _UPLOAD_MAX_EDGE = 1600
+
+    def _prep_upload(self, p: Path):
+        """Return (bytes, mime, filename) for upload, downscaling large refs."""
+        raw = p.read_bytes()
+        suffix = p.suffix.lstrip(".").lower()
+        mime = "image/png" if suffix == "png" else "image/jpeg"
+        if len(raw) <= self._UPLOAD_MAX_BYTES:
+            return raw, mime, p.name
+        try:
+            import io
+            from PIL import Image
+            im = Image.open(io.BytesIO(raw))
+            im = im.convert("RGB")
+            im.thumbnail((self._UPLOAD_MAX_EDGE, self._UPLOAD_MAX_EDGE), Image.LANCZOS)
+            buf = io.BytesIO()
+            im.save(buf, format="JPEG", quality=88)
+            out = buf.getvalue()
+            print(f"  → downscaled {p.name} for upload "
+                  f"({len(raw)//1024}KB → {len(out)//1024}KB JPEG)")
+            return out, "image/jpeg", p.stem + ".jpg"
+        except Exception as exc:
+            print(f"  → downscale skipped for {p.name} ({exc.__class__.__name__}); "
+                  f"uploading original")
+            return raw, mime, p.name
 
     def _post(self, url: str, payload: dict, label: str) -> dict:
         for attempt in range(1, 4):
