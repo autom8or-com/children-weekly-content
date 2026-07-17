@@ -1,11 +1,11 @@
 {
   "version": "1",
-  "target_date": "2026-06-21",
-  "activity": "QUIZ",
-  "teens_passage": "Acts 26",
-  "preteens_passage": "John 13",
-  "started_at": "2026-06-19T16:27:06Z",
-  "last_updated": "2026-06-19T16:47:40Z",
+  "target_date": "2026-07-19",
+  "activity": "GAME",
+  "teens_passage": "Hebrews 2",
+  "preteens_passage": "John 17",
+  "started_at": "2026-07-17T13:02:14Z",
+  "last_updated": "2026-07-17T13:05:21Z",
   "steps": {
     "rotation_lookup": "done",
     "teens_spec_written": "done",
@@ -19,62 +19,20 @@
   "files": {
     "teens": [
       {
-        "filename": "Quiz_Teens_Variant_A_Acts26.docx",
-        "local_path": "content/teens/2026-06-21_QUIZ_Acts26/Quiz_Teens_Variant_A_Acts26.docx",
-        "file_type": "QUIZ_VARIANT_A",
-        "download_url": "https://nocodb.aiautom8or.com/dltemp/RoQ8wQyuFu-upqjr/1781894400000/tod/2026/06/Quiz_Teens_Variant_A_Acts26_AsIhZ.docx",
-        "nocodb_record_id": 5
-      },
-      {
-        "filename": "Quiz_Teens_Variant_B_Acts26.docx",
-        "local_path": "content/teens/2026-06-21_QUIZ_Acts26/Quiz_Teens_Variant_B_Acts26.docx",
-        "file_type": "QUIZ_VARIANT_B",
-        "download_url": "https://nocodb.aiautom8or.com/dltemp/Lvj276unbkRZqcaa/1781894400000/tod/2026/06/Quiz_Teens_Variant_B_Acts26_hGAus.docx",
-        "nocodb_record_id": 6
-      },
-      {
-        "filename": "Quiz_Teens_Variant_C_Acts26.docx",
-        "local_path": "content/teens/2026-06-21_QUIZ_Acts26/Quiz_Teens_Variant_C_Acts26.docx",
-        "file_type": "QUIZ_VARIANT_C",
-        "download_url": "https://nocodb.aiautom8or.com/dltemp/cUr_uKiwdUxo8XwV/1781894400000/tod/2026/06/Quiz_Teens_Variant_C_Acts26_N7_fy.docx",
-        "nocodb_record_id": 7
-      },
-      {
-        "filename": "Quiz_Teens_Answer_Keys_Acts26.docx",
-        "local_path": "content/teens/2026-06-21_QUIZ_Acts26/Quiz_Teens_Answer_Keys_Acts26.docx",
-        "file_type": "QUIZ_ANSWER_KEYS",
-        "download_url": "https://nocodb.aiautom8or.com/dltemp/6MdiGeDaiK5aZ_3C/1781894400000/tod/2026/06/Quiz_Teens_Answer_Keys_Acts26_v5fAI.docx",
-        "nocodb_record_id": 8
+        "filename": "Game_Teens_Hebrews2.docx",
+        "local_path": "content/teens/2026-07-19_GAME_Hebrews2/Game_Teens_Hebrews2.docx",
+        "file_type": "GAME_SHEET",
+        "download_url": "https://nocodb.aiautom8or.com/dltemp/d9vKsgvq2-xNDOgx/1784301000000/tod/2026/07/Game_Teens_Hebrews2_jGRHp.docx",
+        "nocodb_record_id": 15
       }
     ],
     "preteens": [
       {
-        "filename": "Quiz_Preteens_Variant_A_John13.docx",
-        "local_path": "content/preteens/2026-06-21_QUIZ_John13/Quiz_Preteens_Variant_A_John13.docx",
-        "file_type": "QUIZ_VARIANT_A",
-        "download_url": "https://nocodb.aiautom8or.com/dltemp/M_-StYHTEvFenzL2/1781895000000/tod/2026/06/Quiz_Preteens_Variant_A_John13_YWzag.docx",
-        "nocodb_record_id": 9
-      },
-      {
-        "filename": "Quiz_Preteens_Variant_B_John13.docx",
-        "local_path": "content/preteens/2026-06-21_QUIZ_John13/Quiz_Preteens_Variant_B_John13.docx",
-        "file_type": "QUIZ_VARIANT_B",
-        "download_url": "https://nocodb.aiautom8or.com/dltemp/24OfzLDgA5hDeT6B/1781895000000/tod/2026/06/Quiz_Preteens_Variant_B_John13_lKLL5.docx",
-        "nocodb_record_id": 10
-      },
-      {
-        "filename": "Quiz_Preteens_Variant_C_John13.docx",
-        "local_path": "content/preteens/2026-06-21_QUIZ_John13/Quiz_Preteens_Variant_C_John13.docx",
-        "file_type": "QUIZ_VARIANT_C",
-        "download_url": "https://nocodb.aiautom8or.com/dltemp/vq_cla9ctAkM2C8Q/1781895000000/tod/2026/06/Quiz_Preteens_Variant_C_John13_-1gHY.docx",
-        "nocodb_record_id": 11
-      },
-      {
-        "filename": "Quiz_Preteens_Answer_Keys_John13.docx",
-        "local_path": "content/preteens/2026-06-21_QUIZ_John13/Quiz_Preteens_Answer_Keys_John13.docx",
-        "file_type": "QUIZ_ANSWER_KEYS",
-        "download_url": "https://nocodb.aiautom8or.com/dltemp/Qu7EZGYt9XbSXzMS/1781895000000/tod/2026/06/Quiz_Preteens_Answer_Keys_John13_8PXao.docx",
-        "nocodb_record_id": 12
+        "filename": "Game_Preteens_John17.docx",
+        "local_path": "content/preteens/2026-07-19_GAME_John17/Game_Preteens_John17.docx",
+        "file_type": "GAME_SHEET",
+        "download_url": "https://nocodb.aiautom8or.com/dltemp/SrGcbxJYWUL_5EUQ/1784301000000/tod/2026/07/Game_Preteens_John17_UT15k.docx",
+        "nocodb_record_id": 16
       }
     ]
   }
