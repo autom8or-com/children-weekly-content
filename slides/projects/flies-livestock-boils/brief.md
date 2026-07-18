@@ -10,11 +10,18 @@
 ## 2. Lesson (the teaching spine)
 - theme (one line):     Incomplete / partial obedience
 - memory verse:         "You have turned against God. That is worse than using magic." — 1 Samuel 15:23 (EASY)
+- bible text:           Exodus 8:20-28; Exodus 8:29-9:12     # full passages → two bible-text slides
+- objectives:           # → objectives slide
+    - Retell the plagues of flies, sick animals, and boils
+    - Explain what incomplete obedience means
+    - Describe how God kept His people safe (the distinction at Goshen)
+    - Choose to obey God fully and right away
 - big questions:
     - What happened when more plagues came?
     - How did God keep His people safe each time?
     - Why is saying "yes" to God but not doing it still saying "no"?
 - angela study title:   Sneaky Pharaoh
+- application:          "You cannot worship God as a slave to sin" — Pharaoh was a slave to sin; the A-B-C rescue follows
 - teaching points:      # the 4 ways Pharaoh dodged full obedience (teacher-level; lives in lesson-notes.md)
     - point:        Sacrifice here in Egypt
       teacher_note: Egyptians would stone them (Exo 8:26) — obedience on Pharaoh's terms, a possible trap
@@ -59,11 +66,12 @@
 - Soft red boils break out on people and animals
 - Pharaoh stays hard-hearted, magicians can't stand
 
-## 6. Deck sections (27 slides)
-- preamble:   title, scripture, last-week-recap, learning-goals, memory-verse, prayer
+## 6. Deck sections (32 slides)
+- open:       {include:welcome} + {include:let-us-pray} + {include:house-rules}   # boilerplate partials
+- preamble:   last-week-recap, objectives, topic (Incomplete Obedience), outlines, memory-verse, bible-text ×2, big-questions
 - per-plague: section header + story-cards (4 flies, 3 livestock, 3 boils)
-- angela:     header + one diary-card per §2 teaching point (each carries its own teacher_note, transcribed from §2 / lesson-notes.md) + a closing prayer card. Pull pictures from existing story scenes, NOT bespoke Angela portraits.
-- wrap:       summary, goodbye
+- angela:     header (thumbs: 1e, 2d) + one diary-card per §2 teaching point. teacher_note → speaker-notes pane. Pull pictures from existing story scenes, NOT bespoke Angela portraits.
+- wrap:       application (A-B-C), summary, goodbye
 
 ## 7. Constraints
 - scene budget:   18 illustrations (13 text-to-image, 5 edit) + 1 PIL composite

@@ -1,10 +1,12 @@
 <!--
-CAPTURE of content found in flies-livestock-boils-final.pptx (Odun's hand-polished
-deck) that the pipeline does NOT yet produce. Verbatim source for the slide-type
-build-out. Typos from the deck are FIXED here and noted. Once the new slide types
-exist in deck_render.py + deck_html.py and the brief feeds them, this file is the
-authoritative copy. Carried-over TEXT edits were already backported into slides.json
-(diary #2 reworded, verse → 1 Sam 15:23, goodbye → "Next Week").
+STATUS (2026-06-28): IMPLEMENTED. The slide types below now exist in deck_render.py +
+deck_html.py, the boilerplate is in _templates/partials/, and slides.json was rebuilt
+to the 32-slide structure — the regenerated deck matches final.pptx 1:1. Kept as the
+authoring reference for these types and the verbatim Bible passages.
+
+CAPTURE of content from flies-livestock-boils-final.pptx (Odun's hand-polished deck).
+Deck typos were FIXED on the way in ("your sis"→"your sins"). Carried-over text edits
+were backported into slides.json (diary #2 reworded, verse → 1 Sam 15:23, goodbye → "Next Week").
 -->
 
 # Final-deck content not yet in the pipeline
