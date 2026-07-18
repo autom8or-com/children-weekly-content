@@ -1,0 +1,113 @@
+[
+  { "include": "welcome" },
+  { "include": "let-us-pray" },
+  { "include": "house-rules" },
+
+  { "type": "title", "eyebrow": "✦ LET'S REMEMBER ✦", "title": "The Ten Plagues",
+    "subtitle": "A Look-and-Guess Revision", "footer": "Point to the picture and shout the answer!" },
+
+  { "type": "section", "palette": "preamble", "eyebrow": "PART 1",
+    "title": "Who Is This?", "footer": "Look at the friend and guess the name!" },
+
+  { "type": "qa-question", "palette": "preamble", "question": "Who is this?",
+    "hint": "Hint: he holds God's special stick.",
+    "image": "projects/character-variants/characters/moses-b/reference.png" },
+  { "type": "qa-answer", "palette": "preamble", "answer": "MOSES!",
+    "lesson": "God sent him to say, \"Let my people go!\"" },
+
+  { "type": "qa-question", "palette": "flies", "question": "Who is this?",
+    "hint": "Hint: Moses' big brother who helps him.",
+    "image": "projects/character-variants/characters/aaron-a/reference.png" },
+  { "type": "qa-answer", "palette": "flies", "answer": "AARON!",
+    "lesson": "He stretched out the rod for God." },
+
+  { "type": "qa-question", "palette": "diary", "question": "Who is this?",
+    "hint": "Hint: she writes in her diary.",
+    "image": "projects/flies-livestock-boils/scenes/scene-4/4d/output.png" },
+  { "type": "qa-answer", "palette": "diary", "answer": "ANGELA!",
+    "lesson": "She finds a lesson in every story." },
+
+  { "type": "qa-question", "palette": "boils", "question": "Who is this?",
+    "hint": "Hint: the king who kept saying NO.",
+    "image": "projects/revision/assets/pharaoh.png" },
+  { "type": "qa-answer", "palette": "boils", "answer": "PHARAOH!",
+    "lesson": "His hard heart brought big trouble." },
+
+  { "type": "section", "palette": "boils", "eyebrow": "PART 2",
+    "title": "What Plague Is This?", "footer": "Ten times God showed His power!" },
+
+  { "type": "qa-question", "palette": "boils", "question": "What plague is this?",
+    "hint": "Look at the river!",
+    "image": "projects/river-turns-to-blood/scenes/scene-2/2c/output.png" },
+  { "type": "qa-answer", "palette": "boils", "answer": "BLOOD!",
+    "lesson": "God is the only true God." },
+
+  { "type": "qa-question", "palette": "livestock", "question": "What plague is this?",
+    "hint": "What is hopping everywhere?",
+    "image": "projects/frogs-and-gnats/scenes/scene-1/1c/output.png" },
+  { "type": "qa-answer", "palette": "livestock", "answer": "FROGS!",
+    "lesson": "Obey God today, not \"tomorrow\"." },
+
+  { "type": "qa-question", "palette": "preamble", "question": "What plague is this?",
+    "hint": "What is in the air?",
+    "image": "projects/frogs-and-gnats/scenes/scene-2/2b/output.png" },
+  { "type": "qa-answer", "palette": "preamble", "answer": "GNATS!",
+    "lesson": "Only God can do this." },
+
+  { "type": "qa-question", "palette": "flies", "question": "What plague is this?",
+    "hint": "What fills the house?",
+    "image": "projects/flies-livestock-boils/scenes/scene-1/1b/output.png" },
+  { "type": "qa-answer", "palette": "flies", "answer": "FLIES!",
+    "lesson": "God keeps His people safe." },
+
+  { "type": "qa-question", "palette": "livestock", "question": "What plague is this?",
+    "hint": "What happened to the animals?",
+    "image": "projects/flies-livestock-boils/scenes/scene-2/2b/output.png" },
+  { "type": "qa-answer", "palette": "livestock", "answer": "SICK ANIMALS!",
+    "lesson": "God protects us." },
+
+  { "type": "qa-question", "palette": "boils", "question": "What plague is this?",
+    "hint": "What is on their skin?",
+    "image": "projects/flies-livestock-boils/scenes/scene-3/3b/output.png" },
+  { "type": "qa-answer", "palette": "boils", "answer": "BOILS!",
+    "lesson": "No one can beat God." },
+
+  { "type": "qa-question", "palette": "preamble", "question": "What plague is this?",
+    "hint": "What is falling from the sky?",
+    "image": "projects/hail-locusts-darkness/scenes/scene-1/1c/output.png" },
+  { "type": "qa-answer", "palette": "preamble", "answer": "HAIL!",
+    "lesson": "Believe God's word." },
+
+  { "type": "qa-question", "palette": "flies", "question": "What plague is this?",
+    "hint": "What is eating the plants?",
+    "image": "projects/hail-locusts-darkness/scenes/scene-2/2c/output.png" },
+  { "type": "qa-answer", "palette": "flies", "answer": "LOCUSTS!",
+    "lesson": "A hard heart brings trouble." },
+
+  { "type": "qa-question", "palette": "preamble", "question": "What plague is this?",
+    "hint": "Why is it so dark?",
+    "image": "projects/hail-locusts-darkness/scenes/scene-3/3a/output.png" },
+  { "type": "qa-answer", "palette": "preamble", "answer": "DARKNESS!",
+    "lesson": "God gives us light." },
+
+  { "type": "qa-question", "palette": "boils", "question": "What plague is this?",
+    "hint": "What is on the door?",
+    "image": "projects/passover/scenes/scene-1/1c/output.png" },
+  { "type": "qa-answer", "palette": "boils", "answer": "PASSOVER!",
+    "lesson": "The lamb's blood keeps us safe — it shows us Jesus." },
+
+  { "type": "section", "palette": "diary", "eyebrow": "PART 3",
+    "title": "What We Learned", "footer": "One lesson from every story!" },
+
+  { "type": "diary-list", "title": "Angela's Diary Lessons",
+    "items": [
+      { "emoji": "🩸", "story": "The River", "lesson": "God alone is the true God." },
+      { "emoji": "🐸", "story": "Frogs & Gnats", "lesson": "Obey today, never \"tomorrow\"." },
+      { "emoji": "🪰", "story": "Flies, Animals & Boils", "lesson": "Obeying halfway is still saying \"no\"." },
+      { "emoji": "💡", "story": "Hail, Locusts & Darkness", "lesson": "I carry God's light in a dark world." },
+      { "emoji": "🐑", "story": "The Passover", "lesson": "The blood of Jesus is my sign; I belong to God." }
+    ] },
+
+  { "type": "goodbye", "eyebrow": "✦ WELL DONE ✦", "title": "You Remembered!",
+    "subtitle": "God is stronger than anything.", "footer": "See you next week!" }
+]

@@ -41,3 +41,5 @@ videos/*/public/assets/
 videos/*/public/audio/
 videos/*/out/
 videos/**/*.mp4
+# revision deck writes Revision.pptx to project root (reproducible artifact)
+slides/projects/*/*.pptx
