@@ -1,0 +1,12 @@
+{
+  "type": "house-rules",
+  "palette": "preamble",
+  "chip": "📋 Before We Begin",
+  "title": "House Rules",
+  "rules": [
+    {"emoji": "🪑", "text": "Sit still during the class"},
+    {"emoji": "🔇", "text": "Keep your microphone muted unless your teacher tells you to unmute"},
+    {"emoji": "🧑‍🤝‍🧑", "text": "There should be an adult close to you"},
+    {"emoji": "📹", "text": "Keep your video on at all times"}
+  ]
+}

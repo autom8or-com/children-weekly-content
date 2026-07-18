@@ -93,6 +93,28 @@ def _pw(*args) -> subprocess.CompletedProcess:
                           capture_output=True, text=True)
 
 
+def _resolve_slide_images(s, resolve_image, idx=None):
+    """Deep-resolve every image ref in a slide dict to an absolute path string (or None).
+    The screenshot path inlines images and can't call resolve_image itself, so top-level
+    `image` plus nested refs (thumbs, outline items, rule icons) are resolved here."""
+    def R(v):
+        if not v:
+            return None
+        p = resolve_image(v)
+        if p is None and idx is not None:
+            print(f"[WARN]  slide {idx} — image '{v}' not found, placeholder used")
+        return str(p) if p else None
+    if "image" in s:
+        s["image"] = R(s["image"])
+    if "thumbs" in s:
+        s["thumbs"] = [R(t) for t in s["thumbs"]]
+    if "items" in s:
+        s["items"] = [{**it, "image": R(it.get("image"))} for it in s["items"]]
+    if "rules" in s:
+        s["rules"] = [{**r, "icon": R(r.get("icon"))} for r in s["rules"]]
+    return s
+
+
 def render_typed_deck(slides_meta, resolve_image) -> list[Path]:
     """Render each typed slide to a 1920x1080 PNG. Returns ordered PNG paths."""
     work = Path(tempfile.mkdtemp(prefix="deckbuild-"))
@@ -103,12 +125,7 @@ def render_typed_deck(slides_meta, resolve_image) -> list[Path]:
 
     # 1. write standalone HTML per slide (images inlined as data URIs)
     for i, slide in enumerate(slides_meta, 1):
-        s = dict(slide)
-        if s.get("image"):
-            resolved = resolve_image(s["image"])
-            s["image"] = str(resolved) if resolved else None
-            if resolved is None:
-                print(f"[WARN]  slide {i} ({slide.get('image')}) — image not found, placeholder used")
+        s = _resolve_slide_images(dict(slide), resolve_image, i)
         (html_dir / f"slide-{i:02d}.html").write_text(deck_html.render_slide_html(s))
 
     # 2. serve the html dir (playwright blocks file://)
@@ -192,6 +209,12 @@ def build_collections(project: Path, scene_ids, resolve_image) -> None:
 
 def make_resolver(project: Path, scenes_by_id):
     def resolve_image(slide_id: str):
+        # static asset (icons, decorations) — a path, not an AI scene id.
+        # e.g. "_assets/icons/mute.png" or "projects/foo/extras/art.png", relative to slides/.
+        if slide_id and ("/" in slide_id and slide_id.rsplit(".", 1)[-1].lower() in
+                         ("png", "jpg", "jpeg", "webp", "svg")):
+            p = (SLIDES_DIR / slide_id) if not Path(slide_id).is_absolute() else Path(slide_id)
+            return p if p.exists() else None
         scene = scenes_by_id.get(slide_id, {})
         mode = scene.get("mode", "")
         if mode == "reuse":
@@ -211,6 +234,28 @@ def make_resolver(project: Path, scenes_by_id):
     return resolve_image
 
 
+def expand_includes(slides_meta):
+    """Replace {"include": "name"} entries with the partial at _templates/partials/name.json.
+
+    Boilerplate slides (house rules, opening prayer, ...) live once as partials so a
+    project's slides.json references them instead of restating their content.
+    """
+    partials_dir = SLIDES_DIR / "_templates" / "partials"
+    out = []
+    for s in slides_meta:
+        if "include" in s:
+            pf = partials_dir / f"{s['include']}.json"
+            if not pf.exists():
+                print(f"[WARN]  include '{s['include']}' not found at {pf}")
+                continue
+            partial = json.loads(pf.read_text())
+            partial.update({k: v for k, v in s.items() if k != "include"})  # allow overrides
+            out.append(partial)
+        else:
+            out.append(s)
+    return out
+
+
 def build_deck(project_name: str, out_name: str | None = None, native: bool = True) -> Path:
     project = SLIDES_DIR / "projects" / project_name
     slides_file = project / "slides.json"
@@ -218,7 +263,7 @@ def build_deck(project_name: str, out_name: str | None = None, native: bool = Tr
         print(f"[ERROR] {slides_file} not found")
         sys.exit(1)
 
-    slides_meta = json.loads(slides_file.read_text())
+    slides_meta = expand_includes(json.loads(slides_file.read_text()))
 
     scenes_file = project / "scenes.json"
     scenes_by_id = {}

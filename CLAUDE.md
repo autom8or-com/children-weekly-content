@@ -150,6 +150,8 @@ Selection precedence: `--provider kie|wavespeed` flag → `"provider"` field in 
 
 **Content filter rule:** Passing a child character reference image + a distress/conflict prompt triggers WaveSpeed safety filters. Use `text-to-image` (no `chars[]`) for scenes involving fear, conflict, or physical contact, describing the character inline instead.
 
+**Dialogue-in-image rule (default clean, bubbles sparingly):** Illustrations default to CLEAN scene art — the slide's text card carries the words. But a baked-in speech/thought bubble (or a banner where a bubble won't fit) is allowed **only where a single spoken line IS the teaching** (a key warning, an ironic confession) — used sparingly, never on every scene, and never on impact/spectacle scenes (a plague striking, a crowd, a split-panel distinction), which stay wordless. When a bubble is used: keep it ≤6 words, quote the exact text in the prompt with "neat, correctly-spelled cartoon lettering" (models garble long text), and trim the story-card body so it narrates *around* the quote rather than echoing it.
+
 **Sequential scenes in the same setting** must be chained via `base_scene`, not generated independently, to maintain consistent location and crowd across slides.
 
 ### PIL Post-Processing
@@ -183,14 +185,22 @@ Valid `position` values for both `pip` and `overlay`: `center`, `center-right`, 
 - **Screenshot (`--screenshot`)** — `deck_html.py` renders each slide to standalone 1920×1080 HTML (fonts via Google Fonts, images inlined as data URIs), `playwright-cli` (headless) screenshots it, placed full-bleed. Pixel-perfect to the mock but flat images (not editable). Needs `playwright-cli` + a Chromium + network for the web fonts.
 
 Slide types and fields (`palette` ∈ `preamble|flies|livestock|boils|diary`; inline `**bold**` supported in any text):
-- `title` / `goodbye` — `{eyebrow, title, subtitle?, footer?}` (goodbye = dark bg)
-- `section-header` — `{palette, eyebrow, title, footer}`
-- `verse` — `{eyebrow, title, reference}` (dark bg) · `prayer` — `{eyebrow, title, footer?}`
+- `title` / `goodbye` — `{eyebrow, title, subtitle?, date?, footer?, image?}` (goodbye = dark bg). `date: "auto"` fills today's date (e.g. "28th June 2026").
+- `topic` — `{eyebrow?, title, image?}` standalone topic bookend (dark bg; eyebrow defaults to "✦ TOPIC ✦")
+- `section-header` — `{palette, eyebrow, title, footer, thumbs?:[scene_id]}` (thumbs = decorative thumbnail row)
+- `verse` — `{eyebrow, title, reference, image?}` (dark bg) · `prayer` — `{eyebrow, title, footer?, image?}`
+- `house-rules` — `{palette?, chip?, title?, rules:[{emoji|icon, text}]}` (boilerplate; usually via the `house-rules` partial)
+- `objectives` — `{palette?, chip?, title?, lead?, bullets:[{emoji, text}], image?}`
+- `outlines` — `{palette?, chip?, title?, items:[{label, image?}]}` (agenda grid; thumbs are story scenes)
+- `bible-text` — `{eyebrow?, reference, body:[paragraph…], columns?:1|2}` (long scripture; 2 columns if multi-paragraph)
+- `application` — `{title?, intro:[line…], steps_lead?, steps?:[{letter, text}], image?}` — altar-call slide; `steps` defaults to the A-B-C of salvation
 - `story-card` — `{palette, chip, title, body:[{text, strong?}], prompt?, image?}`
-- `diary-card` — `{chip, title, body:[{text, strong?}], teacher_note?, signature, image?}` (Angela's voice; Odun authors the text). `teacher_note` renders a teacher-facing band beneath the card; set it to `null` to opt a card out (e.g. a closing prayer card). A diary-card with no `teacher_note` key at all triggers a build `[GUARD]` warning.
+- `diary-card` — `{chip, title, body:[{text, strong?}], teacher_note?, signature, image?}` (Angela's voice; Odun authors the text). `teacher_note` is written to the slide's **speaker-notes pane** in the native deck (teacher sees it, kids don't; omitted from screenshot decks); set it to `null` to opt a card out. A diary-card with no `teacher_note` key triggers a build `[GUARD]` warning.
 - `summary` — `{palette, chip, title, bullets:[{emoji, text}], prompt?, image?}`
 
-`image` is a `scenes.json` scene id, resolved to its `output.png`/`draft.png` (or via `reuse` source). Omit for text-only slides.
+`image` (and `thumbs[]`, `items[].image`, `rules[].icon`) is either a `scenes.json` scene id (→ its `output.png`/`draft.png`, or a `reuse` source) **or a static-asset path** ending in an image extension (e.g. `_assets/icons/mute.png`), resolved relative to `slides/`. Omit for text-only slides.
+
+**Boilerplate partials** — repeating slides (weekly welcome, opening prayer, house rules) live once under `slides/_templates/partials/<name>.json`; a project references them in `slides.json` with `{"include": "<name>"}` (extra keys on the include override the partial). Available: `welcome`, `let-us-pray`, `house-rules`. The renderers (`deck_render.py` native + `deck_html.py` screenshot) are kept in lockstep — any new slide type must be added to **both**.
 
 **Legacy image deck** (no `"type"`) — full-bleed scene image + optional CTA text slide. Preserves older projects (frogs-and-gnats, deliverance, etc.):
 - Prefers `output.png`, falls back to `draft.png`; resolves `reuse` scenes via the `source` pointer

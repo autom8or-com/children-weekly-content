@@ -32,11 +32,16 @@ usually wrong. build_pptx.py prints a [GUARD] warning if "OPEN DECISION" survive
 
 ## 2. Lesson (the teaching spine)
 - theme (one line):     <the single idea this week, e.g. Incomplete obedience>
-- memory verse:         <"verse text" — Reference>
+- memory verse:         <"verse text" — Reference>      # → verse slide
+- bible text:           <passage(s), e.g. Exodus 8:20-28; 8:29-9:12>   # → bible-text slide(s), full passage
+- objectives:           # → objectives slide ("children will be able to…")
+    - <objective 1>
+    - <objective 2>
 - big questions:        # 2-3 kid-level questions the lesson answers
     - <question 1>
     - <question 2>
 - angela study title:   <Angela's diary headline, e.g. Sneaky Pharaoh>
+- application:          <one-line altar-call framing; A-B-C rescue steps are added automatically>
 - teaching points:      # one block per point Angela will document
     - point:         <short label>
       teacher_note:  <the deeper why, for the teacher>
@@ -57,24 +62,33 @@ usually wrong. build_pptx.py prints a [GUARD] warning if "OPEN DECISION" survive
 # character in a cross-edit (forces a redraw + appearance drift).
 
 ## 5. Story beats  (ordered → become illustrations + story slides)
-# One line per narrative moment. Keep illustrations CLEAN scene art — the words
-# live on the slide's text card, NOT baked into the image (no speech bubbles).
+# One line per narrative moment. Illustrations default to CLEAN scene art — the words
+# live on the slide's text card. EXCEPTION: bake in a short speech/thought bubble (or a
+# banner if unavoidable) ONLY where one spoken line IS the teaching — sparingly, never on
+# impact/spectacle scenes. Bubble ≤6 words, quoted exactly in the prompt; trim the card
+# text so it narrates around the quote, no echo. (See CLAUDE.md "Dialogue-in-image rule".)
 - 1: <beat>
 - 2: <beat>
 - 3: <beat>
 
 ## 6. Deck sections  (include / drop; order runs top → bottom)
-- preamble:   [ title, scripture, last-week-recap, learning-goals, memory-verse, prayer ]
+- open:       [ {include:welcome}, {include:let-us-pray}, {include:house-rules} ]  # boilerplate partials
+- preamble:   [ last-week-recap, objectives, topic, outlines, memory-verse, bible-text×N, big-questions ]
 - per-story:  header + story-cards            # auto-built from §5 beats
-- angela:     [ header, ONE diary-card per §2 teaching point, closing prayer ]
-- wrap:       [ summary, goodbye ]
+- angela:     [ header (thumbs?), ONE diary-card per §2 teaching point ]
+- wrap:       [ application, summary, goodbye ]
+# BOILERPLATE: welcome / let-us-pray / house-rules are partials in _templates/partials/ —
+# reference with {"include":"name"} (override keys inline), never restate their content.
+# application `steps` default to the A-B-C of salvation; supply only the §2 application line.
 # DIARY RULE: the diary is defined ONCE — in §2 teaching points. Each teaching
 # point becomes exactly one diary-card whose body + teacher_note are TRANSCRIBED
 # from §2 (and lesson-notes.md), never invented during slides.json authoring. Do
 # not restate a competing diary card-list here. Pull each card's picture from an
 # existing story scene (§2 pull_slide), not a bespoke portrait, unless §2 says so.
-# Slide types available: title · section-header · story-card · verse · prayer ·
-# diary-card · summary · goodbye.  Palettes: preamble | flies | livestock | boils | diary
+# teacher_note → speaker-notes pane (native), not the slide face.
+# Slide types: title · topic · section-header · story-card · verse · prayer · diary-card ·
+# summary · house-rules · objectives · outlines · bible-text · application · goodbye.
+# Palettes: preamble | flies | livestock | boils | diary
 
 ## 7. Constraints
 - scene budget:     <approx # of illustrations>
