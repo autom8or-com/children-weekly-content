@@ -1,0 +1,138 @@
+[
+  {
+    "id": "scene-0/0a",
+    "title": "Last week recap — flies, sick animals, boils (reuse of flies triptych)",
+    "mode": "reuse",
+    "source": "scene-5/5a",
+    "source_project": "flies-livestock-boils"
+  },
+  {
+    "id": "scene-0/0b",
+    "title": "Children in a circle (learning-goals illustration, reuse)",
+    "mode": "reuse",
+    "source": "scene-0/0c",
+    "source_project": "flies-livestock-boils"
+  },
+  {
+    "id": "scene-1/1a",
+    "title": "God's final warning — Moses warns Pharaoh at dawn (hail)",
+    "mode": "edit",
+    "model": "nano-banana-pro",
+    "resolution": "2k",
+    "chars": ["moses-b", "aaron-a"],
+    "base_scene": "scene-1/1a",
+    "base_project": "flies-livestock-boils",
+    "prompt": "Using the provided sunrise Nile-riverbank scene (Pharaoh in his golden crown and three Egyptian officials in white robes and striped headdresses at left; young Moses in white tunic and emerald-green mantle holding his tall wooden staff with a soft warm glow at the top, and young Aaron in a sunshine-yellow robe with a colourful gemstone breastplate and golden headband at right; blue Nile, reeds, palms, golden sunrise): KEEP every character EXACTLY as they appear — same child faces, dark brown skin, same clothing, Moses's glowing staff, Aaron's gemstone breastplate and golden headband, same positions. Do not move, age or redraw anyone. Change only this: Moses stands tall and raises one hand toward Pharaoh in a calm, firm, urgent warning, and ONE clean white oval cartoon speech bubble rises from Moses containing ONLY the neat, clearly and correctly-spelled words: \"Let my people go!\" — no other text, letters, bubbles or banners anywhere in the image; Pharaoh listens with a stern frown. Keep the blue Nile, reeds, palms, sandy shore and golden morning light exactly. Storybook flat digital art style, clean bold black outlines, warm vibrant colours."
+  },
+  {
+    "id": "scene-1/1b",
+    "title": "Bring everything inside — those who feared vs ignored the warning",
+    "mode": "text-to-image",
+    "model": "nano-banana-pro",
+    "resolution": "2k",
+    "prompt": "A storybook flat digital illustration, clean bold black outlines and warm vibrant colours, split into two clear halves under a dark, gathering storm sky just before a storm. LEFT — a wise Egyptian farmer who FEARED God's word hurries his servants and his farm animals (cattle, a donkey, sheep) safely INSIDE a sturdy sandstone barn, everyone sheltered and calm. RIGHT — a careless Egyptian farmer who IGNORED the warning leaves his servants and animals standing out in the open field, looking up worried at the fast-darkening sky. Heavy grey-purple storm clouds roll overhead. The contrast between the sheltered ones and the exposed ones is clear. NO text, NO speech bubbles. Storybook flat digital art style."
+  },
+  {
+    "id": "scene-1/1c",
+    "title": "Hail and fire crash down on Egypt (honest impact, no injury shown)",
+    "mode": "text-to-image",
+    "model": "nano-banana-pro",
+    "resolution": "2k",
+    "prompt": "A dramatic storybook flat digital illustration, clean bold black outlines and vivid colours, of the great hailstorm striking Egypt: big chunks of white hail and bright streaks of fire pour down from a dark thundercloud-filled sky, jagged lightning flashing, hailstones bouncing hard across an Egyptian farmland. Crops are flattened, tree branches snapped and knocked down, a wooden fence broken. The storm is powerful, loud and unmistakable. NO people or animals are shown being hurt — only the empty fields, plants and trees take the damage. Awe-inspiring and mighty but NOT gory. NO text, NO speech bubbles. Storybook flat digital art style."
+  },
+  {
+    "id": "scene-1/1d",
+    "title": "Safe in Goshen — hail everywhere in Egypt but not on God's people",
+    "mode": "text-to-image",
+    "model": "nano-banana-pro",
+    "resolution": "2k",
+    "prompt": "A storybook flat digital illustration, clean bold black outlines and warm vibrant colours, split into two contrasting halves. LEFT — the land of Goshen: a calm bright blue sky with golden sunshine over a tidy Israelite village, green fields and healthy trees, an Israelite family with dark brown skin standing safe and happy outside their home, NOT a single hailstone. RIGHT — Egypt in the same moment: battered by a violent hailstorm, white hail and fire crashing down from a black stormy sky onto flattened crops and broken trees. A clear bright band of light divides the peaceful sunny Goshen from the storm-struck Egypt. NO text. Storybook flat digital art style."
+  },
+  {
+    "id": "scene-1/1e",
+    "title": "Pharaoh's fake sorry — false confession before he hardens again",
+    "mode": "edit",
+    "model": "nano-banana-pro",
+    "resolution": "2k",
+    "chars": ["moses-b", "aaron-a"],
+    "base_scene": "scene-2/2a",
+    "base_project": "flies-livestock-boils",
+    "prompt": "Using the provided Egyptian palace throne-room scene (Pharaoh in his golden crown, his red-and-gold throne, two Egyptian officials in white robes and striped headdresses, young Moses in white tunic and emerald-green mantle holding his glowing wooden staff, and young Aaron in a sunshine-yellow robe with gemstone breastplate and golden headband): PRESERVE THE EXACT ART STYLE of the provided image — the same warm palace, bold black outlines, rich colour palette and torch lighting; do NOT lighten, flatten, recolour or restyle it. KEEP Moses and Aaron EXACTLY as they appear — same child faces, dark brown skin, same clothing and props, same positions; do not age or redraw them. Change Pharaoh: he clasps both hands to his chest and bows his head slightly with an exaggerated, theatrical 'I am so sorry' expression — pretending to be repentant but insincere — and ONE clean white oval cartoon speech bubble rises from Pharaoh containing ONLY the neat, clearly and correctly-spelled words: \"This time I have sinned!\" — no other text, letters, bubbles or banners anywhere in the image. Moses and Aaron stand calm and watchful, unconvinced. Keep the columns, torches, hieroglyph walls and throne exactly. Storybook flat digital art style."
+  },
+  {
+    "id": "scene-2/2a",
+    "title": "Not a leaf will be left — Moses declares the locust warning",
+    "mode": "edit",
+    "model": "nano-banana-pro",
+    "resolution": "2k",
+    "chars": ["moses-b", "aaron-a"],
+    "base_scene": "scene-2/2a",
+    "base_project": "flies-livestock-boils",
+    "prompt": "Using the provided Egyptian palace throne-room scene (Pharaoh in his golden crown by his red-and-gold throne, two Egyptian officials in white robes and striped headdresses, young Moses in white tunic and emerald-green mantle with his glowing wooden staff, and young Aaron in a sunshine-yellow robe with gemstone breastplate and golden headband): PRESERVE THE EXACT ART STYLE — same warm palace, bold black outlines, rich palette and torch lighting; do NOT restyle. KEEP Moses and Aaron EXACTLY as they appear — same child faces, dark brown skin, clothing, props and positions. Change this: Moses stands tall and stretches one arm boldly forward toward Pharaoh in solemn warning, and ONE clean white oval cartoon speech bubble rises from Moses containing ONLY the neat, clearly and correctly-spelled words: \"Not a leaf will be left!\" — no other text, letters, bubbles or banners anywhere in the image; Pharaoh listens with a hard, stubborn frown and arms crossed. Keep the columns, torches, hieroglyph walls and throne exactly. Storybook flat digital art style."
+  },
+  {
+    "id": "scene-2/2b",
+    "title": "Even his helpers begged him — Pharaoh's officials plead",
+    "mode": "text-to-image",
+    "model": "nano-banana-pro",
+    "resolution": "2k",
+    "prompt": "A storybook flat digital illustration, clean bold black outlines and warm vibrant colours, inside an Egyptian palace throne room: Pharaoh in his golden crown sits stiff and stubborn on his red-and-gold throne, arms folded and chin raised. Around him several worried Egyptian officials in white robes and striped headdresses lean in and plead with him — hands open and raised in urgent appeal, faces anxious, one gesturing toward a tall window that shows ruined, plant-stripped brown fields outside. Warm torchlight, hieroglyph columns, golden vases. The officials are clearly begging Pharaoh to give in and listen, and ONE clean white oval cartoon speech bubble rises from a pleading official containing ONLY the neat, clearly and correctly-spelled words: \"Egypt is ruined!\" — no other text, letters, bubbles or banners anywhere in the image. Storybook flat digital art style."
+  },
+  {
+    "id": "scene-2/2c",
+    "title": "The sky went dark with locusts — swarm devours every green thing",
+    "mode": "text-to-image",
+    "model": "nano-banana-pro",
+    "resolution": "2k",
+    "prompt": "A dramatic storybook flat digital illustration, clean bold black outlines and vivid colours, of the locust plague covering Egypt: an enormous dense swarm of clearly-drawn locusts — thousands of little winged insects — fills the whole sky like a dark brown cloud and blankets the ground, settling thickly over the fields. Green crops and trees are being stripped completely bare, leaves and stalks eaten down to brown stubble. A few large locusts in the foreground are drawn big and clear so it is obvious they are locusts. Egyptian farmland with a pyramid and palms behind under a darkened sky. Overwhelming, teeming and unmistakable. NO text, NO speech bubbles. Storybook flat digital art style."
+  },
+  {
+    "id": "scene-2/2d",
+    "title": "Only halfway — Pharaoh's partial offer, Moses driven out",
+    "mode": "edit",
+    "model": "nano-banana-pro",
+    "resolution": "2k",
+    "chars": ["moses-b", "aaron-a"],
+    "base_scene": "scene-2/2a",
+    "base_project": "flies-livestock-boils",
+    "prompt": "Using the provided Egyptian palace throne-room scene (Pharaoh in his golden crown, red-and-gold throne, two Egyptian officials in white robes and striped headdresses, young Moses in white tunic and emerald-green mantle with glowing staff, and young Aaron in a sunshine-yellow robe with gemstone breastplate and golden headband): PRESERVE THE EXACT ART STYLE — same warm palace, bold outlines, rich palette and torch lighting. KEEP Moses and Aaron EXACTLY as they appear — same child faces, dark brown skin, clothing, props and positions. Change Pharaoh: he leans forward and thrusts one arm out in an angry, dismissive command, pointing toward the palace door, and ONE clean white oval cartoon speech bubble rises from Pharaoh containing ONLY the neat, clearly and correctly-spelled words: \"Only the men may go!\" — no other text, letters, bubbles or banners anywhere in the image. Young Moses stands firm and unafraid, chin up; Aaron steady beside him. Keep the columns, torches, hieroglyph walls and throne exactly. Storybook flat digital art style."
+  },
+  {
+    "id": "scene-3/3a",
+    "title": "Darkness you can feel — Moses stretches his hand over Egypt",
+    "mode": "text-to-image",
+    "model": "nano-banana-pro",
+    "resolution": "2k",
+    "prompt": "A storybook flat digital illustration, clean bold black outlines, of Egypt plunged into thick darkness: a deep midnight-blue and violet darkness — the kind you can almost feel — smothers an Egyptian city, the pyramids and palm trees barely visible as dark silhouettes, a few faint dim torches struggling to glow. In the foreground stands young Moses — a Nigerian boy with chocolate-brown skin, short cropped hair, a white inner tunic and an emerald-green mantle over his shoulder, holding a tall wooden staff with a soft warm glow at its top — his free arm stretched upward toward the black sky, bringing the darkness. A couple of Egyptian figures in the gloom stand frozen, hands out, unable to see. Eerie and awe-filled but NOT frightening, NOT monstrous, nothing scary. NO text, NO speech bubbles. Storybook flat digital art style."
+  },
+  {
+    "id": "scene-3/3b",
+    "title": "But God's people had light — Goshen bright while Egypt is dark",
+    "mode": "text-to-image",
+    "model": "nano-banana-pro",
+    "resolution": "2k",
+    "prompt": "A storybook flat digital illustration, clean bold black outlines, split into two strongly contrasting halves. LEFT — the land of Goshen: a warm golden light fills a cozy Israelite home where a dark-brown-skinned family sits together happily in bright cheerful lamplight, everything glowing, warm and safe. RIGHT — the rest of Egypt: swallowed in thick deep-blue darkness, buildings and figures barely visible as dim shadows, a lone Egyptian holding a tiny failing torch that gives almost no light. A crisp line down the middle divides the glowing light of Goshen from the heavy darkness of Egypt. The contrast of light versus darkness is the whole point of the picture. NO text. Storybook flat digital art style."
+  },
+  {
+    "id": "scene-3/3c",
+    "title": "Pharaoh's last no — the final angry threat, Moses stands brave",
+    "mode": "edit",
+    "model": "nano-banana-pro",
+    "resolution": "2k",
+    "chars": ["moses-b", "aaron-a"],
+    "base_scene": "scene-2/2a",
+    "base_project": "flies-livestock-boils",
+    "prompt": "Using the provided Egyptian palace throne-room scene (Pharaoh in his golden crown, red-and-gold throne, two Egyptian officials in white robes and striped headdresses, young Moses in white tunic and emerald-green mantle with glowing staff, and young Aaron in a sunshine-yellow robe with gemstone breastplate and golden headband): PRESERVE THE EXACT ART STYLE — same warm palace, bold outlines, rich palette and torch lighting. KEEP Moses and Aaron EXACTLY as they appear — same child faces, dark brown skin, clothing, props and positions. REMOVE every speech bubble and any text — completely clean, NO words. Change Pharaoh: he rises furious, leaning forward with one arm flung out and finger pointing hard at Moses in a final angry threat, face twisted with rage. Young Moses stands calm, brave and completely unmoved, chin up, glowing staff in hand; Aaron steady beside him. Keep the columns, torches, hieroglyph walls and throne exactly. Storybook flat digital art style."
+  },
+  {
+    "id": "scene-5/5a",
+    "title": "Summary triptych (hail + locusts + darkness)",
+    "mode": "composite",
+    "layout": "3-panel-horizontal",
+    "sources": [
+      "projects/hail-locusts-darkness/scenes/scene-1/1c/output.png",
+      "projects/hail-locusts-darkness/scenes/scene-2/2c/output.png",
+      "projects/hail-locusts-darkness/scenes/scene-3/3a/output.png"
+    ]
+  }
+]
