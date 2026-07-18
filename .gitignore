@@ -28,3 +28,16 @@ slides/projects/*/output/*.zip
 *.pyc
 __pycache__/
 .tmp.driveupload
+
+# Git worktrees (transient working copies)
+.worktrees/
+
+# Slides — design-handoff template binaries (large, exported artifacts)
+slides/_templates/*.pptx
+slides/_templates/*.zip
+
+# Videos — Remotion projects: generated media artifacts (large binary, reproducible)
+videos/*/public/assets/
+videos/*/public/audio/
+videos/*/out/
+videos/**/*.mp4
