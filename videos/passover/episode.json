@@ -1,0 +1,1217 @@
+{
+  "meta": {
+    "title": "The Passover — Mighty Hand, Tender Care",
+    "series_name": "Pre-K Bible Story Time",
+    "episode_number": 4,
+    "theme": "The blood of the Lamb saves, and God's promises always come true",
+    "target_age": "2-5",
+    "total_duration_seconds": 360,
+    "fps": 30,
+    "width": 1920,
+    "height": 1080,
+    "source_project": "slides/projects/passover",
+    "script_source": "slides.json story-card.body + diary-card.angela_line",
+    "computed_total_seconds": 419.7
+  },
+  "voices": [
+    {
+      "character_name": "Narrator",
+      "voice_id": "English_CaptivatingStoryteller",
+      "speed": 0.95,
+      "notes": "Warm, gentle, engaging — like a kind Sunday-school teacher"
+    },
+    {
+      "character_name": "Angela",
+      "voice_id": "English_PlayfulGirl",
+      "speed": 1.0,
+      "notes": "Bright, childlike, slightly older than toddler — Angela is the diary-kid"
+    }
+  ],
+  "background_music_tracks": [
+    {
+      "id": "bgm-main",
+      "description": "warm gentle acoustic guitar with soft pizzicato strings, hopeful and reverent, suitable for a Pre-K Bible story, Middle-Eastern-flavored but gentle, loopable, 60 seconds",
+      "duration_seconds": 18.007,
+      "audio_file": "audio/bgm/bgm-main.mp3"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene-01",
+      "scene_type": "intro",
+      "title": "Mighty Hand, Tender Care",
+      "visual": {
+        "id": "vis-01",
+        "type": "title-card",
+        "bg_color": "#1a2845",
+        "eyebrow": "✦ TOPIC ✦",
+        "title": "Mighty Hand,\nTender Care",
+        "subtitle": "The Passover · Exodus 12",
+        "asset_file": null,
+        "animation": "fade-in"
+      },
+      "dialogue": [
+        {
+          "id": "scene-01-line-01",
+          "character": "Narrator",
+          "text": "Hello friends! Today we are going to learn about the Passover — when God used a mighty hand to save His people, with tender care.",
+          "emotion": "happy",
+          "audio_file": "audio/scene-01/scene-01-line-01.mp3",
+          "duration_seconds": 8.487,
+          "duration_frames": 255
+        }
+      ],
+      "sound_effects": [
+        {
+          "id": "sfx-intro-chime",
+          "description": "gentle bright chime, single note, like a storybook opening",
+          "timing": "start",
+          "audio_file": "audio/sfx/sfx-intro-chime.mp3",
+          "duration_seconds": 2.5
+        }
+      ],
+      "background_music": "bgm-main",
+      "transition": "fade",
+      "duration_seconds": 8.487,
+      "duration_frames": 255
+    },
+    {
+      "id": "scene-02",
+      "scene_type": "recap",
+      "title": "Last Week's Lesson",
+      "visual": {
+        "id": "vis-02",
+        "type": "image",
+        "asset_file": "assets/scene-5a.png",
+        "animation": "ken-burns",
+        "caption_strip": true
+      },
+      "dialogue": [
+        {
+          "id": "scene-02-line-01",
+          "character": "Narrator",
+          "text": "Do you remember last week? God sent hail and fire, then locusts, then thick darkness for three whole days.",
+          "emotion": "neutral",
+          "audio_file": "audio/scene-02/scene-02-line-01.mp3",
+          "duration_seconds": 8.394,
+          "duration_frames": 252
+        },
+        {
+          "id": "scene-02-line-02",
+          "character": "Narrator",
+          "text": "But God's people in Goshen had light! And now — the final warning is here.",
+          "emotion": "gentle",
+          "audio_file": "audio/scene-02/scene-02-line-02.mp3",
+          "duration_seconds": 6.502,
+          "duration_frames": 195
+        }
+      ],
+      "sound_effects": [],
+      "background_music": "bgm-main",
+      "transition": "fade",
+      "duration_seconds": 15.496,
+      "duration_frames": 465
+    },
+    {
+      "id": "scene-03",
+      "scene_type": "lesson",
+      "title": "Objectives",
+      "visual": {
+        "id": "vis-03",
+        "type": "image",
+        "asset_file": null,
+        "animation": "ken-burns",
+        "subtitle_bg_color": "#fff5e6"
+      },
+      "dialogue": [
+        {
+          "id": "scene-03-line-01",
+          "character": "Narrator",
+          "text": "By the end of today, you will be able to: tell the Passover story, explain the blood on the door, see God as a promise-keeper, and choose to keep obeying God.",
+          "emotion": "gentle",
+          "audio_file": "audio/scene-03/scene-03-line-01.mp3",
+          "duration_seconds": 12.086,
+          "duration_frames": 363
+        }
+      ],
+      "sound_effects": [],
+      "background_music": "bgm-main",
+      "transition": "fade",
+      "duration_seconds": 12.086,
+      "duration_frames": 363
+    },
+    {
+      "id": "scene-04",
+      "scene_type": "lesson",
+      "title": "Memory Verse",
+      "visual": {
+        "id": "vis-04",
+        "type": "image",
+        "asset_file": "assets/scene-1c.png",
+        "animation": "ken-burns",
+        "verse_overlay": true
+      },
+      "dialogue": [
+        {
+          "id": "scene-04-line-01",
+          "character": "Narrator",
+          "text": "Here is our memory verse. Can you say it with me?",
+          "emotion": "gentle",
+          "audio_file": "audio/scene-04/scene-04-line-01.mp3",
+          "duration_seconds": 3.274,
+          "duration_frames": 98
+        },
+        {
+          "id": "scene-04-line-02",
+          "character": "Narrator",
+          "text": "When I see the blood, I will pass over you. — Exodus twelve, thirteen.",
+          "emotion": "gentle",
+          "audio_file": "audio/scene-04/scene-04-line-02.mp3",
+          "duration_seconds": 5.689,
+          "duration_frames": 171
+        }
+      ],
+      "sound_effects": [],
+      "background_music": "bgm-main",
+      "transition": "fade",
+      "duration_seconds": 9.563,
+      "duration_frames": 287
+    },
+    {
+      "id": "scene-05",
+      "scene_type": "lesson",
+      "title": "Big Questions",
+      "visual": {
+        "id": "vis-05",
+        "type": "image",
+        "asset_file": "assets/scene-5a.png",
+        "animation": "ken-burns"
+      },
+      "dialogue": [
+        {
+          "id": "scene-05-line-01",
+          "character": "Narrator",
+          "text": "Today we will find answers to three big questions.",
+          "emotion": "curious",
+          "audio_file": "audio/scene-05/scene-05-line-01.mp3",
+          "duration_seconds": 3.808,
+          "duration_frames": 114
+        },
+        {
+          "id": "scene-05-line-02",
+          "character": "Narrator",
+          "text": "Why did God tell the Israelites to put blood on their doors?",
+          "emotion": "curious",
+          "audio_file": "audio/scene-05/scene-05-line-02.mp3",
+          "duration_seconds": 4.087,
+          "duration_frames": 123
+        },
+        {
+          "id": "scene-05-line-03",
+          "character": "Narrator",
+          "text": "How did God keep His promise to deliver His people?",
+          "emotion": "curious",
+          "audio_file": "audio/scene-05/scene-05-line-03.mp3",
+          "duration_seconds": 4.087,
+          "duration_frames": 123
+        },
+        {
+          "id": "scene-05-line-04",
+          "character": "Narrator",
+          "text": "And what does the Passover lamb remind us of today? Let's find out together!",
+          "emotion": "happy",
+          "audio_file": "audio/scene-05/scene-05-line-04.mp3",
+          "duration_seconds": 5.7,
+          "duration_frames": 171
+        }
+      ],
+      "sound_effects": [],
+      "background_music": "bgm-main",
+      "transition": "fade",
+      "duration_seconds": 19.482,
+      "duration_frames": 584
+    },
+    {
+      "id": "scene-06",
+      "scene_type": "lesson",
+      "title": "The Blood on the Door",
+      "visual": {
+        "id": "vis-06",
+        "type": "section-header",
+        "bg_color": "#2a1a45",
+        "eyebrow": "✦ PART ONE ✦",
+        "title": "The Blood\non the Door",
+        "footer": "Exodus 12:1-13",
+        "animation": "fade-in"
+      },
+      "dialogue": [
+        {
+          "id": "scene-06-line-01",
+          "character": "Narrator",
+          "text": "Part One. The Blood on the Door.",
+          "emotion": "gentle",
+          "audio_file": "audio/scene-06/scene-06-line-01.mp3",
+          "duration_seconds": 2.891,
+          "duration_frames": 87
+        }
+      ],
+      "sound_effects": [
+        {
+          "id": "sfx-section-whoosh",
+          "description": "soft swoosh, like turning a storybook page",
+          "timing": "start",
+          "audio_file": "audio/sfx/sfx-section-whoosh.mp3",
+          "duration_seconds": 2.5
+        }
+      ],
+      "background_music": "bgm-main",
+      "transition": "fade",
+      "duration_seconds": 4.5,
+      "duration_frames": 135
+    },
+    {
+      "id": "scene-07",
+      "scene_type": "lesson",
+      "title": "God's Calendar",
+      "visual": {
+        "id": "vis-07",
+        "type": "image",
+        "asset_file": "assets/scene-1a.png",
+        "animation": "ken-burns"
+      },
+      "dialogue": [
+        {
+          "id": "scene-07-line-01",
+          "character": "Narrator",
+          "text": "God told Moses and Aaron — this month will be your first month. On the tenth day, every family must choose a lamb — a year-old male, without blemish. And on the fourteenth day, at twilight, they must kill it.",
+          "emotion": "gentle",
+          "audio_file": "audio/scene-07/scene-07-line-01.mp3",
+          "duration_seconds": 16.44,
+          "duration_frames": 493
+        },
+        {
+          "id": "scene-07-line-02",
+          "character": "Narrator",
+          "text": "God always has a plan — and a clock!",
+          "emotion": "happy",
+          "audio_file": "audio/scene-07/scene-07-line-02.mp3",
+          "duration_seconds": 3.413,
+          "duration_frames": 102
+        }
+      ],
+      "sound_effects": [
+        {
+          "id": "sfx-lamb-bleat-1",
+          "description": "a soft single lamb bleat, gentle and childlike",
+          "timing": "start",
+          "audio_file": "audio/sfx/sfx-lamb-bleat-1.mp3",
+          "duration_seconds": 3.0
+        }
+      ],
+      "background_music": "bgm-main",
+      "transition": "fade",
+      "duration_seconds": 20.453,
+      "duration_frames": 614
+    },
+    {
+      "id": "scene-08",
+      "scene_type": "lesson",
+      "title": "Bring the Lamb Home",
+      "visual": {
+        "id": "vis-08",
+        "type": "image",
+        "asset_file": "assets/scene-1b.png",
+        "animation": "ken-burns"
+      },
+      "dialogue": [
+        {
+          "id": "scene-08-line-01",
+          "character": "Narrator",
+          "text": "So every Israelite family chose a perfect little lamb and brought it into their home. They cared for it for four days — petting it, feeding it, learning to love it. The lamb became part of the family.",
+          "emotion": "gentle",
+          "audio_file": "audio/scene-08/scene-08-line-01.mp3",
+          "duration_seconds": 14.164,
+          "duration_frames": 425
+        },
+        {
+          "id": "scene-08-line-02",
+          "character": "Narrator",
+          "text": "Have you ever loved a little animal?",
+          "emotion": "curious",
+          "audio_file": "audio/scene-08/scene-08-line-02.mp3",
+          "duration_seconds": 2.287,
+          "duration_frames": 69
+        }
+      ],
+      "sound_effects": [],
+      "background_music": "bgm-main",
+      "transition": "fade",
+      "duration_seconds": 17.051,
+      "duration_frames": 512
+    },
+    {
+      "id": "scene-09",
+      "scene_type": "lesson",
+      "title": "Blood on the Door",
+      "visual": {
+        "id": "vis-09",
+        "type": "image",
+        "asset_file": "assets/scene-1c.png",
+        "animation": "ken-burns"
+      },
+      "dialogue": [
+        {
+          "id": "scene-09-line-01",
+          "character": "Narrator",
+          "text": "At twilight on the fourteenth day, the father killed the lamb. Then he took a hyssop branch, dipped it in the blood, and brushed the blood on the lintel and the two side-posts of the door.",
+          "emotion": "gentle",
+          "audio_file": "audio/scene-09/scene-09-line-01.mp3",
+          "duration_seconds": 12.841,
+          "duration_frames": 385
+        },
+        {
+          "id": "scene-09-line-02",
+          "character": "Narrator",
+          "text": "The blood was a sign — this house belongs to God.",
+          "emotion": "gentle",
+          "audio_file": "audio/scene-09/scene-09-line-02.mp3",
+          "duration_seconds": 3.413,
+          "duration_frames": 102
+        },
+        {
+          "id": "scene-09-line-03",
+          "character": "Narrator",
+          "text": "When God sees the blood, He will pass over you.",
+          "emotion": "gentle",
+          "audio_file": "audio/scene-09/scene-09-line-03.mp3",
+          "duration_seconds": 3.355,
+          "duration_frames": 101
+        }
+      ],
+      "sound_effects": [
+        {
+          "id": "sfx-brush-stroke",
+          "description": "a single soft brush stroke on wood, gentle and reverent",
+          "timing": "with-line:scene-09-line-01",
+          "audio_file": "audio/sfx/sfx-brush-stroke.mp3",
+          "duration_seconds": 2.5
+        }
+      ],
+      "background_music": "bgm-main",
+      "transition": "fade",
+      "duration_seconds": 20.809,
+      "duration_frames": 624
+    },
+    {
+      "id": "scene-10",
+      "scene_type": "lesson",
+      "title": "Eat in Haste!",
+      "visual": {
+        "id": "vis-10",
+        "type": "image",
+        "asset_file": "assets/scene-1d.png",
+        "animation": "ken-burns"
+      },
+      "dialogue": [
+        {
+          "id": "scene-10-line-01",
+          "character": "Narrator",
+          "text": "That same night, the family ate the meal inside — roasted lamb, flat unleavened bread, and bitter herbs. Cloaks tucked in, sandals on, staff in hand.",
+          "emotion": "happy",
+          "audio_file": "audio/scene-10/scene-10-line-01.mp3",
+          "duration_seconds": 11.088,
+          "duration_frames": 333
+        },
+        {
+          "id": "scene-10-line-02",
+          "character": "Narrator",
+          "text": "Eat it in haste — it is the Lord's Passover!",
+          "emotion": "excited",
+          "audio_file": "audio/scene-10/scene-10-line-02.mp3",
+          "duration_seconds": 3.135,
+          "duration_frames": 94
+        },
+        {
+          "id": "scene-10-line-03",
+          "character": "Narrator",
+          "text": "Can you pretend to eat something yummy, really fast?",
+          "emotion": "excited",
+          "audio_file": "audio/scene-10/scene-10-line-03.mp3",
+          "duration_seconds": 3.587,
+          "duration_frames": 108
+        }
+      ],
+      "sound_effects": [],
+      "background_music": "bgm-main",
+      "transition": "fade",
+      "duration_seconds": 19.01,
+      "duration_frames": 570
+    },
+    {
+      "id": "scene-11",
+      "scene_type": "lesson",
+      "title": "Midnight",
+      "visual": {
+        "id": "vis-11",
+        "type": "section-header",
+        "bg_color": "#1a1a45",
+        "eyebrow": "✦ PART TWO ✦",
+        "title": "Midnight",
+        "footer": "Exodus 12:21-32",
+        "animation": "fade-in"
+      },
+      "dialogue": [
+        {
+          "id": "scene-11-line-01",
+          "character": "Narrator",
+          "text": "Part Two. Midnight. The Destroyer passes.",
+          "emotion": "gentle",
+          "audio_file": "audio/scene-11/scene-11-line-01.mp3",
+          "duration_seconds": 3.599,
+          "duration_frames": 108
+        }
+      ],
+      "sound_effects": [
+        {
+          "id": "sfx-low-rumble",
+          "description": "very low distant thunder rumble, gentle, not scary, just a deep hum in the night",
+          "timing": "start",
+          "audio_file": "audio/sfx/sfx-low-rumble.mp3",
+          "duration_seconds": 2.5
+        }
+      ],
+      "background_music": "bgm-main",
+      "transition": "fade",
+      "duration_seconds": 5.099,
+      "duration_frames": 153
+    },
+    {
+      "id": "scene-12",
+      "scene_type": "lesson",
+      "title": "Pass Over!",
+      "visual": {
+        "id": "vis-12",
+        "type": "image",
+        "asset_file": "assets/scene-2a.png",
+        "animation": "ken-burns"
+      },
+      "dialogue": [
+        {
+          "id": "scene-12-line-01",
+          "character": "Narrator",
+          "text": "At midnight, the Lord passed through the land of Egypt. Every house without the blood on the door — the destroyer came inside. But every house WITH the blood — the Lord passed over.",
+          "emotion": "gentle",
+          "audio_file": "audio/scene-12/scene-12-line-01.mp3",
+          "duration_seconds": 12.133,
+          "duration_frames": 364
+        },
+        {
+          "id": "scene-12-line-02",
+          "character": "Narrator",
+          "text": "The blood is the sign that saves.",
+          "emotion": "gentle",
+          "audio_file": "audio/scene-12/scene-12-line-02.mp3",
+          "duration_seconds": 2.554,
+          "duration_frames": 77
+        }
+      ],
+      "sound_effects": [],
+      "background_music": "bgm-main",
+      "transition": "fade",
+      "duration_seconds": 15.288,
+      "duration_frames": 459
+    },
+    {
+      "id": "scene-13",
+      "scene_type": "lesson",
+      "title": "The Firstborn",
+      "visual": {
+        "id": "vis-13",
+        "type": "image",
+        "asset_file": "assets/scene-2b.png",
+        "animation": "ken-burns"
+      },
+      "dialogue": [
+        {
+          "id": "scene-13-line-01",
+          "character": "Narrator",
+          "text": "In every Egyptian home without the blood, the firstborn — from Pharaoh's palace to the prisoner's cell — fell asleep and did not wake. There was loud wailing all over Egypt.",
+          "emotion": "gentle",
+          "audio_file": "audio/scene-13/scene-13-line-01.mp3",
+          "duration_seconds": 14.652,
+          "duration_frames": 440
+        },
+        {
+          "id": "scene-13-line-02",
+          "character": "Narrator",
+          "text": "Not one house in Egypt was without someone gone.",
+          "emotion": "gentle",
+          "audio_file": "audio/scene-13/scene-13-line-02.mp3",
+          "duration_seconds": 4.11,
+          "duration_frames": 123
+        },
+        {
+          "id": "scene-13-line-03",
+          "character": "Narrator",
+          "text": "It was a deeply sad night. God does not stay quiet forever.",
+          "emotion": "gentle",
+          "audio_file": "audio/scene-13/scene-13-line-03.mp3",
+          "duration_seconds": 5.12,
+          "duration_frames": 154
+        }
+      ],
+      "sound_effects": [],
+      "background_music": "bgm-main",
+      "transition": "fade",
+      "duration_seconds": 25.082,
+      "duration_frames": 752
+    },
+    {
+      "id": "scene-14",
+      "scene_type": "lesson",
+      "title": "Pharaoh's Last Plea",
+      "visual": {
+        "id": "vis-14",
+        "type": "image",
+        "asset_file": "assets/scene-2c.png",
+        "animation": "ken-burns"
+      },
+      "dialogue": [
+        {
+          "id": "scene-14-line-01",
+          "character": "Narrator",
+          "text": "In the middle of the night, Pharaoh sent for Moses and Aaron. He was done fighting. He begged them — Rise up! Go! Take your flocks, your families — go!",
+          "emotion": "excited",
+          "audio_file": "audio/scene-14/scene-14-line-01.mp3",
+          "duration_seconds": 9.694,
+          "duration_frames": 291
+        },
+        {
+          "id": "scene-14-line-02",
+          "character": "Narrator",
+          "text": "The mighty hand of God had won.",
+          "emotion": "gentle",
+          "audio_file": "audio/scene-14/scene-14-line-02.mp3",
+          "duration_seconds": 2.891,
+          "duration_frames": 87
+        },
+        {
+          "id": "scene-14-line-03",
+          "character": "Narrator",
+          "text": "When God decides, even Pharaoh cannot stop it.",
+          "emotion": "gentle",
+          "audio_file": "audio/scene-14/scene-14-line-03.mp3",
+          "duration_seconds": 3.738,
+          "duration_frames": 112
+        }
+      ],
+      "sound_effects": [
+        {
+          "id": "sfx-door-open",
+          "description": "a single heavy palace door creaking open",
+          "timing": "with-line:scene-14-line-01",
+          "audio_file": "audio/sfx/sfx-door-open.mp3",
+          "duration_seconds": 2.5
+        }
+      ],
+      "background_music": "bgm-main",
+      "transition": "fade",
+      "duration_seconds": 17.524,
+      "duration_frames": 526
+    },
+    {
+      "id": "scene-15",
+      "scene_type": "lesson",
+      "title": "Leave Now!",
+      "visual": {
+        "id": "vis-15",
+        "type": "image",
+        "asset_file": "assets/scene-2d.png",
+        "animation": "ken-burns"
+      },
+      "dialogue": [
+        {
+          "id": "scene-15-line-01",
+          "character": "Narrator",
+          "text": "All the Egyptians urged the Israelites to leave at once. Go now — or we'll all die! They were done with God's people staying.",
+          "emotion": "excited",
+          "audio_file": "audio/scene-15/scene-15-line-01.mp3",
+          "duration_seconds": 9.474,
+          "duration_frames": 284
+        },
+        {
+          "id": "scene-15-line-02",
+          "character": "Narrator",
+          "text": "The Lord made the Egyptians willing to let them go.",
+          "emotion": "gentle",
+          "audio_file": "audio/scene-15/scene-15-line-02.mp3",
+          "duration_seconds": 3.599,
+          "duration_frames": 108
+        },
+        {
+          "id": "scene-15-line-03",
+          "character": "Narrator",
+          "text": "When God opens a door, nobody can shut it!",
+          "emotion": "happy",
+          "audio_file": "audio/scene-15/scene-15-line-03.mp3",
+          "duration_seconds": 3.32,
+          "duration_frames": 100
+        }
+      ],
+      "sound_effects": [],
+      "background_music": "bgm-main",
+      "transition": "fade",
+      "duration_seconds": 17.593,
+      "duration_frames": 528
+    },
+    {
+      "id": "scene-16",
+      "scene_type": "lesson",
+      "title": "Set Free",
+      "visual": {
+        "id": "vis-16",
+        "type": "section-header",
+        "bg_color": "#3a2a1a",
+        "eyebrow": "✦ PART THREE ✦",
+        "title": "Set Free",
+        "footer": "Exodus 12:33-51",
+        "animation": "fade-in"
+      },
+      "dialogue": [
+        {
+          "id": "scene-16-line-01",
+          "character": "Narrator",
+          "text": "Part Three. Set Free. The Wages and the Walk.",
+          "emotion": "gentle",
+          "audio_file": "audio/scene-16/scene-16-line-01.mp3",
+          "duration_seconds": 4.783,
+          "duration_frames": 143
+        }
+      ],
+      "sound_effects": [
+        {
+          "id": "sfx-section-chime-2",
+          "description": "soft uplifting chime, dawn-bright",
+          "timing": "start",
+          "audio_file": "audio/sfx/sfx-section-chime-2.mp3",
+          "duration_seconds": 3.0
+        }
+      ],
+      "background_music": "bgm-main",
+      "transition": "fade",
+      "duration_seconds": 4.783,
+      "duration_frames": 143
+    },
+    {
+      "id": "scene-17",
+      "scene_type": "lesson",
+      "title": "The Wages They Were Owed",
+      "visual": {
+        "id": "vis-17",
+        "type": "image",
+        "asset_file": "assets/scene-3a.png",
+        "animation": "ken-burns"
+      },
+      "dialogue": [
+        {
+          "id": "scene-17-line-01",
+          "character": "Narrator",
+          "text": "Before they left, the Israelites asked their Egyptian neighbors for silver and gold and clothing — the wages for all those years of hard work. And the Egyptians gave it freely.",
+          "emotion": "happy",
+          "audio_file": "audio/scene-17/scene-17-line-01.mp3",
+          "duration_seconds": 11.471,
+          "duration_frames": 344
+        },
+        {
+          "id": "scene-17-line-02",
+          "character": "Narrator",
+          "text": "God had made the Egyptians willing to bless His people.",
+          "emotion": "gentle",
+          "audio_file": "audio/scene-17/scene-17-line-02.mp3",
+          "duration_seconds": 4.029,
+          "duration_frames": 121
+        },
+        {
+          "id": "scene-17-line-03",
+          "character": "Narrator",
+          "text": "If someone has hurt you, ask God to bless them — like this!",
+          "emotion": "gentle",
+          "audio_file": "audio/scene-17/scene-17-line-03.mp3",
+          "duration_seconds": 4.621,
+          "duration_frames": 139
+        }
+      ],
+      "sound_effects": [
+        {
+          "id": "sfx-coins-jingle",
+          "description": "a gentle jingle of small coins being handed over, warm and happy",
+          "timing": "with-line:scene-17-line-01",
+          "audio_file": "audio/sfx/sfx-coins-jingle.mp3",
+          "duration_seconds": 2.5
+        }
+      ],
+      "background_music": "bgm-main",
+      "transition": "fade",
+      "duration_seconds": 21.32,
+      "duration_frames": 640
+    },
+    {
+      "id": "scene-18",
+      "scene_type": "lesson",
+      "title": "The Great March-Out",
+      "visual": {
+        "id": "vis-18",
+        "type": "image",
+        "asset_file": "assets/scene-3b.png",
+        "animation": "ken-burns"
+      },
+      "dialogue": [
+        {
+          "id": "scene-18-line-01",
+          "character": "Narrator",
+          "text": "That very day, the Israelites left Rameses — about six hundred thousand men, plus women and children and many other people, with their flocks and herds. They headed for Succoth.",
+          "emotion": "excited",
+          "audio_file": "audio/scene-18/scene-18-line-01.mp3",
+          "duration_seconds": 12.295,
+          "duration_frames": 369
+        },
+        {
+          "id": "scene-18-line-02",
+          "character": "Narrator",
+          "text": "After four hundred and thirty years — the very day — they were free!",
+          "emotion": "excited",
+          "audio_file": "audio/scene-18/scene-18-line-02.mp3",
+          "duration_seconds": 4.76,
+          "duration_frames": 143
+        },
+        {
+          "id": "scene-18-line-03",
+          "character": "Narrator",
+          "text": "God keeps His promises down to the very day!",
+          "emotion": "happy",
+          "audio_file": "audio/scene-18/scene-18-line-03.mp3",
+          "duration_seconds": 4.087,
+          "duration_frames": 123
+        }
+      ],
+      "sound_effects": [
+        {
+          "id": "sfx-footsteps-march",
+          "description": "a soft rhythmic patter of many footsteps, like a small crowd walking together, hopeful and steady",
+          "timing": "with-line:scene-18-line-01",
+          "audio_file": "audio/sfx/sfx-footsteps-march.mp3",
+          "duration_seconds": 2.5
+        }
+      ],
+      "background_music": "bgm-main",
+      "transition": "fade",
+      "duration_seconds": 22.342,
+      "duration_frames": 670
+    },
+    {
+      "id": "scene-19",
+      "scene_type": "lesson",
+      "title": "Keep This Day",
+      "visual": {
+        "id": "vis-19",
+        "type": "image",
+        "asset_file": "assets/scene-3c.png",
+        "animation": "ken-burns"
+      },
+      "dialogue": [
+        {
+          "id": "scene-19-line-01",
+          "character": "Narrator",
+          "text": "Moses taught the elders — this is a permanent law. From generation to generation, the Israelites will eat the Passover meal and remember this night.",
+          "emotion": "gentle",
+          "audio_file": "audio/scene-19/scene-19-line-01.mp3",
+          "duration_seconds": 10.902,
+          "duration_frames": 327
+        },
+        {
+          "id": "scene-19-line-02",
+          "character": "Narrator",
+          "text": "To this day, the children of Israel remember.",
+          "emotion": "gentle",
+          "audio_file": "audio/scene-19/scene-19-line-02.mp3",
+          "duration_seconds": 3.599,
+          "duration_frames": 108
+        },
+        {
+          "id": "scene-19-line-03",
+          "character": "Narrator",
+          "text": "When you remember what God has done, you stay strong!",
+          "emotion": "happy",
+          "audio_file": "audio/scene-19/scene-19-line-03.mp3",
+          "duration_seconds": 3.634,
+          "duration_frames": 109
+        }
+      ],
+      "sound_effects": [],
+      "background_music": "bgm-main",
+      "transition": "fade",
+      "duration_seconds": 19.335,
+      "duration_frames": 580
+    },
+    {
+      "id": "scene-20",
+      "scene_type": "lesson",
+      "title": "The Bridge — The Lamb of God",
+      "visual": {
+        "id": "vis-20",
+        "type": "image",
+        "asset_file": "assets/scene-4a.png",
+        "animation": "ken-burns",
+        "verse_overlay": true
+      },
+      "dialogue": [
+        {
+          "id": "scene-20-line-01",
+          "character": "Narrator",
+          "text": "And here is the beautiful secret of the whole story.",
+          "emotion": "gentle",
+          "audio_file": "audio/scene-20/scene-20-line-01.mp3",
+          "duration_seconds": 3.831,
+          "duration_frames": 115
+        },
+        {
+          "id": "scene-20-line-02",
+          "character": "Narrator",
+          "text": "Behold, the Lamb of God, who takes away the sin of the world. — John one, twenty-nine.",
+          "emotion": "gentle",
+          "audio_file": "audio/scene-20/scene-20-line-02.mp3",
+          "duration_seconds": 7.581,
+          "duration_frames": 227
+        },
+        {
+          "id": "scene-20-line-03",
+          "character": "Narrator",
+          "text": "Jesus is the Lamb of God — and His blood covers us forever.",
+          "emotion": "gentle",
+          "audio_file": "audio/scene-20/scene-20-line-03.mp3",
+          "duration_seconds": 5.352,
+          "duration_frames": 161
+        }
+      ],
+      "sound_effects": [
+        {
+          "id": "sfx-gentle-chime-bridge",
+          "description": "a single soft celestial chime, reverent and bright",
+          "timing": "start",
+          "audio_file": "audio/sfx/sfx-gentle-chime-bridge.mp3",
+          "duration_seconds": 2.5
+        }
+      ],
+      "background_music": "bgm-main",
+      "transition": "fade",
+      "duration_seconds": 17.965,
+      "duration_frames": 539
+    },
+    {
+      "id": "scene-21",
+      "scene_type": "lesson",
+      "title": "Angela's Diary",
+      "visual": {
+        "id": "vis-21",
+        "type": "section-header",
+        "bg_color": "#5a2a45",
+        "eyebrow": "✦ ANGELA'S DIARY ✦",
+        "title": "Dear\nDiary",
+        "footer": "What Angela is learning today…",
+        "animation": "fade-in"
+      },
+      "dialogue": [
+        {
+          "id": "scene-21-line-01",
+          "character": "Angela",
+          "text": "Hi everyone! It's Angela. Can I share my diary with you? I learned four things today!",
+          "emotion": "happy",
+          "audio_file": "audio/scene-21/scene-21-line-01.mp3",
+          "duration_seconds": 5.793,
+          "duration_frames": 174
+        }
+      ],
+      "sound_effects": [
+        {
+          "id": "sfx-page-turn",
+          "description": "a soft storybook page turning, paper crinkling gently",
+          "timing": "start",
+          "audio_file": "audio/sfx/sfx-page-turn.mp3",
+          "duration_seconds": 2.5
+        }
+      ],
+      "background_music": "bgm-main",
+      "transition": "fade",
+      "duration_seconds": 5.793,
+      "duration_frames": 174
+    },
+    {
+      "id": "scene-22",
+      "scene_type": "lesson",
+      "title": "Diary 1 — Pray, Don't Pay Back",
+      "visual": {
+        "id": "vis-22",
+        "type": "image",
+        "asset_file": "assets/scene-3a.png",
+        "animation": "ken-burns",
+        "diary_card": true
+      },
+      "dialogue": [
+        {
+          "id": "scene-22-line-01",
+          "character": "Angela",
+          "text": "Number one! The Israelites were slaves for four hundred and thirty years. God told them to ask for their wages — and the Egyptians gave silver, gold, and clothing.",
+          "emotion": "happy",
+          "audio_file": "audio/scene-22/scene-22-line-01.mp3",
+          "duration_seconds": 9.892,
+          "duration_frames": 297
+        },
+        {
+          "id": "scene-22-line-02",
+          "character": "Angela",
+          "text": "I should pray for those who despitefully use me. I certainly will — because the children of Israel got the wages for their labor before they left!",
+          "emotion": "happy",
+          "audio_file": "audio/scene-22/scene-22-line-02.mp3",
+          "duration_seconds": 8.011,
+          "duration_frames": 240
+        }
+      ],
+      "sound_effects": [],
+      "background_music": "bgm-main",
+      "transition": "fade",
+      "duration_seconds": 18.503,
+      "duration_frames": 555
+    },
+    {
+      "id": "scene-23",
+      "scene_type": "lesson",
+      "title": "Diary 2 — The Blood on My Door",
+      "visual": {
+        "id": "vis-23",
+        "type": "image",
+        "asset_file": "assets/scene-1c.png",
+        "animation": "ken-burns",
+        "diary_card": true
+      },
+      "dialogue": [
+        {
+          "id": "scene-23-line-01",
+          "character": "Angela",
+          "text": "Number two! The blood on the door was the sign — this home belongs to God. The destroyer passed over.",
+          "emotion": "gentle",
+          "audio_file": "audio/scene-23/scene-23-line-01.mp3",
+          "duration_seconds": 6.049,
+          "duration_frames": 181
+        },
+        {
+          "id": "scene-23-line-02",
+          "character": "Angela",
+          "text": "The blood of Jesus must be on me as a sign that I am a child of God — otherwise the messenger of death will come to me, like he came to the Egyptians.",
+          "emotion": "gentle",
+          "audio_file": "audio/scene-23/scene-23-line-02.mp3",
+          "duration_seconds": 7.988,
+          "duration_frames": 240
+        }
+      ],
+      "sound_effects": [],
+      "background_music": "bgm-main",
+      "transition": "fade",
+      "duration_seconds": 14.637,
+      "duration_frames": 439
+    },
+    {
+      "id": "scene-24",
+      "scene_type": "lesson",
+      "title": "Diary 3 — God Keeps Every Promise",
+      "visual": {
+        "id": "vis-24",
+        "type": "image",
+        "asset_file": "assets/scene-2c.png",
+        "animation": "ken-burns",
+        "diary_card": true
+      },
+      "dialogue": [
+        {
+          "id": "scene-24-line-01",
+          "character": "Angela",
+          "text": "Number three! God promised to deliver Israel with a mighty hand. At midnight, Pharaoh begged them to leave.",
+          "emotion": "excited",
+          "audio_file": "audio/scene-24/scene-24-line-01.mp3",
+          "duration_seconds": 7.036,
+          "duration_frames": 211
+        },
+        {
+          "id": "scene-24-line-02",
+          "character": "Angela",
+          "text": "God promised Moses that He would deliver the Israelites by a powerful hand — and He did! Whatever God promises me, He will fulfill. I believe!",
+          "emotion": "excited",
+          "audio_file": "audio/scene-24/scene-24-line-02.mp3",
+          "duration_seconds": 8.742,
+          "duration_frames": 262
+        }
+      ],
+      "sound_effects": [],
+      "background_music": "bgm-main",
+      "transition": "fade",
+      "duration_seconds": 16.378,
+      "duration_frames": 491
+    },
+    {
+      "id": "scene-25",
+      "scene_type": "lesson",
+      "title": "Diary 4 — Keep Hearing God",
+      "visual": {
+        "id": "vis-25",
+        "type": "image",
+        "asset_file": "assets/scene-1a.png",
+        "animation": "ken-burns",
+        "diary_card": true
+      },
+      "dialogue": [
+        {
+          "id": "scene-25-line-01",
+          "character": "Angela",
+          "text": "Number four! Moses heard God and kept believing — even after Pharaoh refused him over and over again.",
+          "emotion": "gentle",
+          "audio_file": "audio/scene-25/scene-25-line-01.mp3",
+          "duration_seconds": 6.687,
+          "duration_frames": 201
+        },
+        {
+          "id": "scene-25-line-02",
+          "character": "Angela",
+          "text": "I want to hear God like Moses — and believe, no matter what!",
+          "emotion": "happy",
+          "audio_file": "audio/scene-25/scene-25-line-02.mp3",
+          "duration_seconds": 3.622,
+          "duration_frames": 109
+        }
+      ],
+      "sound_effects": [],
+      "background_music": "bgm-main",
+      "transition": "fade",
+      "duration_seconds": 10.91,
+      "duration_frames": 327
+    },
+    {
+      "id": "scene-26",
+      "scene_type": "activity",
+      "title": "Application — A-B-C of Salvation",
+      "visual": {
+        "id": "vis-26",
+        "type": "image",
+        "asset_file": "assets/scene-4a.png",
+        "animation": "ken-burns"
+      },
+      "dialogue": [
+        {
+          "id": "scene-26-line-01",
+          "character": "Narrator",
+          "text": "If you are saved, thank God for His tender care. If the blood of Jesus has not covered your sin, you are marked for death!",
+          "emotion": "gentle",
+          "audio_file": "audio/scene-26/scene-26-line-01.mp3",
+          "duration_seconds": 9.52,
+          "duration_frames": 286
+        },
+        {
+          "id": "scene-26-line-02",
+          "character": "Narrator",
+          "text": "To be rescued — A — Admit you have sinned. B — Believe Jesus died for you. C — Call on His name!",
+          "emotion": "gentle",
+          "audio_file": "audio/scene-26/scene-26-line-02.mp3",
+          "duration_seconds": 8.626,
+          "duration_frames": 259
+        }
+      ],
+      "sound_effects": [],
+      "background_music": "bgm-main",
+      "transition": "fade",
+      "duration_seconds": 18.746,
+      "duration_frames": 562
+    },
+    {
+      "id": "scene-27",
+      "scene_type": "recap",
+      "title": "Today We Learned",
+      "visual": {
+        "id": "vis-27",
+        "type": "image",
+        "asset_file": "assets/scene-5a.png",
+        "animation": "ken-burns"
+      },
+      "dialogue": [
+        {
+          "id": "scene-27-line-01",
+          "character": "Narrator",
+          "text": "Today we learned about the Passover — Mighty Hand, Tender Care.",
+          "emotion": "happy",
+          "audio_file": "audio/scene-27/scene-27-line-01.mp3",
+          "duration_seconds": 4.481,
+          "duration_frames": 134
+        },
+        {
+          "id": "scene-27-line-02",
+          "character": "Narrator",
+          "text": "The lamb's blood saved the Israelites. The destroyer passed over every marked house. God's mighty hand kept His promise. And Jesus is the Lamb of God for the whole world.",
+          "emotion": "gentle",
+          "audio_file": "audio/scene-27/scene-27-line-02.mp3",
+          "duration_seconds": 13.595,
+          "duration_frames": 408
+        },
+        {
+          "id": "scene-27-line-03",
+          "character": "Narrator",
+          "text": "Thank God for His tender care today!",
+          "emotion": "happy",
+          "audio_file": "audio/scene-27/scene-27-line-03.mp3",
+          "duration_seconds": 2.728,
+          "duration_frames": 82
+        }
+      ],
+      "sound_effects": [],
+      "background_music": "bgm-main",
+      "transition": "fade",
+      "duration_seconds": 22.005,
+      "duration_frames": 660
+    },
+    {
+      "id": "scene-28",
+      "scene_type": "outro",
+      "title": "See You Next Week!",
+      "visual": {
+        "id": "vis-28",
+        "type": "title-card",
+        "bg_color": "#1a2845",
+        "eyebrow": "✦ Great Job Today, Friends! ✦",
+        "title": "See You\nNext Week!",
+        "subtitle": "Set free by the blood of the Lamb! 🐑",
+        "footer": "Next time: God leads His people into the wilderness — stay tuned!",
+        "animation": "fade-in"
+      },
+      "dialogue": [
+        {
+          "id": "scene-28-line-01",
+          "character": "Narrator",
+          "text": "Great job today, friends! You remembered the story of the Passover — the blood on the door, the mighty hand, the tender care. See you next week, when God leads His people into the wilderness!",
+          "emotion": "happy",
+          "audio_file": "audio/scene-28/scene-28-line-01.mp3",
+          "duration_seconds": 12.968,
+          "duration_frames": 389
+        }
+      ],
+      "sound_effects": [
+        {
+          "id": "sfx-outro-chime",
+          "description": "warm bright chime, like the closing of a storybook",
+          "timing": "end",
+          "audio_file": "audio/sfx/sfx-outro-chime.mp3",
+          "duration_seconds": 2.5
+        }
+      ],
+      "background_music": "bgm-main",
+      "transition": "fade",
+      "duration_seconds": 12.968,
+      "duration_frames": 389
+    }
+  ]
+}
