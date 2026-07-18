@@ -1,0 +1,392 @@
+[
+  { "include": "welcome" },
+  { "include": "let-us-pray" },
+  { "include": "house-rules" },
+
+  {
+    "type": "summary",
+    "palette": "preamble",
+    "chip": "🔙 Do You Remember?",
+    "title": "Last Week's Lesson",
+    "bullets": [
+      { "emoji": "⛈️", "text": "**Hail and fire** crashed down on Egypt" },
+      { "emoji": "🦗", "text": "**Locusts** ate every green thing left" },
+      { "emoji": "🌑", "text": "**Thick darkness** covered Egypt for three days" }
+    ],
+    "prompt": "But God's people in Goshen had light! And now — the final warning is here.",
+    "image": "scene-0/0a"
+  },
+
+  {
+    "type": "objectives",
+    "palette": "preamble",
+    "chip": "🎯 Objectives",
+    "title": "Objectives",
+    "lead": "By the end, the children will be able to:",
+    "bullets": [
+      { "emoji": "🐑", "text": "Retell the **Passover** story" },
+      { "emoji": "🩸", "text": "Explain the **blood on the door**" },
+      { "emoji": "🤝", "text": "See God as a **promise-keeper**" },
+      { "emoji": "👂", "text": "Choose to **keep obeying** God" }
+    ],
+    "image": "scene-0/0b"
+  },
+
+  {
+    "type": "topic",
+    "eyebrow": "✦ TOPIC ✦",
+    "title": "Mighty Hand,\nTender Care"
+  },
+
+  {
+    "type": "outlines",
+    "palette": "preamble",
+    "chip": "🗺️ Today's Journey",
+    "title": "Outlines",
+    "items": [
+      { "label": "The Passover",  "image": "scene-1/1c" },
+      { "label": "The Destroyer", "image": "scene-2/2a" },
+      { "label": "The Departure", "image": "scene-3/3b" },
+      { "label": "Angela's Diary", "image": "scene-3/3a" }
+    ]
+  },
+
+  {
+    "type": "verse",
+    "eyebrow": "📖 Memory Verse",
+    "title": "\"When I see the blood,\nI will pass over you.\"",
+    "reference": "Exodus 12:13 (NIV)"
+  },
+
+  {
+    "type": "bible-text",
+    "eyebrow": "📖 Bible Text",
+    "reference": "Exodus 12:1–13 · The Passover",
+    "columns": 1,
+    "body": [
+      "6 “Take care of them until the fourteenth day of the month, when all the members of the community of Israel must slaughter them at twilight. 7 Then they are to take some of the blood and put it on the sides and tops of the doorframes of the houses where they eat the lambs.”",
+      "12 “On that same night I will pass through Egypt and strike down every firstborn — both men and animals — and I will bring judgment on all the gods of Egypt. I am the Lord. 13 The blood will be a sign for you on the houses where you are, and when I see the blood, I will pass over you. No destructive plague will touch you when I strike Egypt.”"
+    ]
+  },
+
+  {
+    "type": "bible-text",
+    "eyebrow": "📖 Bible Text",
+    "reference": "Exodus 12:14–20 · The Feast of Unleavened Bread",
+    "columns": 1,
+    "body": [
+      "14 “This is a day you are to commemorate; for the generations to come you shall celebrate it as a festival to the Lord — a lasting ordinance. 17 Celebrate the Feast of Unleavened Bread, because it was on this very day that I brought your divisions out of Egypt. Celebrate this day as a lasting ordinance for the generations to come. 19 For seven days no yeast is to be found in your houses. And whoever eats anything with yeast in it is to be cut off from the community of Israel.”"
+    ]
+  },
+
+  {
+    "type": "bible-text",
+    "eyebrow": "📖 Bible Text",
+    "reference": "Exodus 12:21–36 · The Destroyer · Pharaoh's Plea",
+    "columns": 1,
+    "body": [
+      "23 “When the Lord goes through the land to strike down the Egyptians, he will see the blood on the top and sides of the doorframe and will pass over that doorway, and he will not permit the destroyer to enter your houses to strike you down.”",
+      "27 “Then tell them, ‘It is the Passover sacrifice to the Lord, who passed over the houses of the Israelites in Egypt and spared our homes when he struck down the Egyptians.’”",
+      "29 At midnight the Lord struck down all the firstborn in Egypt, from the firstborn of Pharaoh, who sat on the throne, to the firstborn of the prisoner, who was in the dungeon. 30 Pharaoh and all his officials and all the Egyptians got up during the night, and there was loud wailing in Egypt, for there was not a house without someone dead.",
+      "31 During the night Pharaoh summoned Moses and Aaron and said, “Up! Leave my people, you and the Israelites! Go, worship the Lord as you have requested!” 35 The Israelites did as Moses instructed and asked the Egyptians for articles of silver and gold and for clothing. 36 The Lord had made the Egyptians favorably disposed toward the people, and they gave them what they asked for; so they plundered the Egyptians."
+    ]
+  },
+
+  {
+    "type": "bible-text",
+    "eyebrow": "📖 Bible Text",
+    "reference": "Exodus 12:37–51 · The Exodus · The Passover Law",
+    "columns": 1,
+    "body": [
+      "37 The Israelites journeyed from Rameses to Succoth. There were about six hundred thousand men on foot, besides women and children. 40 Now the length of time the Israelites lived in Egypt was 430 years. 41 At the end of the 430 years, to the very day, all the Lord’s divisions left Egypt. 42 Because the Lord kept vigil that night to bring them out of Egypt, on this night all the Israelites are to keep vigil to honor the Lord for the generations to come.",
+      "46 “It must be eaten inside one house; take none of the meat outside the house. Do not break any of the bones. 47 The whole community of Israel must celebrate it.” 51 And on that very day the Lord brought the Israelites out of Egypt by their divisions."
+    ]
+  },
+
+  {
+    "type": "summary",
+    "palette": "preamble",
+    "chip": "✨ Today We Will Learn...",
+    "title": "Our Big Questions",
+    "bullets": [
+      { "emoji": "🩸", "text": "Why did God tell the Israelites to put **blood on their doors?**" },
+      { "emoji": "💪", "text": "How did God keep His **promise** to deliver His people?" },
+      { "emoji": "🐑", "text": "What does the **Passover lamb** remind us of today?" }
+    ],
+    "prompt": "Let's find out together!",
+    "image": "scene-0/0b"
+  },
+
+  {
+    "type": "section-header",
+    "palette": "preamble",
+    "eyebrow": "✦ The Passover ✦",
+    "title": "The Blood\non the Door",
+    "footer": "Exodus 12:1 – 51"
+  },
+
+  {
+    "type": "story-card",
+    "palette": "preamble",
+    "chip": "🐑 The Passover",
+    "title": "God's Calendar",
+    "body": [
+      { "text": "God told Moses and Aaron: this month will be your first month. On the tenth day, every family must choose a lamb — a year-old male, without blemish." },
+      { "text": "And on the fourteenth day, at twilight, they must kill it.", "strong": true }
+    ],
+    "prompt": "God always has a plan — and a clock! ⏰",
+    "image": "scene-1/1a"
+  },
+
+  {
+    "type": "story-card",
+    "palette": "preamble",
+    "chip": "🐑 The Passover",
+    "title": "Bring the Lamb Home",
+    "body": [
+      { "text": "So every Israelite family chose a perfect little lamb and brought it into their home. They cared for it for four days — petting it, feeding it, learning to love it." },
+      { "text": "The lamb became part of the family.", "strong": true }
+    ],
+    "prompt": "Have you ever loved a little animal? 🐑",
+    "image": "scene-1/1b"
+  },
+
+  {
+    "type": "story-card",
+    "palette": "preamble",
+    "chip": "🐑 The Passover",
+    "title": "Blood on the Door",
+    "body": [
+      { "text": "At twilight on the fourteenth day, the father killed the lamb. Then he took a hyssop branch, dipped it in the blood, and brushed the blood on the lintel and the two side-posts of the door." },
+      { "text": "The blood was a sign: this house belongs to God.", "strong": true }
+    ],
+    "prompt": "When God sees the blood, He will pass over you. 🩸",
+    "image": "scene-1/1c"
+  },
+
+  {
+    "type": "story-card",
+    "palette": "preamble",
+    "chip": "🐑 The Passover",
+    "title": "Eat in Haste!",
+    "body": [
+      { "text": "That same night, the family ate the meal inside: roasted lamb, flat unleavened bread, and bitter herbs. Cloaks tucked in, sandals on, staff in hand." },
+      { "text": "Eat it in haste — it is the Lord's Passover!", "strong": true }
+    ],
+    "prompt": "Can you pretend to eat something yummy really fast? 😋",
+    "image": "scene-1/1d"
+  },
+
+  {
+    "type": "section-header",
+    "palette": "preamble",
+    "eyebrow": "✦ The Destroyer Passes ✦",
+    "title": "Midnight",
+    "footer": "Exodus 12:21 – 32"
+  },
+
+  {
+    "type": "story-card",
+    "palette": "preamble",
+    "chip": "🌑 The Destroyer",
+    "title": "Pass Over!",
+    "body": [
+      { "text": "At midnight, the Lord passed through the land of Egypt. Every house without the blood on the door — the destroyer came inside." },
+      { "text": "But every house WITH the blood — the Lord passed over.", "strong": true }
+    ],
+    "prompt": "The blood is the sign that saves. 🩸",
+    "image": "scene-2/2a"
+  },
+
+  {
+    "type": "story-card",
+    "palette": "preamble",
+    "chip": "🌑 The Destroyer",
+    "title": "The Firstborn",
+    "body": [
+      { "text": "In every Egyptian home without the blood, the firstborn — from Pharaoh's palace to the prisoner's cell — fell. There was loud wailing all over Egypt." },
+      { "text": "Not one house in Egypt was without someone gone.", "strong": true }
+    ],
+    "prompt": "It was a deeply sad night. God does not stay quiet forever. 💔",
+    "image": "scene-2/2b"
+  },
+
+  {
+    "type": "story-card",
+    "palette": "preamble",
+    "chip": "🌑 The Destroyer",
+    "title": "Pharaoh's Last Plea",
+    "body": [
+      { "text": "In the middle of the night, Pharaoh sent for Moses and Aaron. He was done fighting. He begged them: \"Rise up! Go! Take your flocks, your families — go!\"" },
+      { "text": "The mighty hand of God had won.", "strong": true }
+    ],
+    "prompt": "When God decides, even Pharaoh cannot stop it. 💪",
+    "image": "scene-2/2c"
+  },
+
+  {
+    "type": "story-card",
+    "palette": "preamble",
+    "chip": "🌑 The Destroyer",
+    "title": "Leave Now!",
+    "body": [
+      { "text": "All the Egyptians urged the Israelites to leave at once. \"Go now — or we'll all die!\" They were DONE with God's people staying." },
+      { "text": "The Lord made the Egyptians willing to let them go.", "strong": true }
+    ],
+    "prompt": "When God opens a door, nobody can shut it! 🚪",
+    "image": "scene-2/2d"
+  },
+
+  {
+    "type": "section-header",
+    "palette": "preamble",
+    "eyebrow": "✦ The Wages and the Walk ✦",
+    "title": "Set Free",
+    "footer": "Exodus 12:33 – 51"
+  },
+
+  {
+    "type": "story-card",
+    "palette": "preamble",
+    "chip": "🎁 The Wages",
+    "title": "The Wages They Were Owed",
+    "body": [
+      { "text": "Before they left, the Israelites asked their Egyptian neighbors for silver and gold and clothing — the wages for all those years of hard work. And the Egyptians GAVE it freely." },
+      { "text": "God had made the Egyptians willing to bless His people.", "strong": true }
+    ],
+    "prompt": "If someone has hurt you, ask God to bless them — like this! 🤲",
+    "image": "scene-3/3a"
+  },
+
+  {
+    "type": "story-card",
+    "palette": "preamble",
+    "chip": "🌅 The Departure",
+    "title": "The Great March-Out",
+    "body": [
+      { "text": "That very day, the Israelites left Rameses — about 600,000 men, plus women and children and many other people, with their flocks and herds. They headed for Succoth." },
+      { "text": "After 430 years — the very day — they were FREE.", "strong": true }
+    ],
+    "prompt": "God keeps His promises down to the very day! 🎉",
+    "image": "scene-3/3b"
+  },
+
+  {
+    "type": "story-card",
+    "palette": "preamble",
+    "chip": "📜 To This Day",
+    "title": "Keep This Day",
+    "body": [
+      { "text": "Moses taught the elders: this is a permanent law. From generation to generation, the Israelites will eat the Passover meal and remember this night." },
+      { "text": "To this day, the children of Israel remember.", "strong": true }
+    ],
+    "prompt": "When you remember what God has done, you stay strong! 📖",
+    "image": "scene-3/3c"
+  },
+
+  {
+    "type": "verse",
+    "eyebrow": "✦ THE BRIDGE ✦",
+    "title": "\"Behold, the Lamb of God,\nwho takes away the sin of the world.\"",
+    "reference": "John 1:29 (NIV)",
+    "image": "scene-4/4a"
+  },
+
+  {
+    "type": "section-header",
+    "palette": "diary",
+    "eyebrow": "✦ Special Section ✦",
+    "title": "Angela's Diary",
+    "footer": "Today Angela is writing about... Mighty Hand, Tender Care!",
+    "thumbs": [
+      "scene-3/3a",
+      "scene-1/1c"
+    ]
+  },
+
+  {
+    "type": "diary-card",
+    "chip": "📓 Dear Diary,",
+    "title": "Pray, Don't Pay Back 🕊️",
+    "body": [
+      { "text": "The Israelites were slaves for 430 years. God told them to ask for their wages — the Egyptians gave silver, gold and clothing." },
+      { "text": "I should pray for those who despitefully use me. I certainly will because the children of Israel got the wages for their labor before departure.", "strong": true }
+    ],
+    "teacher_note": "Exodus 12:35-36; Matthew 5:44 — The Israelites had been enslaved and mistreated for generations. God could have told them to take revenge, but instead He told them to ASK the Egyptians for their wages — and the Egyptians gave freely. Blessing, not cursing, is the way of the Kingdom.",
+    "signature": "Love, Angela 💜",
+    "image": "scene-3/3a"
+  },
+
+  {
+    "type": "diary-card",
+    "chip": "📓 Dear Diary,",
+    "title": "The Blood on My Door 🩸",
+    "body": [
+      { "text": "The blood on the door was the sign: this home belongs to God. The destroyer passed over." },
+      { "text": "The blood of Jesus must be on me as a sign that I am a child of God, else the messenger of death will kill me as he killed the Egyptians.", "strong": true }
+    ],
+    "teacher_note": "Exodus 12:13; 1 Corinthians 5:7 — The destroyer passed over every house marked with blood. The Passover lamb is a picture of Jesus — the Lamb of God whose blood covers us. Without the blood, there is no covering.",
+    "signature": "Love, Angela 💜",
+    "image": "scene-1/1c"
+  },
+
+  {
+    "type": "diary-card",
+    "chip": "📓 Dear Diary,",
+    "title": "God Keeps Every Promise ✨",
+    "body": [
+      { "text": "God promised to deliver Israel with a mighty hand. At midnight, Pharaoh BEGGED them to leave." },
+      { "text": "God promised Moses that he will deliver the Israelites by a powerful hand and he did. Whatever God promises me, He will fulfill. I believe!", "strong": true }
+    ],
+    "teacher_note": "Exodus 12:31-33, 51 — God told Moses He would deliver Israel with a mighty hand (Exo 3:19-20; 6:1). On that very night, Pharaoh rose in the dark and begged Israel to leave. God's word never returns empty (Isa 55:11).",
+    "signature": "Love, Angela 💜",
+    "image": "scene-2/2c"
+  },
+
+  {
+    "type": "diary-card",
+    "chip": "📓 Dear Diary,",
+    "title": "Keep Hearing God 👂",
+    "body": [
+      { "text": "Moses heard God and kept believing — even after Pharaoh refused him over and over." },
+      { "text": "I like to hear God like Moses heard and believed despite Pharaoh's past disobedience.", "strong": true }
+    ],
+    "teacher_note": "Exodus 12:1, 21; Mark 9:23 — Moses heard God and kept believing even after Pharaoh refused him time and again. His relationship with the Lord was never broken. \"All things are possible to him that believes\" — a child who keeps hearing God can face any Pharaoh.",
+    "signature": "Love, Angela 💜",
+    "image": "scene-1/1a"
+  },
+
+  {
+    "type": "application",
+    "title": "Saved by the blood of the Lamb.",
+    "intro": [
+      "If you are saved, thank God for His tender care.",
+      "If the blood of Jesus has not covered your sin, you are marked for death!"
+    ],
+    "steps_lead": "To be rescued:",
+    "image": "scene-4/4a"
+  },
+
+  {
+    "type": "summary",
+    "palette": "preamble",
+    "chip": "✦ Today We Learned...",
+    "title": "Mighty Hand, Tender Care",
+    "bullets": [
+      { "emoji": "🐑", "text": "**Passover:** the lamb's blood saved the Israelites" },
+      { "emoji": "🩸", "text": "**The Destroyer passed over** every marked house" },
+      { "emoji": "💪", "text": "**God's mighty hand** kept His promise" },
+      { "emoji": "✝️", "text": "**Jesus is the Lamb of God** for the world" }
+    ],
+    "prompt": "Thank God for His tender care today! ❤️",
+    "image": "scene-5/5a"
+  },
+
+  {
+    "type": "goodbye",
+    "eyebrow": "✦ Great Job Today, Friends! ✦",
+    "title": "See You\nNext Week!",
+    "subtitle": "Set free by the blood of the Lamb! 🐑",
+    "footer": "Next time: God leads His people into the wilderness — stay tuned!"
+  }
+]

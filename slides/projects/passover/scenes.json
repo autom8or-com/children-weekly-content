@@ -1,0 +1,141 @@
+[
+  {
+    "id": "scene-0/0a",
+    "title": "Last week recap — hail, locusts, darkness (reuse of hld triptych)",
+    "mode": "reuse",
+    "source": "scene-5/5a",
+    "source_project": "hail-locusts-darkness"
+  },
+  {
+    "id": "scene-0/0b",
+    "title": "Children in a circle (learning-goals illustration, reuse)",
+    "mode": "reuse",
+    "source": "scene-0/0c",
+    "source_project": "flies-livestock-boils"
+  },
+
+  {
+    "id": "scene-1/1a",
+    "title": "God tells Moses and Aaron the calendar — the month, the lamb, the blood",
+    "mode": "edit",
+    "model": "nano-banana-pro",
+    "resolution": "2k",
+    "chars": ["god-a"],
+    "prompt": "A storybook flat digital illustration, clean bold black outlines and warm vibrant colours, of a quiet outdoor scene at golden sunrise. On the left, a soft warm cloud-bubble rises in the sky, and inside it sits an elderly, loving God-figure (use the provided god-a reference for consistency — long flowing white hair and beard, long white robe, gentle kind face) sitting on a simple golden throne — gently speaking forward. Three small thought-circle puffs trail from the cloud down to the two young listeners on the right (Moses and Aaron described inline in the storybook style of the deck): a young Nigerian boy, Moses, with chocolate-brown skin, short cropped hair, a white inner tunic, an emerald-green outer mantle over his left shoulder, brown sandals, and holding a tall wooden staff with a soft warm glow at the top; and a young Nigerian boy, Aaron, with chocolate-brown skin, short cropped hair, a sunshine-yellow priestly robe with a colourful gemstone breastplate (red, blue, green, purple) and a golden headband, holding a long wooden rod. Moses and Aaron stand facing the cloud, faces uplifted, listening intently, full of wonder. Soft golden light bathes the scene. A small white lamb walks at Moses's feet. Storybook flat digital art style, Pre-K friendly. NO text, NO speech bubbles in the image — the verse on the slide carries the words."
+  },
+
+  {
+    "id": "scene-1/1b",
+    "title": "An Israelite family selects a blemish-free lamb on day 10",
+    "mode": "text-to-image",
+    "model": "nano-banana-pro",
+    "resolution": "2k",
+    "prompt": "A storybook flat digital illustration, clean bold black outlines and warm vibrant colours, of a warm domestic scene outside a small sandstone Israelite home in Goshen. A happy Israelite family with dark brown skin — a smiling father in a cream linen tunic, a mother in a soft blue wrap-dress, two cheerful children in simple robes — are gently leading a small, healthy, spotlessly white lamb into their courtyard. The father holds the lamb gently by its back, the children are petting it, the mother stands at the doorway smiling. Behind them the home is a tidy low sandstone house with a flat roof, a wooden door, and a small olive tree. Warm golden afternoon light. The mood is gentle, hopeful, and Pre-K friendly. NO text, NO speech bubbles. Storybook flat digital art style."
+  },
+
+  {
+    "id": "scene-1/1c",
+    "title": "The blood on the doorposts — a single brush of red on the lintel",
+    "mode": "text-to-image",
+    "model": "nano-banana-pro",
+    "resolution": "2k",
+    "prompt": "A storybook flat digital illustration, clean bold black outlines and warm vibrant colours, of an Israelite home at twilight. The father (dark brown skin, cream linen tunic) stands on a low wooden stool and carefully brushes a SINGLE clean line of bright red blood across the wooden lintel and the two side doorposts of his home — a hyssop branch in his hand. The doorway glows faintly with the deep red of the freshly brushed blood. Just inside the open door, the rest of the family — mother, two children, a grandmother in a soft headwrap — gather close, holding a small lamp that gives a warm yellow glow. A small white roasted lamb and flat unleavened bread sit on a low table inside. Outside, the sky is deep dusk blue, a few stars just appearing. Mood: gentle, reverent, full of hope. NO graphic, NO drips, NO splatter — the blood is one calm brush stroke on the lintel only. NO text, NO speech bubbles. Storybook flat digital art style."
+  },
+
+  {
+    "id": "scene-1/1d",
+    "title": "The family eats the Passover meal inside — lamp, lamb, unleavened bread, bitter herbs",
+    "mode": "text-to-image",
+    "model": "nano-banana-pro",
+    "resolution": "2k",
+    "prompt": "A storybook flat digital illustration, clean bold black outlines and warm vibrant colours, of an intimate indoor Israelite family Passover meal. The whole family sits together on low cushions around a low wooden table inside a sandstone home. On the table: a small roasted lamb on a clay dish, a stack of flat round unleavened bread, a small bowl of dark bitter herbs. A single clay oil lamp on a high shelf gives the whole room a warm golden glow. The family is dark-brown-skinned — father, mother, two children, a grandmother — wearing simple robes and headwraps, smiling softly, eating together. Through a small high window, the dark blue night sky is visible with a few stars. The mood is warm, safe, and tender. The doorway behind them shows a faint outline of red on the lintel (one clean line, not graphic). NO text, NO speech bubbles. Storybook flat digital art style."
+  },
+
+  {
+    "id": "scene-2/2a",
+    "title": "Midnight — the destroyer sweeps over Egypt; houses with the blood are passed over",
+    "mode": "text-to-image",
+    "model": "nano-banana-pro",
+    "resolution": "2k",
+    "prompt": "A storybook flat digital illustration, clean bold black outlines and warm vibrant colours, of midnight over a small Egyptian town. In the foreground, an Israelite home with a warm golden glow from a single oil lamp shining through its doorway, a faint single line of red on the lintel, the family safe inside. A soft swift dark shadow — the destroyer — passes silently OVER the rooftop of that one home and continues on; it is NOT a menacing angel, NOT a monster, NOT a winged figure, just a smooth soft shadow sweeping low and harmless over the marked house. Behind and around that one home, a few other Egyptian houses sit dark and quiet under a deep midnight-blue sky with stars. The contrast between the one glowing safe home and the sleeping dark town is the whole point of the picture. Reverent, awe-filled, NOT scary. NO text, NO speech bubbles. Storybook flat digital art style."
+  },
+
+  {
+    "id": "scene-2/2b",
+    "title": "The firstborn of Egypt fall — gentle, sleeping, no graphic",
+    "mode": "text-to-image",
+    "model": "nano-banana-pro",
+    "resolution": "2k",
+    "prompt": "A storybook flat digital illustration, clean bold black outlines and warm vibrant colours, of a quiet Egyptian home at midnight after the destroyer has passed. A father in white Egyptian robes sleeps peacefully on a low bed, a mother sleeps on a mat nearby, a small firstborn child sleeps softly on the bed beside the father. A single clay oil lamp on a small table has gone out — the flame just barely dimming. Through the high window, a deep midnight-blue sky with a single bright star. The room is calm, still, gentle. The scene is reverent and sad, NOT graphic, NOT gory, NOT showing any injury or distress — the family is at rest, simply still. A faint distant wail from a far-off house can be implied only by the silence in the foreground. NO text, NO speech bubbles. Storybook flat digital art style."
+  },
+
+  {
+    "id": "scene-2/2c",
+    "title": "Pharaoh rises in the dark — \"Rise up, go!\" — Moses and Aaron summoned",
+    "mode": "edit",
+    "model": "nano-banana-pro",
+    "resolution": "2k",
+    "chars": ["moses-b", "aaron-a"],
+    "base_scene": "scene-3/3c",
+    "base_project": "hail-locusts-darkness",
+    "prompt": "Using the provided Egyptian palace throne-room scene (Pharaoh in his golden crown, red-and-gold throne, columns, torches, hieroglyph walls): PRESERVE THE EXACT ART STYLE — same warm palace, bold black outlines, rich colour palette and torch lighting; do NOT restyle. Add in EXACTLY as they appear in the deck: young Moses (chocolate-brown skin, white tunic, emerald-green mantle, tall wooden staff with a soft warm glow at the top) and young Aaron (chocolate-brown skin, sunshine-yellow robe, colourful gemstone breastplate, golden headband, wooden rod), standing before Pharaoh with calm and dignified faces, no fear. Change Pharaoh: he is standing up from his throne, leaning forward urgently, both hands open and raised in a desperate plea, his golden crown slightly askew from rising in haste, and ONE clean white oval cartoon speech bubble rises from Pharaoh containing ONLY the neat, clearly and correctly-spelled words: \"Rise up! Go!\" — no other text, letters, bubbles or banners anywhere in the image. A faint dawn light begins to enter through tall palace windows. Keep the columns, torches, hieroglyph walls and throne exactly. Storybook flat digital art style."
+  },
+
+  {
+    "id": "scene-2/2d",
+    "title": "The Egyptians urge the Israelites to leave at once",
+    "mode": "text-to-image",
+    "model": "nano-banana-pro",
+    "resolution": "2k",
+    "prompt": "A storybook flat digital illustration, clean bold black outlines and warm vibrant colours, of a busy Egyptian street at first dawn. Several Egyptians in white robes and striped headdresses are urgently pushing and helping a group of dark-brown-skinned Israelite families — fathers, mothers carrying babies, children holding small bundles, a few older people — toward the edge of town. The Egyptians have worried, urgent faces, hands outstretched in desperate 'go now' gestures. The Israelites carry small sacks over their shoulders and a few small clay jars. In the background, a pyramid and palm trees against a pale pink-gold dawn sky. The mood is hurried but NOT violent, NOT scary — the Egyptians are blessing the Israelites' departure, not fighting them. NO text, NO speech bubbles. Storybook flat digital art style."
+  },
+
+  {
+    "id": "scene-3/3a",
+    "title": "The wages — Israelites ask for silver and gold, the Egyptians give freely",
+    "mode": "text-to-image",
+    "model": "nano-banana-pro",
+    "resolution": "2k",
+    "prompt": "A storybook flat digital illustration, clean bold black outlines and warm vibrant colours, of a generous exchange on an Egyptian street. A dark-brown-skinned Israelite woman in a soft blue wrap-dress, smiling and holding out her hands, receives a small bundle of silver jewellery and a pouch of gold coins from a kind-faced Egyptian woman in a white robe and striped headdress. Beside them, more Israelite and Egyptian pairs exchange gifts: a small clay jar of silver, a folded linen garment, a brass mirror, a leather pouch. Several Egypt-ians are emptying small baskets of gold and silver trinkets into the arms of Israelite families. In the background, a few Israelite children hug a small lamb. Warm golden morning light. The mood is blessing, not robbery — the Egyptians give freely, the Israelites receive with joy. NO text, NO speech bubbles. Storybook flat digital art style."
+  },
+
+  {
+    "id": "scene-3/3b",
+    "title": "The Israelites leave Rameses — the great march-out for Succoth",
+    "mode": "text-to-image",
+    "model": "nano-banana-pro",
+    "resolution": "2k",
+    "prompt": "A wide storybook flat digital illustration, clean bold black outlines and warm vibrant colours, of the great Israelite departure from Egypt. A long joyful column of dark-brown-skinned Israelites — fathers in cream tunics, mothers in blue wraps, many children, a few older people in headwraps, some on foot, a few on small donkeys — winds its way out of a sandstone Egyptian city in the background, across a sandy desert road, toward green hills and a soft sunrise on the horizon. With them walk small flocks of sheep and goats, and a few small white lambs. Some Israelites carry the silver and gold gifts they have received, small sacks on their shoulders, small children on their hips. The mood is hopeful, bright, and free. A few Egyptians stand in the distant city gate, waving them off. Warm golden-pink dawn light. NO text, NO speech bubbles. Storybook flat digital art style."
+  },
+
+  {
+    "id": "scene-3/3c",
+    "title": "To this day — Moses teaches the elders: keep the Passover as a permanent law",
+    "mode": "text-to-image",
+    "model": "nano-banana-pro",
+    "resolution": "2k",
+    "prompt": "A storybook flat digital illustration, clean bold black outlines and warm vibrant colours, of Moses teaching the Israelite elders at the close of the day. Young Moses (chocolate-brown skin, white tunic, emerald-green mantle, tall glowing staff) stands in the centre of a circle of older Israelite men and women, his hand raised gently as he speaks, a small white lamb at his feet. The elders listen with reverent, attentive faces — some bearded men in cream robes, a few elder women in soft headwraps. Behind them, the great camp stretches out: simple tents, cooking fires beginning to glow in the dusk, children playing, a few small lambs nearby. The sky is a soft golden-pink sunset. The mood is solemn, hopeful, and passing-on. NO text, NO speech bubbles. Storybook flat digital art style."
+  },
+
+  {
+    "id": "scene-4/4a",
+    "title": "The Bridge — Jesus with the Passover lamb at his feet",
+    "mode": "edit",
+    "model": "nano-banana-pro",
+    "resolution": "2k",
+    "chars": ["jesus-a"],
+    "prompt": "A reverent storybook flat digital illustration, clean bold black outlines and warm vibrant colours. Use the provided jesus-a reference for the figure of Jesus — warm golden-brown skin, kind loving eyes, short dark hair, long flowing white robe with a deep royal blue sash at the waist, simple sandals, a soft warm golden radiance naturally glowing from around him (not a halo ring, just gentle warm light). He kneels slightly in a soft golden meadow, one hand resting tenderly on the back of a small white lamb that stands at his feet, his other hand raised in a gentle welcoming gesture. His face is the warmest, most loving smile imaginable. A few small white daisies grow in the grass around him. A few distant rolling green hills under a warm open sky. The mood is reverent, gentle, deeply loving. NO text, NO speech bubbles in the image — the slide's text card carries the John 1:29 words. Storybook flat digital art style, Pre-K friendly."
+  },
+
+  {
+    "id": "scene-5/5a",
+    "title": "Summary triptych (instructions · destroyer · wages+departure)",
+    "mode": "composite",
+    "layout": "3-panel-horizontal",
+    "sources": [
+      "projects/passover/scenes/scene-1/1c/output.png",
+      "projects/passover/scenes/scene-2/2a/output.png",
+      "projects/passover/scenes/scene-3/3a/output.png"
+    ]
+  }
+]
