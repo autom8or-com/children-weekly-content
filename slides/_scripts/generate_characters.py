@@ -6,13 +6,19 @@ Run once per project. Re-run only when a character design needs updating.
 
 Usage:
   python generate_characters.py deliverance
-  python generate_characters.py deliverance angela jesus   # specific characters only
-  python generate_characters.py deliverance --redo         # force regenerate all
-  python generate_characters.py deliverance god-a --redo  # force regenerate one
-  python generate_characters.py deliverance --provider wavespeed  # override provider
+  python generate_characters.py deliverance angela jesus            # specific characters only
+  python generate_characters.py deliverance --redo                  # force regenerate all
+  python generate_characters.py deliverance god-a --redo            # force regenerate one
+  python generate_characters.py deliverance --provider wavespeed    # override provider
+  python generate_characters.py deliverance --provider mmx          # mmx CLI (no per-image $)
 
 Provider defaults to kie.ai. Override with --provider, a "provider" field in
 project.json, or the IMAGE_PROVIDER env var.
+
+Available providers:
+  kie        kie.ai API (default; needs KIE_API_KEY)
+  wavespeed  WaveSpeed API (needs WAVESPEEDAI_API_KEY)
+  mmx        local `mmx` CLI (needs `mmx auth login`; quota only, no $ per image)
 """
 import sys
 import json
@@ -30,7 +36,7 @@ SLIDES = Path(__file__).parent.parent
 def main():
     args = sys.argv[1:]
     if not args:
-        print("Usage: python generate_characters.py <project> [--provider kie|wavespeed] [char_id ...]")
+        print("Usage: python generate_characters.py <project> [--provider kie|wavespeed|mmx] [char_id ...]")
         sys.exit(1)
 
     project_name = args[0]

@@ -1,0 +1,108 @@
+[
+  { "type": "title",
+    "eyebrow": "✦ GRADUATION GAMES ✦",
+    "title": "John 7",
+    "subtitle": "A Pre-Teens Bible Quiz",
+    "footer": "Find & Quote  ·  Binary Jump" },
+
+  { "type": "section", "palette": "preamble",
+    "eyebrow": "PART A",
+    "title": "Find & Quote",
+    "footer": "Teams race to find the phrase in your Bible and quote the exact verse reference." },
+
+  { "type": "num-question", "palette": "preamble", "number": 1,
+    "text": "So Jesus stayed in Galilee. But after His brothers had gone up to the feast, He also went up — not openly, but in private." },
+  { "type": "num-answer", "palette": "preamble", "number": 1,
+    "text": "John 7:9-10", "chip": "📖 REFERENCE" },
+
+  { "type": "num-question", "palette": "flies", "number": 2,
+    "text": "My teaching is not mine, but His who sent me. If anyone wants to do God's will, he will know whether the teaching is from God or whether I am speaking on my own authority." },
+  { "type": "num-answer", "palette": "flies", "number": 2,
+    "text": "John 7:16-17", "chip": "📖 REFERENCE" },
+
+  { "type": "num-question", "palette": "preamble", "number": 3,
+    "text": "Yet no one laid a hand on Him, because His hour had not yet come." },
+  { "type": "num-answer", "palette": "preamble", "number": 3,
+    "text": "John 7:30", "chip": "📖 REFERENCE" },
+
+  { "type": "num-question", "palette": "flies", "number": 4,
+    "text": "On the last day, the great day of the feast, Jesus stood up and cried out, \"If anyone thirsts, let him come to me and drink. Whoever believes in me, as the Scripture has said, out of his heart will flow rivers of living water.\"" },
+  { "type": "num-answer", "palette": "flies", "number": 4,
+    "text": "John 7:37-38", "chip": "📖 REFERENCE" },
+
+  { "type": "num-question", "palette": "preamble", "number": 5,
+    "text": "Nicodemus, who had gone to Jesus before, and who was one of them, said to them, \"Does our law judge a man without first giving him a hearing and learning what he does?\"" },
+  { "type": "num-answer", "palette": "preamble", "number": 5,
+    "text": "John 7:50-51", "chip": "📖 REFERENCE" },
+
+  { "type": "num-question", "palette": "flies", "number": 6,
+    "text": "The world cannot hate you, but it hates me because I testify that its works are evil." },
+  { "type": "num-answer", "palette": "flies", "number": 6,
+    "text": "John 7:7", "chip": "📖 REFERENCE" },
+
+  { "type": "num-question", "palette": "preamble", "number": 7,
+    "text": "Stop judging by mere appearances, but instead judge correctly." },
+  { "type": "num-answer", "palette": "preamble", "number": 7,
+    "text": "John 7:24", "chip": "📖 REFERENCE" },
+
+  { "type": "section", "palette": "diary",
+    "eyebrow": "PART C",
+    "title": "Binary Jump",
+    "footer": "Everyone jumps RIGHT (True) or LEFT (False)." },
+
+  { "type": "num-question", "palette": "diary", "number": 8,
+    "text": "Jesus' brothers believed in Him and encouraged Him to go to the festival and show His miracles to everyone.",
+    "footnote": "True or False?" },
+  { "type": "num-answer", "palette": "diary", "number": 8,
+    "text": "FALSE",
+    "footnote": "John 7:5 — even His brothers did not believe in Him. They were challenging Him, not supporting Him out of faith." },
+
+  { "type": "num-question", "palette": "boils", "number": 9,
+    "text": "Jesus taught in the temple during the festival and the people were amazed because He had great learning even though He had not been trained in the usual schools.",
+    "footnote": "True or False?" },
+  { "type": "num-answer", "palette": "boils", "number": 9,
+    "text": "TRUE",
+    "footnote": "John 7:14-15 — the Jews were astonished, asking how Jesus knew so much without training under famous teachers." },
+
+  { "type": "num-question", "palette": "diary", "number": 10,
+    "text": "When the chief priests sent guards to arrest Jesus, the guards came back with Jesus in handcuffs.",
+    "footnote": "True or False?" },
+  { "type": "num-answer", "palette": "diary", "number": 10,
+    "text": "FALSE",
+    "footnote": "John 7:44-46 — the guards came back empty-handed. They said, \"No one ever spoke like this man!\"" },
+
+  { "type": "num-question", "palette": "boils", "number": 11,
+    "text": "Jesus made His promise about living water on the very last and most important day of the festival.",
+    "footnote": "True or False?" },
+  { "type": "num-answer", "palette": "boils", "number": 11,
+    "text": "TRUE",
+    "footnote": "John 7:37 — it was \"the last day, the great day of the feast,\" the most important moment of the celebration." },
+
+  { "type": "num-question", "palette": "diary", "number": 12,
+    "text": "All the religious leaders agreed that Jesus was a false teacher and no one among them spoke up for Him.",
+    "footnote": "True or False?" },
+  { "type": "num-answer", "palette": "diary", "number": 12,
+    "text": "FALSE",
+    "footnote": "John 7:50-51 — Nicodemus, himself a Pharisee and a leader, spoke up and asked whether it was right to judge Jesus without hearing Him first." },
+
+  { "type": "num-question", "palette": "boils", "number": 13,
+    "text": "When Jesus' brothers urged Him to go up to the feast in Judea, He told them to go on without Him because His time had not yet fully come.",
+    "footnote": "True or False?" },
+  { "type": "num-answer", "palette": "boils", "number": 13,
+    "text": "TRUE",
+    "footnote": "John 7:8 — Jesus said, \"You go to the festival. I am not going up to this festival, because my time has not yet fully come.\" He followed the Father's schedule." },
+
+  { "type": "num-question", "palette": "diary", "number": 14,
+    "text": "Jesus told the crowd to judge Him by His family background and outward appearance.",
+    "footnote": "True or False?" },
+  { "type": "num-answer", "palette": "diary", "number": 14,
+    "text": "FALSE",
+    "footnote": "John 7:24 — Jesus said the opposite: \"Stop judging by mere appearances, but instead judge correctly.\" Look past the surface." },
+
+  { "type": "num-question", "palette": "boils", "number": 15,
+    "text": "After hearing Jesus' teaching at the feast, some in the crowd said that He must be \"the Prophet\" that God had promised long ago.",
+    "footnote": "True or False?" },
+  { "type": "num-answer", "palette": "boils", "number": 15,
+    "text": "TRUE",
+    "footnote": "John 7:40 — \"On hearing his words, some of the people said, 'Surely this man is the Prophet.'\" (cf. Deuteronomy 18:15-18.)" }
+]

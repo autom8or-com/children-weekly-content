@@ -1,0 +1,207 @@
+[
+  { "include": "welcome" },
+  { "include": "let-us-pray" },
+  { "include": "house-rules" },
+  {
+    "type": "topic",
+    "eyebrow": "✦ TOPIC ✦",
+    "title": "Robert the\nProdigal Student"
+  },
+  {
+    "type": "objectives",
+    "palette": "preamble",
+    "chip": "🎯 Objectives",
+    "title": "What We Will Learn Today",
+    "lead": "By the end of this lesson, the children will be able to:",
+    "bullets": [
+      { "emoji": "📖", "text": "Tell the **Prodigal Son** story in their own words, panel by panel" },
+      { "emoji": "💔", "text": "Identify the **3 conditions** of the lost son — without senses, dead while alive, lost" },
+      { "emoji": "🎒", "text": "Apply the **5 lessons** to their transition from primary to secondary school" },
+      { "emoji": "✝️", "text": "Make a personal decision to **defy worldly school parties** and belong to Jesus" }
+    ],
+    "image": "scene-1/1a"
+  },
+  {
+    "type": "verse",
+    "eyebrow": "📖 Memory Verse",
+    "title": "\"But we had to celebrate and be glad, because this brother of yours was dead and is alive again; he was lost and is found.\"",
+    "reference": "Luke 15:32 (NIV)"
+  },
+  {
+    "type": "bible-text",
+    "eyebrow": "📖 Bible Text",
+    "reference": "Luke 15:11–32 · The Prodigal Son",
+    "columns": 2,
+    "body": [
+      "11 Jesus continued: \"There was a man who had two sons. 12 The younger one said to his father, 'Father, give me my share of the estate.' So he divided his property between them. 13 Not long after that, the younger son got together all he had, set off for a far country and there squandered his wealth in wild living. 14 After he had spent everything, there was a severe famine in that whole country, and he began to be in need. 15 So he went and hired himself out to a citizen of that country, who sent him to his fields to feed pigs. 16 He longed to fill his stomach with the pods that the pigs were eating, but no one gave him anything. 17 When he came to his senses, he said, 'How many of my father's hired men have food to spare, and here I am starving to death! 18 I will set out and go back to my father and say to him: Father, I have sinned against heaven and against you. 19 I am no longer worthy to be called your son; make me like one of your hired men.' 20 So he got up and went to his father. But while he was still a long way off, his father saw him and was filled with compassion for him; he ran to his son, threw his arms around him and kissed him. 21 The son said to him, 'Father, I have sinned against heaven and against you. I am no longer worthy to be called your son.' 22 But the father said to his servants, 'Quick! Bring the best robe and put it on him. Put a ring on his finger and sandals on his feet. 23 Bring the fattened calf and kill it. Let's have a feast and celebrate. 24 For this son of mine was dead and is alive again; he was lost and is found.' So they began to celebrate.",
+      "25 Meanwhile, the older son was in the field. When he came near the house, he heard music and dancing. 26 So he called one of the servants and asked him what was going on. 27 'Your brother has come back,' he said, 'and your father has killed the fattened calf because he has him back safe and sound.' 28 The older brother became angry and refused to go in. So his father went out and pleaded with him. 29 But he answered his father, 'Look! All these years I've been slaving for you and never disobeyed your orders. Yet you never gave me even a young goat so I could celebrate with my friends. 30 But when this son of yours who has squandered your property with prostitutes comes home, you kill the fattened calf for him!' 31 'My son,' the father said to him, 'you are always with me, and everything I have is yours. 32 But we had to celebrate and be glad, because this brother of yours was dead and is alive again; he was lost and is found.'"
+    ]
+  },
+  {
+    "type": "section-header",
+    "palette": "preamble",
+    "eyebrow": "✦ The Story ✦",
+    "title": "Robert the Prodigal Student",
+    "footer": "Luke 15:11–32 — retold for Lagos",
+    "thumbs": ["scene-1/1a", "scene-1/1b", "scene-2/2a", "scene-2/2b"]
+  },
+  {
+    "type": "story-card",
+    "palette": "preamble",
+    "chip": "📖 Panel 1",
+    "title": "He Wanted His Share",
+    "body": [
+      { "text": "Robert was 12, just finished primary school, about to start secondary. But he didn't want to wait." },
+      { "text": "He walked up to his dad in the living room and demanded what he thought was rightfully his." }
+    ],
+    "prompt": "Have you ever asked God for something you weren't ready for?",
+    "image": "scene-1/1a"
+  },
+  {
+    "type": "story-card",
+    "palette": "preamble",
+    "chip": "📖 Panel 2",
+    "title": "The Far Country",
+    "body": [
+      { "text": "Robert left home. The money in his pocket made him feel big. New friends, loud music, naira flying." },
+      { "text": "He was having the time of his life — but he was also running out of time.", "strong": true }
+    ],
+    "prompt": "Bad friends don't always look bad. Sometimes they just look fun.",
+    "image": "scene-1/1b"
+  },
+  {
+    "type": "story-card",
+    "palette": "preamble",
+    "chip": "📖 Panel 3",
+    "title": "He Ended Up With Pigs",
+    "body": [
+      { "text": "The money ran out. Then the friends ran out. Then the food ran out. Robert was alone in a muddy pig pen, hungry, with no one to call." },
+      { "text": "It was the lowest point of his life. But it was also the moment he came to his senses.", "strong": true }
+    ],
+    "prompt": "Sometimes God has to let us hit the bottom so we'll look up.",
+    "image": "scene-2/2a"
+  },
+  {
+    "type": "story-card",
+    "palette": "preamble",
+    "chip": "📖 Panel 4",
+    "title": "Father Ran to Him",
+    "body": [
+      { "text": "Robert stood up, brushed himself off, and started the long walk home. Before he could reach the compound, he saw someone running toward him." },
+      { "text": "It was his father. Running. Arms wide open. With the biggest smile Robert had ever seen.", "strong": true }
+    ],
+    "prompt": "That's how God runs to you the moment you turn around. 🏃",
+    "image": "scene-2/2b"
+  },
+  {
+    "type": "story-card",
+    "palette": "preamble",
+    "chip": "📖 The Full Comic",
+    "title": "Robert the Prodigal Student — All 4 Panels",
+    "body": [
+      { "text": "Here's the whole story at a glance. Read the bubbles. Read the headers. Hear what God is saying to you through Robert's story." }
+    ],
+    "prompt": "Which panel hits you the hardest? Tell your parent on the way home. 💬",
+    "image": "scene-3/3a"
+  },
+  {
+    "type": "application",
+    "title": "Choose Jesus at your new school.",
+    "intro": [
+      "You're about to start a new school. There will be new friends, new parties, new pressure.",
+      "Today, before you get there, decide: I belong to Jesus. No matter what."
+    ],
+    "steps_lead": "If you slip — and you might — here's the rescue plan:",
+    "image": "scene-2/2b"
+  },
+  {
+    "type": "section-header",
+    "palette": "diary",
+    "eyebrow": "✦ Nicolas's Corner ✦",
+    "title": "Nicolas's Diary",
+    "footer": "What I learned from Robert's story…",
+    "thumbs": ["scene-1/1a", "scene-1/1b", "scene-2/2a", "scene-2/2b"]
+  },
+  {
+    "type": "diary-card",
+    "chip": "📓 Dear Diary,",
+    "title": "Without His Senses 💭",
+    "body": [
+      { "text": "Robert ate with pigs because he lost his senses — if you don't pray daily, you'll lose yours too." },
+      { "text": "Bad friends will only look bad AFTER you've lost your sense to spot them. Pray first, friend later.", "strong": true }
+    ],
+    "teacher_note": "You need to be consistent in your prayer and devotions so you have prayer and wisdom stored up for many days. So you can know bad friends and avoid them. (Luke 15:17)",
+    "signature": "Love, Nicolas 💜",
+    "image": "scene-2/2a"
+  },
+  {
+    "type": "diary-card",
+    "chip": "📓 Dear Diary,",
+    "title": "Dead While Alive 💀",
+    "body": [
+      { "text": "Every time you disobey God, you're alive on the outside but dead on the inside." },
+      { "text": "At school, the moment I disobey God, I am dead while alive.", "strong": true }
+    ],
+    "teacher_note": "As far as I am separated from God through sin and disobedience, I am dead alive. Everyday in school, if I disobey God I will be dead while alive. (Luke 15:24)",
+    "signature": "Love, Nicolas 💜",
+    "image": "scene-2/2a"
+  },
+  {
+    "type": "diary-card",
+    "chip": "📓 Dear Diary,",
+    "title": "Lost 📵",
+    "body": [
+      { "text": "If your parents haven't heard from you in a while — that's the lost condition. Robert's parents didn't hear from him either." },
+      { "text": "As I go to school I must be brave to tell my parents about my problems.", "strong": true }
+    ],
+    "teacher_note": "His parents did not hear from him. His life was hidden from his parents. As I go to school I must be brave to tell my parents about my problems. (Luke 15:24)",
+    "signature": "Love, Nicolas 💜",
+    "image": "scene-1/1b"
+  },
+  {
+    "type": "diary-card",
+    "chip": "📓 Dear Diary,",
+    "title": "Repentant 🙇",
+    "body": [
+      { "text": "Repentance isn't just a feeling — it's the decision to run back, even when you're dirty and ashamed." },
+      { "text": "Whenever you spot you have started little little disobediences, run back to God and repent. Tell your parents too.", "strong": true }
+    ],
+    "teacher_note": "He confessed his sin. Whenever you spot you have started little little disobediences, run back to God and repent. Tell your parents too. They will be happy for and pray for you. (Luke 15:21)",
+    "signature": "Love, Nicolas 💜",
+    "image": "scene-2/2b"
+  },
+  {
+    "type": "diary-card",
+    "chip": "📓 Dear Diary,",
+    "title": "Heaven Throws a Party 🎉",
+    "body": [
+      { "text": "When one of you decides for Jesus — heaven throws a feast. You matter that much." },
+      { "text": "So as you go, decide: no bad friends, no disobedience, daily devotions, quick repentance — and tell others about it. Then you will be causing joy in heaven.", "strong": true }
+    ],
+    "teacher_note": "Every time I bring a sinner to repentance, I cause a party in heaven. So as you go you must decide not to follow bad friends, not to be disobedient to your parents, observe your devotions daily, and be repentant when you sin. Most of all, tell others about it. Then you will be causing joy in heaven. (Luke 15:10)",
+    "signature": "Love, Nicolas 💜",
+    "image": "scene-2/2b"
+  },
+  {
+    "type": "summary",
+    "palette": "diary",
+    "chip": "✦ Today We Learned...",
+    "title": "Five Lessons from Robert",
+    "bullets": [
+      { "emoji": "💭", "text": "**Without his senses** — pray daily, store up wisdom" },
+      { "emoji": "💀", "text": "**Dead while alive** — disobedience cuts you off from God" },
+      { "emoji": "📵", "text": "**Lost** — if your parents can't reach you, you're lost" },
+      { "emoji": "🙇", "text": "**Repentant** — run back the moment you slip" },
+      { "emoji": "🎉", "text": "**Heaven throws a party** — every repentant soul is a feast" }
+    ],
+    "prompt": "Choose Jesus at your new school. The world is watching — and heaven is ready to celebrate. ❤️",
+    "image": "scene-3/3a"
+  },
+  {
+    "type": "goodbye",
+    "eyebrow": "✦ See You Next Week! ✦",
+    "title": "Go Shine\nat Your\nNew School!",
+    "subtitle": "You belong to Jesus. 🎒✝️",
+    "footer": "Tell one friend this week what you learned about Robert."
+  }
+]

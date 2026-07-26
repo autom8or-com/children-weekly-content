@@ -1,0 +1,34 @@
+{
+  "round1_new": [
+    {
+      "section": 1,
+      "phrase": "The world cannot hate you, but it hates me because I testify that its works are evil.",
+      "reference": "John 7:7"
+    },
+    {
+      "section": 2,
+      "phrase": "Stop judging by mere appearances, but instead judge correctly.",
+      "reference": "John 7:24"
+    }
+  ],
+  "round3_new": [
+    {
+      "section": 1,
+      "statement": "When Jesus' brothers urged Him to go up to the feast in Judea, He told them to go on without Him because His time had not yet fully come.",
+      "answer": "TRUE",
+      "explanation": "John 7:8 records Jesus saying, \"You go to the festival. I am not going up to this festival, because my time has not yet fully come.\" He was following the Father's schedule, not His brothers' pressure."
+    },
+    {
+      "section": 2,
+      "statement": "Jesus told the crowd to judge Him by His family background and outward appearance.",
+      "answer": "FALSE",
+      "explanation": "Jesus said the opposite in John 7:24: \"Stop judging by mere appearances, but instead judge correctly.\" He wanted people to look past the surface — where He came from, what He looked like — and judge with truth and wisdom."
+    },
+    {
+      "section": 5,
+      "statement": "After hearing Jesus' teaching at the feast, some in the crowd said that He must be \"the Prophet\" that God had promised long ago.",
+      "answer": "TRUE",
+      "explanation": "John 7:40 says, \"On hearing his words, some of the people said, 'Surely this man is the Prophet.'\" They were thinking of Deuteronomy 18:15-18, where Moses promised that God would one day raise up a prophet like him. Not everyone agreed, but the Prophet claim was a real option the crowd considered."
+    }
+  ]
+}

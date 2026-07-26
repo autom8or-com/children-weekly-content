@@ -1,0 +1,49 @@
+[
+  {
+    "id": "scene-1/1a",
+    "title": "He wanted his share",
+    "mode": "edit",
+    "model": "nano-banana-2",
+    "resolution": "2k",
+    "chars": ["robert", "father"],
+    "prompt": "Storybook comic panel, 16:9. Setting: a modern Nigerian family living room at night, warm yellow lamp light, a small framed family photo on the wall, a brown leather sofa, polished wooden floor, a half-packed brown travel bag on the floor. Using the provided character references, PRESERVE the exact appearance of Robert and Father — same faces, same skin tone, same clothing, same proportions. Robert (12-year-old Nigerian pre-teen, navy blue graphic t-shirt, blue jeans, white-and-red sneakers) stands in the centre with one hand outstretched palm-up, chin raised, looking determined. Father (40s Nigerian man, light blue button-up shirt rolled at the sleeves, dark navy trousers) stands across from Robert looking deeply heartbroken, holding a thick brown envelope and a small white envelope of cash in his hand. A small white rectangular header banner at the very top of the panel reads: 'HE WANTED HIS SHARE' in neat, correctly-spelled cartoon lettering. ONE clean white oval speech bubble rises from Robert containing ONLY the words: 'GIVE ME MY SHARE, DAD!' — no other text anywhere. ONE clean white oval speech bubble rises from Father containing ONLY the words: 'MY SON…' — no other text. Storybook flat digital art, clean bold black outlines, warm vibrant colours, simple and engaging."
+  },
+  {
+    "id": "scene-1/1b",
+    "title": "The far country",
+    "mode": "text-to-image",
+    "model": "nano-banana-pro",
+    "resolution": "2k",
+    "prompt": "Storybook comic panel, 16:9. Setting: a loud flashy Lagos party night under neon string lights, a big black music speaker blasting, takeaway cups and naira notes scattered on a plastic table, more naira notes flying in the air, a generic city skyline in the far background. Inline character description (no ref sheet, to avoid any child-ref filter triggers): Robert is a 12-year-old Nigerian pre-teen with medium-dark chocolate-brown skin, short cropped black natural hair, wearing a fitted navy blue graphic t-shirt, blue jeans, a brown leather belt, and white-and-red sneakers. He stands in the middle of three older Nigerian teenagers (about 17-18, each wearing flashy shirts, caps, fake gold chains) who are laughing and spending freely. Robert is smiling, holding a takeaway cup, but looks slightly out of place. A small white rectangular header banner at the very top of the panel reads: 'THE FAR COUNTRY' in neat, correctly-spelled cartoon lettering. ONE clean white oval speech bubble rises from the lead bad-friend on the left containing ONLY the words: 'SPEND IT ALL, BRO!' — no other text. The mood is loud, tempting, and not yet disastrous — Robert is still enjoying himself. Storybook flat digital art, clean bold black outlines, warm vibrant colours."
+  },
+  {
+    "id": "scene-2/2a",
+    "title": "He ended up with pigs",
+    "mode": "text-to-image",
+    "model": "nano-banana-pro",
+    "resolution": "2k",
+    "prompt": "Storybook comic panel, 16:9. Setting: a muddy pig pen at the edge of a remote Nigerian village under a heavy overcast grey sky, dry yellow grass around, a rough wooden fence, a small wooden feeding trough on the ground. Inline character description (no ref sheet, to avoid any child-ref + distress filter triggers): Robert is a 12-year-old Nigerian pre-teen with medium-dark chocolate-brown skin and short cropped black natural hair. He now wears torn, dirty, faded versions of his t-shirt and jeans, no shoes, no belt, a small tear at his sleeve. He sits on the ground in the mud, knees pulled up, back leaning against the wooden fence, head down, looking exhausted and hungry but not broken — a small quiet determination forming on his face. Three friendly cartoon pinkish-brown pigs snuffle around him, drawn big and simple, clearly pigs but not scary. He holds out a small empty wooden trough. A small piece of bread lies on the ground nearby. A small white rectangular header banner at the very top of the panel reads: 'HE ENDED UP WITH PIGS' in neat, correctly-spelled cartoon lettering. NO speech bubbles. The mood is quiet, sad and humble — NOT gory, NOT horror, NOT showing injuries or starvation. Storybook flat digital art, clean bold black outlines, warm but muted colours (slightly desaturated compared to panel 1)."
+  },
+  {
+    "id": "scene-2/2b",
+    "title": "Father ran to him",
+    "mode": "edit",
+    "model": "nano-banana-2",
+    "resolution": "2k",
+    "chars": ["robert", "father"],
+    "prompt": "Storybook comic panel, 16:9. Setting: a sunny road leading up to a modern Nigerian family compound, a low green-painted compound wall, a big mango tree, a glimpse of the family home behind, a clear bright blue sky with a few small birds. CRITICAL COMPOSITION: this is a TWO-CHARACTER REUNION in profile, FACING EACH OTHER across the panel. Father stands on the LEFT side of the panel, his body and face turned to the RIGHT (toward Robert), one foot forward mid-run, arms wide open, a big relieved loving smile, eyes locked on Robert. Robert stands on the RIGHT side of the panel, his body and face turned to the LEFT (toward Father), one foot forward mid-step toward Father, head slightly raised with a humble hopeful expression, eyes on Father. Their lines of sight cross in the middle of the panel — they are looking at each other, NOT at the viewer, NOT at the house, NOT away from each other. The space between them is open road. Using the provided character references, PRESERVE the exact appearance of Robert and Father — same faces, same skin tone, same clothing: Father wears a light blue button-up shirt rolled at the sleeves and dark navy trousers; Robert wears his torn dirty faded t-shirt, torn jeans, no shoes, dusty. A small white rectangular header banner at the very top of the panel reads: 'FATHER RAN TO HIM' in neat, correctly-spelled cartoon lettering. ONE clean white oval speech bubble rises from Father containing ONLY the words: 'MY SON IS HOME!' — no other text. The mood is joyful, warm, relieved — the reunion moment. Storybook flat digital art, clean bold black outlines, warm vibrant colours, the most colourful and bright of the four panels."
+  },
+  {
+    "id": "scene-3/3a",
+    "title": "Robert the Prodigal Student — full 4-panel comic strip",
+    "mode": "composite",
+    "layout": "4-panel-horizontal",
+    "gutter": 12,
+    "sources": [
+      "projects/robert-prodigal-student/scenes/scene-1/1a/output.png",
+      "projects/robert-prodigal-student/scenes/scene-1/1b/output.png",
+      "projects/robert-prodigal-student/scenes/scene-2/2a/output.png",
+      "projects/robert-prodigal-student/scenes/scene-2/2b/output.png"
+    ]
+  }
+]

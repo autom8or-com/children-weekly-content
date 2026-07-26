@@ -107,14 +107,18 @@ load_dotenv('.env')
 r = requests.get('https://api.wavespeed.ai/api/v3/balance', headers={'Authorization': f'Bearer {os.environ[\"WAVESPEEDAI_API_KEY\"]}'})
 print(r.json()['data']['balance'])
 "
+
+# Check mmx quota (opt-in provider, no per-image $)
+mmx quota show
 ```
 
 ### Image Providers
 
-The slides pipeline runs on two interchangeable providers behind one interface:
+The slides pipeline runs on three interchangeable providers behind one interface:
 
 - **kie.ai** (default) — `KIE_API_KEY`. Job API: `POST /api/v1/jobs/createTask`, poll `GET /api/v1/jobs/recordInfo?taskId=`. Reference images must be URLs, so local refs are auto-uploaded via the base64 upload endpoint first. No separate `edit`/`edit-fast` endpoints — edit-vs-generate is inferred from whether refs are passed.
 - **WaveSpeed** (opt-in) — `WAVESPEEDAI_API_KEY`. Inline base64 refs; per-mode endpoints.
+- **mmx** (opt-in) — local `mmx` CLI; quota only, no per-image $. Single `--subject-ref` per call, so multi-ref edit-mode scenes should use kie or wavespeed. The agent's preferred default (in conversational use) is the built-in `image_synthesize` tool — that path is separate from the script-driven pipeline.
 
 Selection precedence: `--provider kie|wavespeed` flag → `"provider"` field in `project.json` → `IMAGE_PROVIDER` env → default `kie`. Model names (`nano-banana-pro`, `nano-banana-2`) and `scenes.json` are identical across providers.
 

@@ -3,17 +3,24 @@
 Automated storybook illustration pipeline using Nano Banana image models.
 Fully reusable — each new topic is a new project folder with three JSON files.
 
-Two interchangeable image providers sit behind one interface:
+Three interchangeable image providers sit behind one interface:
 
-- **kie.ai** (default) — env `KIE_API_KEY`
-- **WaveSpeed** (opt-in) — env `WAVESPEEDAI_API_KEY`
+- **kie.ai** (default) — env `KIE_API_KEY`. Per-image credits.
+- **WaveSpeed** (opt-in) — env `WAVESPEEDAI_API_KEY`. Per-image $.
+- **mmx** (opt-in) — local `mmx` CLI (`mmx auth login`). Quota only, no $ per image.
+  Subject-ref takes a single image per call — for multi-ref consistency in edit-mode
+  scenes, fall back to `--provider kie` or `--provider wavespeed`.
 
 Provider is chosen by, in order: `--provider <name>` flag → `"provider"` field in the
-project's `project.json` → `IMAGE_PROVIDER` env var → default `kie`. Both providers use
-the same model names (`nano-banana-pro`, `nano-banana-2`), so `scenes.json` is unchanged
-either way. Note kie.ai's job API has no separate `edit`/`edit-fast` endpoints — it
-infers edit-vs-generate from whether reference images are present — so on kie.ai those
-modes behave the same; the distinction only affects cost on WaveSpeed.
+project's `project.json` → `IMAGE_PROVIDER` env var → default `kie`. kie.ai and
+WaveSpeed share model names (`nano-banana-pro`, `nano-banana-2`), so `scenes.json` is
+unchanged between them. mmx has its own model name (`image-01`) — the client handles
+the mapping automatically. Note kie.ai's job API has no separate `edit`/`edit-fast`
+endpoints — it infers edit-vs-generate from whether reference images are present.
+
+The agent's conversational default is the built-in `image_synthesize` tool (no API
+key, no quota, no install). That path is the agent's only — the script-driven
+pipeline uses one of the three providers above.
 
 ---
 
@@ -22,9 +29,10 @@ modes behave the same; the distinction only affects cost on WaveSpeed.
 ```
 slides/
 ├── _lib/
-│   ├── provider.py                # Provider selection (kie.ai / WaveSpeed)
+│   ├── provider.py                # Provider selection (kie.ai / WaveSpeed / mmx)
 │   ├── kie.py                     # kie.ai API client (default)
-│   └── wavespeed.py               # WaveSpeed API client (opt-in)
+│   ├── wavespeed.py               # WaveSpeed API client (opt-in)
+│   └── mmx.py                     # mmx CLI wrapper (opt-in, quota only)
 ├── _scripts/
 │   ├── generate_characters.py     # Step 1: Generate character reference sheets
 │   ├── generate_scenes.py         # Step 2: Generate scene images

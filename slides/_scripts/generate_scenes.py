@@ -14,13 +14,21 @@ Optional post-processing fields (applied after the API call):
   overlay — stamp a graphic asset from slides/_assets/ onto the output
 
 Usage:
-  python generate_scenes.py <project>                        # all scenes
-  python generate_scenes.py <project> scene-1/1a scene-1/1b # specific scenes only
-  python generate_scenes.py <project> --redo scene-3/3c     # force re-generate
-  python generate_scenes.py <project> --provider wavespeed  # override provider
+  python generate_scenes.py <project>                              # all scenes
+  python generate_scenes.py <project> scene-1/1a scene-1/1b       # specific scenes only
+  python generate_scenes.py <project> --redo scene-3/3c           # force re-generate
+  python generate_scenes.py <project> --provider wavespeed        # override provider
+  python generate_scenes.py <project> --provider mmx              # mmx CLI (quota only)
 
 Provider defaults to kie.ai. Override with --provider, a "provider" field in
 project.json, or the IMAGE_PROVIDER env var.
+
+Available providers:
+  kie        kie.ai API (default; needs KIE_API_KEY)
+  wavespeed  WaveSpeed API (needs WAVESPEEDAI_API_KEY)
+  mmx        local `mmx` CLI (needs `mmx auth login`; quota only, no $ per image).
+             Subject-ref takes a single image per call — for multi-ref consistency
+             in edit-mode scenes, fall back to --provider kie or --provider wavespeed.
 """
 import sys
 import json
@@ -225,6 +233,7 @@ LAYOUT_PANELS = {
     "3-panel-horizontal":   3,
     "2-panel-vertical":     2,
     "2-panel-horizontal":   2,
+    "4-panel-horizontal":   4,   # NEW: true horizontal strip, 4 wide × 1 tall (comic strip)
 }
 
 def build_composite(scene: dict, out_path: Path):
@@ -232,6 +241,7 @@ def build_composite(scene: dict, out_path: Path):
     layout  = scene.get("layout", "3-panel-vertical")
     sources = scene.get("sources", [])
     panels  = LAYOUT_PANELS.get(layout, len(sources))
+    gutter  = int(scene.get("gutter", 0))  # px between panels (optional)
 
     images = []
     for src in sources[:panels]:
@@ -245,24 +255,33 @@ def build_composite(scene: dict, out_path: Path):
         print(f"  [WARN] No valid composite sources found — skipping")
         return
 
-    is_vertical = "vertical" in layout
     ref_w = images[0].width
     ref_h = images[0].height
 
     images = [img.resize((ref_w, ref_h), Image.LANCZOS) for img in images]
 
-    if is_vertical:
-        canvas = Image.new("RGB", (ref_w * len(images), ref_h))
+    # 4-panel-horizontal: ALWAYS a horizontal strip (wide canvas), regardless of the
+    # "vertical in name" branch below. With optional thin black gutter.
+    if layout == "4-panel-horizontal":
+        total_w = ref_w * len(images) + gutter * (len(images) - 1)
+        canvas = Image.new("RGB", (total_w, ref_h))
         for i, img in enumerate(images):
-            canvas.paste(img, (ref_w * i, 0))
+            x = i * (ref_w + gutter)
+            canvas.paste(img, (x, 0))
     else:
-        canvas = Image.new("RGB", (ref_w, ref_h * len(images)))
-        for i, img in enumerate(images):
-            canvas.paste(img, (0, ref_h * i))
+        is_vertical = "vertical" in layout
+        if is_vertical:
+            canvas = Image.new("RGB", (ref_w * len(images), ref_h))
+            for i, img in enumerate(images):
+                canvas.paste(img, (ref_w * i, 0))
+        else:
+            canvas = Image.new("RGB", (ref_w, ref_h * len(images)))
+            for i, img in enumerate(images):
+                canvas.paste(img, (0, ref_h * i))
 
     out_path.parent.mkdir(parents=True, exist_ok=True)
     canvas.save(out_path)
-    print(f"  [PIL]  composite saved → {out_path}  (layout={layout}, panels={len(images)})")
+    print(f"  [PIL]  composite saved → {out_path}  (layout={layout}, panels={len(images)}, gutter={gutter})")
 
 
 # ---------------------------------------------------------------------------
@@ -282,7 +301,7 @@ def load_char_project(project: Path) -> Path | None:
 def main():
     args = sys.argv[1:]
     if not args:
-        print("Usage: python generate_scenes.py <project> [--provider kie|wavespeed] [--redo] [scene-id ...]")
+        print("Usage: python generate_scenes.py <project> [--provider kie|wavespeed|mmx] [--redo] [scene-id ...]")
         sys.exit(1)
 
     project_name = args[0]
