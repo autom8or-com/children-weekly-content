@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="electron" modified="2026-07-26T22:50:00.000Z" agent="Copilot" version="25.0" etag="1" type="device">
+  <diagram name="Components" id="components">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <!-- Title -->
+        <mxCell id="title" value="Slides Generation Components" style="text;fontSize=16;fontStyle=1;align=center;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="300" y="20" width="500" height="25" as="geometry" />
+        </mxCell>
+        <!-- Provider Abstraction Layer -->
+        <mxCell id="group1" value="Provider Layer" style="group;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1" connectable="0">
+          <mxGeometry x="50" y="100" width="300" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="prov-abs" value="provider.py&#10;(abstraction)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5ff;strokeColor=#9673a6;shadow=1;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="100" y="130" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="kie" value="kie.py&#10;(kie.ai)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;shadow=1;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="60" y="210" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ws" value="wavespeed.py&#10;(WaveSpeed)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;shadow=1;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="175" y="210" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="mmx" value="mmx.py&#10;(mmx CLI)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;shadow=1;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="290" y="210" width="100" height="60" as="geometry" />
+        </mxCell>
+        <!-- Arrows from abstraction to providers -->
+        <mxCell id="a1" edge="1" parent="1" source="prov-abs" target="kie">
+          <mxGeometry relative="1" as="geometry" />
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#666;strokeWidth=1.5;" />
+        </mxCell>
+        <mxCell id="a2" edge="1" parent="1" source="prov-abs" target="ws">
+          <mxGeometry relative="1" as="geometry" />
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#666;strokeWidth=1.5;" />
+        </mxCell>
+        <mxCell id="a3" edge="1" parent="1" source="prov-abs" target="mmx">
+          <mxGeometry relative="1" as="geometry" />
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#666;strokeWidth=1.5;" />
+        </mxCell>
+        <!-- Generation Scripts -->
+        <mxCell id="group2" value="Generation Scripts" style="group;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1" connectable="0">
+          <mxGeometry x="450" y="100" width="280" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="gen-chars" value="generate_characters.py&#10;&#10;nano-banana-pro" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;shadow=1;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="480" y="130" width="130" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="gen-scenes" value="generate_scenes.py&#10;&#10;nano-banana-2" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;shadow=1;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="650" y="130" width="130" height="70" as="geometry" />
+        </mxCell>
+        <!-- Build Script -->
+        <mxCell id="group3" value="Assembly" style="group;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1" connectable="0">
+          <mxGeometry x="800" y="100" width="250" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="build-pptx" value="build_pptx.py&#10;&#10;deck_render.py&#10;deck_html.py" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;shadow=1;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="830" y="130" width="140" height="70" as="geometry" />
+        </mxCell>
+        <!-- Rendering Engines box -->
+        <mxCell id="render-label" value="Rendering Engines" style="text;fontSize=10;fontStyle=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="830" y="210" width="140" height="20" as="geometry" />
+        </mxCell>
+        <!-- PIL Post-Processing -->
+        <mxCell id="pil" value="PIL Post-Processing&#10;(pip, overlay, composite)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5ff;strokeColor=#9673a6;shadow=1;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="450" y="350" width="200" height="60" as="geometry" />
+        </mxCell>
+        <!-- Provider dependency -->
+        <mxCell id="a4" edge="1" parent="1" source="gen-scenes" target="prov-abs">
+          <mxGeometry relative="1" as="geometry" />
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#b85450;strokeWidth=2;exitX=0.3;exitY=1;entryX=0.7;entryY=0;" />
+        </Cell>
+        <!-- PIL dependency -->
+        <mxCell id="a5" edge="1" parent="1" source="gen-scenes" target="pil">
+          <mxGeometry relative="1" as="geometry" />
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#333;strokeWidth=1.5;exitX=1;exitY=1;entryX=0;entryY=0;" />
+        </mxCell>
+        <!-- Build uses scenes -->
+        <mxCell id="a6" edge="1" parent="1" source="gen-scenes" target="build-pptx">
+          <mxGeometry relative="1" as="geometry" />
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#333;strokeWidth=2;exitX=1;exitY=0;entryX=0;entryY=0.5;" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

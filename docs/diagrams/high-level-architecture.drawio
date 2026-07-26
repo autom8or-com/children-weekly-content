@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="electron" modified="2026-07-26T22:50:00.000Z" agent="Copilot" version="25.0" etag="1" type="device">
+  <diagram name="High-Level Architecture" id="high-level">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <!-- Title -->
+        <mxCell id="title" value="Children's Weekly Content Pipeline" style="text;fontSize=18;fontStyle=1;align=center;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="350" y="20" width="400" height="30" as="geometry" />
+        </mxCell>
+        <!-- Swimlanes -->
+        <mxCell id="swim1" value="TOD System" style="swimlane;startSize=40;fillColor=#fff2cc;strokeColor=#d6b656;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="100" width="460" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="swim2" value="Slides System" style="swimlane;startSize=40;fillColor=#e1d5ff;strokeColor=#9673a6;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="560" y="100" width="480" height="300" as="geometry" />
+        </mxCell>
+        <!-- TOD System Components -->
+        <mxCell id="tod-input" value="Rotation&#10;Schedule" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="150" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="tod-gen" value="TOD Generator&#10;(tod-generate skill)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="220" y="150" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="tod-output" value="Word Docs&#10;(.docx)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="250" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="noco" value="NocoDB&#10;Storage" style="shape=cylinder3;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="250" width="100" height="60" as="geometry" />
+        </mxCell>
+        <!-- TOD Arrows -->
+        <mxCell id="arrow1" edge="1" parent="1" source="tod-input" target="tod-gen">
+          <mxGeometry relative="1" as="geometry" />
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#333;strokeWidth=2;" />
+        </mxCell>
+        <mxCell id="arrow2" edge="1" parent="1" source="tod-gen" target="tod-output">
+          <mxGeometry relative="1" as="geometry" />
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#333;strokeWidth=2;" />
+        </mxCell>
+        <mxCell id="arrow3" edge="1" parent="1" source="tod-gen" target="noco">
+          <mxGeometry relative="1" as="geometry" />
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#333;strokeWidth=2;" />
+        </mxCell>
+        <!-- Slides System Components -->
+        <mxCell id="project-def" value="Project Files&#10;(JSON)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="590" y="150" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="char-gen" value="generate_characters.py" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="735" y="150" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="scene-gen" value="generate_scenes.py" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="860" y="150" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="pptx-build" value="build_pptx.py" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="860" y="250" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="image-prov" value="Image Provider&#10;(kie.ai, WaveSpeed, mmx)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="735" y="250" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="pptx-out" value="PowerPoint&#10;Deck (.pptx)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="590" y="250" width="120" height="60" as="geometry" />
+        </mxCell>
+        <!-- Slides Arrows -->
+        <mxCell id="arrow4" edge="1" parent="1" source="project-def" target="char-gen">
+          <mxGeometry relative="1" as="geometry" />
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#333;strokeWidth=2;" />
+        </mxCell>
+        <mxCell id="arrow5" edge="1" parent="1" source="project-def" target="scene-gen">
+          <mxGeometry relative="1" as="geometry" />
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#333;strokeWidth=2;" />
+        </mxCell>
+        <mxCell id="arrow6" edge="1" parent="1" source="scene-gen" target="image-prov">
+          <mxGeometry relative="1" as="geometry" />
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor:#b85450;strokeWidth=2;" />
+        </mxCell>
+        <mxCell id="arrow7" edge="1" parent="1" source="scene-gen" target="pptx-build">
+          <mxGeometry relative="1" as="geometry" />
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor:#333;strokeWidth=2;" />
+        </mxCell>
+        <mxCell id="arrow8" edge="1" parent="1" source="pptx-build" target="pptx-out">
+          <mxGeometry relative="1" as="geometry" />
+          <mxCell style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor:#333;strokeWidth=2;" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
