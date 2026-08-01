@@ -89,12 +89,15 @@ Stop here. No checkpoint needed.
 
 **If activity is GAME**, initialise the checkpoint and proceed to Step 3.
 
-**If activity is QUIZ**, also check the very next entry in the schedule:
-- If that next entry's `activity` is `PRESENTATION`, store it as the **paired PRESENTATION**:
+**If activity is QUIZ**, scan ahead in the schedule for the next PRESENTATION entry,
+skipping any SKIPPED or MESSAGE entries in between:
+- Look at the entry immediately after the QUIZ date, then the one after that, etc.,
+  stopping as soon as you find an entry whose `activity` is `PRESENTATION` or exhaust the list.
+- If a PRESENTATION is found within the look-ahead, store it as the **paired PRESENTATION**:
   `pres_date`, `pres_teens_passage`, `pres_preteens_passage`
 - Announce: "QUIZ + PRESENTATION pair detected — generating both in one run."
-- Generate QUIZ content (Steps 4–5), then immediately generate PRESENTATION content
-  (Steps 4–5 again for the paired date) before sending the Telegram notification.
+- Generate QUIZ content (Steps 3–4), then immediately generate PRESENTATION content
+  (Steps 3–4 again for the paired date) before sending the Telegram notification.
   The Telegram message covers both Sundays.
 
 **If activity is PRESENTATION**, initialise the checkpoint and proceed to Step 3.
