@@ -1,11 +1,11 @@
 {
   "version": "1",
-  "target_date": "2026-09-27",
+  "target_date": "2026-11-08",
   "activity": "GAME",
-  "teens_passage": "Hebrews 12",
-  "preteens_passage": "Matthew 6",
-  "started_at": "2026-09-25T13:02:53Z",
-  "last_updated": "2026-09-25T13:07:21Z",
+  "teens_passage": "Matthew 5",
+  "preteens_passage": "Matthew 12",
+  "started_at": "2026-11-06T13:02:00Z",
+  "last_updated": "2026-11-06T13:05:23Z",
   "steps": {
     "rotation_lookup": "done",
     "teens_spec_written": "done",
@@ -19,20 +19,20 @@
   "files": {
     "teens": [
       {
-        "filename": "Game_Teens_Hebrews12.docx",
-        "local_path": "content/teens/2026-09-27_GAME_Hebrews12/Game_Teens_Hebrews12.docx",
+        "filename": "Game_Teens_Matthew5.docx",
+        "local_path": "content/teens/2026-11-08_GAME_Matthew5/Game_Teens_Matthew5.docx",
         "file_type": "GAME_SHEET",
-        "download_url": "https://nocodb.aiautom8or.com/dltemp/oqY0uWoHKs-yRHTc/1790349000000/tod/2026/09/Game_Teens_Hebrews12_Z6JGy.docx",
-        "nocodb_record_id": 41
+        "download_url": "https://nocodb.aiautom8or.com/dltemp/199196n5J_oPZcV6/1793977800000/tod/2026/11/Game_Teens_Matthew5_1sOl0.docx",
+        "nocodb_record_id": 43
       }
     ],
     "preteens": [
       {
-        "filename": "Game_Preteens_Matthew6.docx",
-        "local_path": "content/preteens/2026-09-27_GAME_Matthew6/Game_Preteens_Matthew6.docx",
+        "filename": "Game_Preteens_Matthew12.docx",
+        "local_path": "content/preteens/2026-11-08_GAME_Matthew12/Game_Preteens_Matthew12.docx",
         "file_type": "GAME_SHEET",
-        "download_url": "https://nocodb.aiautom8or.com/dltemp/Rg3awnGxe0xOnuE4/1790349000000/tod/2026/09/Game_Preteens_Matthew6_JDnn6.docx",
-        "nocodb_record_id": 42
+        "download_url": "https://nocodb.aiautom8or.com/dltemp/qSSwjr0KMzGgDiYb/1793977800000/tod/2026/11/Game_Preteens_Matthew12_apxqH.docx",
+        "nocodb_record_id": 44
       }
     ]
   }
