@@ -1,11 +1,11 @@
 {
   "version": "1",
-  "target_date": "2026-09-27",
-  "activity": "GAME",
-  "teens_passage": "Hebrews 12",
-  "preteens_passage": "Matthew 6",
-  "started_at": "2026-09-25T13:02:53Z",
-  "last_updated": "2026-09-25T13:07:21Z",
+  "target_date": "2026-11-15",
+  "activity": "QUIZ",
+  "teens_passage": "Matthew 6",
+  "preteens_passage": "Matthew 13",
+  "started_at": "2026-11-13T13:46:09Z",
+  "last_updated": "2026-11-13T14:01:20Z",
   "steps": {
     "rotation_lookup": "done",
     "teens_spec_written": "done",
@@ -19,20 +19,76 @@
   "files": {
     "teens": [
       {
-        "filename": "Game_Teens_Hebrews12.docx",
-        "local_path": "content/teens/2026-09-27_GAME_Hebrews12/Game_Teens_Hebrews12.docx",
-        "file_type": "GAME_SHEET",
-        "download_url": "https://nocodb.aiautom8or.com/dltemp/oqY0uWoHKs-yRHTc/1790349000000/tod/2026/09/Game_Teens_Hebrews12_Z6JGy.docx",
-        "nocodb_record_id": 41
+        "filename": "Quiz_Teens_Variant_A_Matthew6.docx",
+        "local_path": "content/teens/2026-11-15_QUIZ_Matthew6/Quiz_Teens_Variant_A_Matthew6.docx",
+        "file_type": "QUIZ_VARIANT_A",
+        "download_url": "https://nocodb.aiautom8or.com/dltemp/1Np1_k5E0jB2B_qt/1794585600000/tod/2026/11/Quiz_Teens_Variant_A_Matthew6_Q9t86V-AO2LmNWa7.docx",
+        "nocodb_record_id": 45
+      },
+      {
+        "filename": "Quiz_Teens_Variant_B_Matthew6.docx",
+        "local_path": "content/teens/2026-11-15_QUIZ_Matthew6/Quiz_Teens_Variant_B_Matthew6.docx",
+        "file_type": "QUIZ_VARIANT_B",
+        "download_url": "https://nocodb.aiautom8or.com/dltemp/esVvXkNv6Qxob8cX/1794585600000/tod/2026/11/Quiz_Teens_Variant_B_Matthew6_tagm6Tx1Uf07QZw0.docx",
+        "nocodb_record_id": 46
+      },
+      {
+        "filename": "Quiz_Teens_Variant_C_Matthew6.docx",
+        "local_path": "content/teens/2026-11-15_QUIZ_Matthew6/Quiz_Teens_Variant_C_Matthew6.docx",
+        "file_type": "QUIZ_VARIANT_C",
+        "download_url": "https://nocodb.aiautom8or.com/dltemp/vRnXXvwiOmD5qJn1/1794585600000/tod/2026/11/Quiz_Teens_Variant_C_Matthew6_vBh_HdH8sTt-qusP.docx",
+        "nocodb_record_id": 47
+      },
+      {
+        "filename": "Quiz_Teens_Answer_Keys_Matthew6.docx",
+        "local_path": "content/teens/2026-11-15_QUIZ_Matthew6/Quiz_Teens_Answer_Keys_Matthew6.docx",
+        "file_type": "QUIZ_ANSWER_KEYS",
+        "download_url": "https://nocodb.aiautom8or.com/dltemp/LQzDPCL8oK4g8MqT/1794585600000/tod/2026/11/Quiz_Teens_Answer_Keys_Matthew6_VABRdc3o60nAIiie.docx",
+        "nocodb_record_id": 48
+      },
+      {
+        "filename": "Presentation_Teens_Matthew7.docx",
+        "local_path": "content/teens/2026-11-22_PRESENTATION_Matthew7/Presentation_Teens_Matthew7.docx",
+        "file_type": "PRESENTATION",
+        "download_url": "https://nocodb.aiautom8or.com/dltemp/zT0VCBra3iWZzPHg/1794589200000/tod/2026/11/Presentation_Teens_Matthew7_iVY5IJLNmyDyL1qQ.docx",
+        "nocodb_record_id": 53
       }
     ],
     "preteens": [
       {
-        "filename": "Game_Preteens_Matthew6.docx",
-        "local_path": "content/preteens/2026-09-27_GAME_Matthew6/Game_Preteens_Matthew6.docx",
-        "file_type": "GAME_SHEET",
-        "download_url": "https://nocodb.aiautom8or.com/dltemp/Rg3awnGxe0xOnuE4/1790349000000/tod/2026/09/Game_Preteens_Matthew6_JDnn6.docx",
-        "nocodb_record_id": 42
+        "filename": "Quiz_Preteens_Variant_A_Matthew13.docx",
+        "local_path": "content/preteens/2026-11-15_QUIZ_Matthew13/Quiz_Preteens_Variant_A_Matthew13.docx",
+        "file_type": "QUIZ_VARIANT_A",
+        "download_url": "https://nocodb.aiautom8or.com/dltemp/bvngC2JG1-VVkV0l/1794585600000/tod/2026/11/Quiz_Preteens_Variant_A_Matthew13_liRVPoDn0HmY5FSs.docx",
+        "nocodb_record_id": 49
+      },
+      {
+        "filename": "Quiz_Preteens_Variant_B_Matthew13.docx",
+        "local_path": "content/preteens/2026-11-15_QUIZ_Matthew13/Quiz_Preteens_Variant_B_Matthew13.docx",
+        "file_type": "QUIZ_VARIANT_B",
+        "download_url": "https://nocodb.aiautom8or.com/dltemp/NDQnyUGqNK_5z4sE/1794585600000/tod/2026/11/Quiz_Preteens_Variant_B_Matthew13_p7gOwPKnT3S5cAiy.docx",
+        "nocodb_record_id": 50
+      },
+      {
+        "filename": "Quiz_Preteens_Variant_C_Matthew13.docx",
+        "local_path": "content/preteens/2026-11-15_QUIZ_Matthew13/Quiz_Preteens_Variant_C_Matthew13.docx",
+        "file_type": "QUIZ_VARIANT_C",
+        "download_url": "https://nocodb.aiautom8or.com/dltemp/BiFbGunBUtMBggpH/1794585600000/tod/2026/11/Quiz_Preteens_Variant_C_Matthew13_574rgjwPP8DPcQk1.docx",
+        "nocodb_record_id": 51
+      },
+      {
+        "filename": "Quiz_Preteens_Answer_Keys_Matthew13.docx",
+        "local_path": "content/preteens/2026-11-15_QUIZ_Matthew13/Quiz_Preteens_Answer_Keys_Matthew13.docx",
+        "file_type": "QUIZ_ANSWER_KEYS",
+        "download_url": "https://nocodb.aiautom8or.com/dltemp/fL68aGxuXK1coT_u/1794585600000/tod/2026/11/Quiz_Preteens_Answer_Keys_Matthew13_KaMd8jCiRvgCW4Ak.docx",
+        "nocodb_record_id": 52
+      },
+      {
+        "filename": "Presentation_Preteens_Matthew14.docx",
+        "local_path": "content/preteens/2026-11-22_PRESENTATION_Matthew14/Presentation_Preteens_Matthew14.docx",
+        "file_type": "PRESENTATION",
+        "download_url": "https://nocodb.aiautom8or.com/dltemp/SGrIxZllRt8efKWD/1794589200000/tod/2026/11/Presentation_Preteens_Matthew14_6OKQi61poF-vFcEE.docx",
+        "nocodb_record_id": 54
       }
     ]
   }

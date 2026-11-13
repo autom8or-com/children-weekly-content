@@ -135,7 +135,7 @@ def main():
         sys.exit(1)
 
     nc = load_settings(args.settings)
-    file_size_kb = round(file_path.stat().st_size / 1024, 1)
+    file_size_kb = max(1, int(file_path.stat().st_size / 1024))
 
     # 1. Upload file to NocoDB storage
     download_url = upload_file(nc["base_url"], nc["api_token"], file_path)
