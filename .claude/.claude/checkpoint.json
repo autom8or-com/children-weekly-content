@@ -1,11 +1,11 @@
 {
   "version": "1",
-  "target_date": "2026-09-27",
-  "activity": "GAME",
-  "teens_passage": "Hebrews 12",
-  "preteens_passage": "Matthew 6",
-  "started_at": "2026-09-25T13:02:53Z",
-  "last_updated": "2026-09-25T13:07:21Z",
+  "target_date": "2026-11-22",
+  "activity": "PRESENTATION",
+  "teens_passage": "Matthew 7",
+  "preteens_passage": "Matthew 14",
+  "started_at": "2026-11-20T13:05:50Z",
+  "last_updated": "2026-11-20T13:09:02Z",
   "steps": {
     "rotation_lookup": "done",
     "teens_spec_written": "done",
@@ -19,20 +19,20 @@
   "files": {
     "teens": [
       {
-        "filename": "Game_Teens_Hebrews12.docx",
-        "local_path": "content/teens/2026-09-27_GAME_Hebrews12/Game_Teens_Hebrews12.docx",
-        "file_type": "GAME_SHEET",
-        "download_url": "https://nocodb.aiautom8or.com/dltemp/oqY0uWoHKs-yRHTc/1790349000000/tod/2026/09/Game_Teens_Hebrews12_Z6JGy.docx",
-        "nocodb_record_id": 41
+        "filename": "Presentation_Teens_Matthew7.docx",
+        "local_path": "content/teens/2026-11-22_PRESENTATION_Matthew7/Presentation_Teens_Matthew7.docx",
+        "file_type": "PRESENTATION",
+        "download_url": "https://nocodb.aiautom8or.com/dltemp/kHyJOXYu5B3vNuoN/1795190400000/tod/2026/11/Presentation_Teens_Matthew7_XAXGUdZoz-AQ2Eqy.docx",
+        "nocodb_record_id": 57
       }
     ],
     "preteens": [
       {
-        "filename": "Game_Preteens_Matthew6.docx",
-        "local_path": "content/preteens/2026-09-27_GAME_Matthew6/Game_Preteens_Matthew6.docx",
-        "file_type": "GAME_SHEET",
-        "download_url": "https://nocodb.aiautom8or.com/dltemp/Rg3awnGxe0xOnuE4/1790349000000/tod/2026/09/Game_Preteens_Matthew6_JDnn6.docx",
-        "nocodb_record_id": 42
+        "filename": "Presentation_Preteens_Matthew14.docx",
+        "local_path": "content/preteens/2026-11-22_PRESENTATION_Matthew14/Presentation_Preteens_Matthew14.docx",
+        "file_type": "PRESENTATION_GUIDELINE",
+        "download_url": "https://nocodb.aiautom8or.com/dltemp/qTplCgTtySlAx64m/1795190400000/tod/2026/11/Presentation_Preteens_Matthew14_m4x952L0_ty2pRX6.docx",
+        "nocodb_record_id": 56
       }
     ]
   }
